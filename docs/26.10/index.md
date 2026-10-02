@@ -106,6 +106,12 @@ Upstream release notes are available in the [Mysql 9.7 documentation library](ht
 
 MySQL Shell was updated to 9.7.1 to support the new MySQL LTS version. See the [upstream release notes](https://dev.mysql.com/doc/relnotes/mysql-shell/9.7/en/) for more information.
 
+#### Valkey
+
+Valkey was updated to the latest major release 9.1, starting with 9.1.2. This includes various performance and security threat model improvements.
+
+For more information on the new version, see the [Valkey 9.1 blog post](https://valkey.io/blog/valkey-9-1-delivers-improvements-in-security-performance-and-more/). Release notes are available on the [Valkey project GitHub](https://github.com/valkey-io/valkey/releases).
+
 ### Development features
 
 #### Toolchain upgrades
