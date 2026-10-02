@@ -35,7 +35,7 @@ The Ubuntu 11.04 family of Kubuntu, Xubuntu, Edubuntu, Mythbuntu, and Ubuntu Stu
 #### New Features
 
 Unity is now the default Ubuntu desktop session. The Unity launcher has
-many [new features](http://unity.ubuntu.com/about/), including drag and drop re-ordering of launcher
+many new features `http://unity.ubuntu.com/about/`, including drag and drop re-ordering of launcher
 icons, full keyboard navigation support, launcher activation through
 keyboard shortcuts, right-click context menu quick-list and switching
 between running applications.
@@ -46,7 +46,7 @@ improved as well.
 
 The Ubuntu Software Center now allows users to  "rate & review"
 installed applications, share reviews via integration with social
-networking services added into Gwibber,  and has other usability
+networking services added into `Gwibber`,  and has other usability
 improvements.
 
 GNOME programs now use a
@@ -83,11 +83,11 @@ version of the in-progress multiarch work.
 
 Upstart has been updated to 0.9.7-1. There are a lot of new features:
 it is now "chroot-aware", there is support for basic job/event
-visualization, there are two new initctl commands (`show-config`,
+visualization, there are two new `initctl` commands (`show-config`,
 `check-config`), a socket bridge is now provided, the latest D-Bus version
 now allows D-Bus services to be activated via Upstart, a manual job
 configuration stanza, and override file support is now available.
-More details can be found in the [Upstart Technical overview](http://wiki.ubuntu.com/NattyNarwhal/TechnicalOverviewUpstart ).
+More details can be found in the Upstart Technical overview `http://wiki.ubuntu.com/NattyNarwhal/TechnicalOverviewUpstart`.
 
 
 (11-04-ubuntu-on-arm)=
@@ -105,7 +105,7 @@ The preinstalled Ubuntu Netbook images for ARM come with the brand new unity-2d 
 
 As a response to long standing community requests, an Ubuntu Headless image is now available for omap3 and omap4 hardware. This image is fully set up to be run and configured using the serial port and contains a minimal command line install.
 
-A detailed list of features and known issues on ARM images can be found [here](http://wiki.ubuntu.com/ARM/NattyReleaseNotes).
+A detailed list of features and known issues on ARM images can be found here `http://wiki.ubuntu.com/ARM/NattyReleaseNotes`.
 
 
 (11-04-ubuntu-server)=
@@ -115,14 +115,14 @@ A detailed list of features and known issues on ARM images can be found [here](h
 (11-04-new-features-2)=
 #### New Features
 
-cobbler and mcollective have been included, which will make provisioning servers easier.
+cobbler and `mcollective` have been included, which will make provisioning servers easier.
 
 PowerNap 2.0 uses a new method to reduce power consumption and can now
 monitor user activity (Console, Mouse, Keyboard), system activity (load,
-processors, process IO), and network activity (wake-on-lan, udp ports
-tcp ports)
+processors, process IO), and network activity (wake-on-lan, `udp` ports
+`tcp` ports)
 
-Default dhcpd server updated from dhcp3 to isc-dhcp (version 4).
+Default `dhcpd` server updated from dhcp3 to isc-dhcp (version 4).
 
 Eucalyptus is now the latest stable point release (2.0.2) with security
 and efficiency fixes.
@@ -138,7 +138,7 @@ Ubuntu Server is available for for UEC and EC2.
 
 cloud-init has been updated to 0.60. This version includes support for
 resizing of the root file system at first boot, adds minimal OVF
-transport (iso) support and allow setting of hostname when first
+transport (`iso`) support and allow setting of hostname when first
 booting. Rightscale support has been added to cloud-config and
 cloud-init.
 
@@ -161,14 +161,14 @@ The new Language Selector module allows you to add, remove, and manage system la
 
 An updated system-config-printer-kde brings a number of bug fixes to Kubuntu's printer management tool.
 
-Please see  [www.kubuntu.org/news/11.04-release](http://www.kubuntu.org/news/11.04-release) for details.
+Please see  www.kubuntu.org/news/11.04-release `http://www.kubuntu.org/news/11.04-release` for details.
 
 
 (11-04-xubuntu)=
 ### Xubuntu
 
 Xubuntu wallpaper has been updated for this release. The wallpaper is
-designed to integrate well with the new graybird theme.
+designed to integrate well with the new `graybird` theme.
 
 The installation slide show has been updated for Natty Narwhal, and
 really displays the best of Xubuntu.
@@ -180,14 +180,14 @@ good visibility font.
 
 The newly released Xfce 4.8 is included. The menus in Xfce 4.8 are now
 editable with any menu editor that meets the freedesktop.org standards.
-The suggested editor is alacarte.
+The suggested editor is `alacarte`.
 
 
 (11-04-edubuntu)=
 ### Edubuntu
 
 You can test Edubuntu 11.04 directly from your web browser by going at
-[www.edubuntu.org/weblive](http://www.edubuntu.org/weblive) (regular Ubuntu 11.04 is also available).
+www.edubuntu.org/weblive `http://www.edubuntu.org/weblive` (regular Ubuntu 11.04 is also available).
 
 WebLive is also directly integrated in the Ubuntu Software Center
 letting you test the most popular apps without installing them on your
@@ -199,8 +199,8 @@ applications should be installed on the final system.
 Edubuntu now ships with Arkose, which provides application sandboxing
 for downloaded apps.
 
-New software packages in Edubuntu include Pencil, Geogebra, Calibre,
-LibreCAD, Freemind and Stellarium.
+New software packages in Edubuntu include Pencil, GeoGebra, Calibre,
+LibreCAD, FreeMind and `Stellarium`.
 
 Theming improvements include a new wallpaper, a LDM theme when installing LTSP
 from the Edubuntu installer. The text-mode boot mode now displays "Edubuntu"
@@ -211,7 +211,7 @@ Edubuntu 11.04 ships with the classical Gnome desktop by default but
 Unity is available as an option in the installer.
 
 For more details on what has changed in Edubuntu 11.04, please refer to
-[www.edubuntu.org/news/11.04-release](http://www.edubuntu.org/news/11.04-release) .
+www.edubuntu.org/news/11.04-release `http://www.edubuntu.org/news/11.04-release` .
 
 
 (11-04-ubuntu-studio)=
@@ -222,8 +222,8 @@ tasks have been parsed into two groups: generation and recording.
 
 Currently, Ubuntu Studio is shipping the -generic kernel. We are working
 with the Ubuntu Kernel Team to get a -low latency kernel into the
-archives.  An interim -lowlatency kernel is available in Allesio
-Bogani's PPA.
+archives.  An interim -lowlatency kernel is available in `Allesio`
+`Bogani's` PPA.
 
 network-manager has replaced gnome-network-admin.
 
@@ -269,23 +269,23 @@ In addition, they can be found at the following links:
 
 [releases.ubuntu.com/11.04/](http://releases.ubuntu.com/11.04/) (Ubuntu, Ubuntu Server)
 
-[cdimage.ubuntu.com/releases/11.04/release/](http://cdimage.ubuntu.com/releases/11.04/release/) (Ubuntu Netbook ARM, Ubuntu Headless ARM, Ubuntu DVD, 64-Bit for Mac, source)
+cdimage.ubuntu.com/releases/11.04/release/ `http://cdimage.ubuntu.com/releases/11.04/release/` (Ubuntu Netbook ARM, Ubuntu Headless ARM, Ubuntu DVD, 64-Bit for Mac, source)
 
-[uec-images.ubuntu.com/releases/11.04/](http://uec-images.ubuntu.com/releases/11.04/) (Ubuntu Server for UEC and EC2)
+uec-images.ubuntu.com/releases/11.04/ `http://uec-images.ubuntu.com/releases/11.04/` (Ubuntu Server for UEC and EC2)
 
-[cdimage.ubuntu.com/netboot/11.04/](http://cdimage.ubuntu.com/netboot/11.04/) (Ubuntu Netboot)
+cdimage.ubuntu.com/netboot/11.04/ `http://cdimage.ubuntu.com/netboot/11.04/` (Ubuntu Netboot)
 
-[releases.ubuntu.com/kubuntu/11.04/](http://releases.ubuntu.com/kubuntu/11.04/) (Kubuntu)
+releases.ubuntu.com/kubuntu/11.04/ `http://releases.ubuntu.com/kubuntu/11.04/` (Kubuntu)
 
-[cdimage.ubuntu.com/kubuntu/releases/11.04/release/](http://cdimage.ubuntu.com/kubuntu/releases/11.04/release/) (Kubuntu DVD, 64-Bit for Mac, preinstalled ARM images)
+cdimage.ubuntu.com/kubuntu/releases/11.04/release/ `http://cdimage.ubuntu.com/kubuntu/releases/11.04/release/` (Kubuntu DVD, 64-Bit for Mac, preinstalled ARM images)
 
-[cdimage.ubuntu.com/xubuntu/releases/11.04/release/](http://cdimage.ubuntu.com/xubuntu/releases/11.04/release/) (Xubuntu)
+cdimage.ubuntu.com/xubuntu/releases/11.04/release/ `http://cdimage.ubuntu.com/xubuntu/releases/11.04/release/` (Xubuntu)
 
-[cdimage.ubuntu.com/edubuntu/releases/11.04/release/](http://cdimage.ubuntu.com/edubuntu/releases/11.04/release/) (Edubuntu)
+cdimage.ubuntu.com/edubuntu/releases/11.04/release/ `http://cdimage.ubuntu.com/edubuntu/releases/11.04/release/` (Edubuntu)
 
-[cdimage.ubuntu.com/ubuntustudio/releases/11.04/release/](http://cdimage.ubuntu.com/ubuntustudio/releases/11.04/release/) (Ubuntu Studio)
+cdimage.ubuntu.com/ubuntustudio/releases/11.04/release/ `http://cdimage.ubuntu.com/ubuntustudio/releases/11.04/release/` (Ubuntu Studio)
 
-[cdimage.ubuntu.com/mythbuntu/releases/11.04/release/](http://cdimage.ubuntu.com/mythbuntu/releases/11.04/release/) (Mythbuntu)
+cdimage.ubuntu.com/mythbuntu/releases/11.04/release/ `http://cdimage.ubuntu.com/mythbuntu/releases/11.04/release/` (Mythbuntu)
 
 
 (11-04-system-requirements)=
@@ -337,7 +337,7 @@ For further information on upgrading to 10.10,  please see the instructions in:
 
 * The swap partition appears become unusable during some installations (UUID not set).   This issue is under investigation. (Bug:709363)
 
-* The return_to_partitioning function executes and returns as normal, but seemingly fails to properly clean up after partman-commit and initialize partman. (Bug:740903)
+* The return_to_partitioning function executes and returns as normal, but seemingly fails to properly clean up after partman-commit and initialize `partman`. (Bug:740903)
 
 * During boot, on the cryptsetup passphrase prompt, every character typed causes a repeat of the prompt. (Bug:566818)
 
@@ -357,7 +357,7 @@ For further information on upgrading to 10.10,  please see the instructions in:
 
 * Selecting "Configure encrypted volumes" in the alternate/server installer initialises encrypted volumes from scratch, and will destroy any encrypted data that was previously present.  There is no way to reuse an existing encrypted volume at installation time at the moment, although we do consider this a bug that will be fixed in a future release. (Bug:420080)
 
-* Some users booting machines from the network using PXE, and using the `LOCALBOOT` facility in Syslinux to hand off to a local hard disk, found that there was no argument that would successfully cause a local boot.  Syslinux provides a `chain.c32` COM32 image which is less reliant on PXE BIOS implementation details. (Bug:625383)
+* Some users booting machines from the network using PXE, and using the `LOCALBOOT` facility in `Syslinux` to hand off to a local hard disk, found that there was no argument that would successfully cause a local boot.  `Syslinux` provides a `chain.c32` COM32 image which is less reliant on PXE BIOS implementation details. (Bug:625383)
 
 * Even if no Internet access is available during installation, the desktop CD installer offers checkboxes to install third-party software and software updates.  These options may not work properly without Internet access. (Bug:651932)
 
@@ -369,7 +369,7 @@ For further information on upgrading to 10.10,  please see the instructions in:
 
 The btrfs filesystem is considered experimental in this release.  It can generally be installed and used, but with a number of problems.  You should only use it if you are comfortable with dealing with problems and helping us resolve them.
 
-* As the [btrfs wiki](http://btrfs.wiki.kernel.org/) notes: "Note that Btrfs does not yet have a fsck tool that can fix errors. While Btrfs is stable on a stable machine, it is currently possible to corrupt a filesystem irrecoverably if your machine crashes or loses power on disks that don't handle flush requests correctly. This will be fixed when the fsck tool is ready."
+* As the [btrfs wiki](http://btrfs.wiki.kernel.org/) notes: "Note that Btrfs does not yet have a `fsck` tool that can fix errors. While Btrfs is stable on a stable machine, it is currently possible to corrupt a filesystem irrecoverably if your machine crashes or loses power on disks that don't handle flush requests correctly. This will be fixed when the `fsck` tool is ready."
 
 * Crash trying to install over btrfs partition in live installer. (Bug:759503)
 
@@ -385,7 +385,7 @@ The btrfs filesystem is considered experimental in this release.  It can general
 
 * In some cases (particularly if different kernel parameters from the default are in use), upgrades from Ubuntu 10.10 may prompt to resolve conflicts in the `/etc/default/grub` configuration file even when it has not been manually changed.  Performing a three-way merge should normally be sufficient if presented with this prompt, although you should check afterwards to ensure that `/etc/default/grub` still looks correct. (Bug:759545)
 
-_ If you have manually installed a PAE kernel (for example to make use of >4GB of RAM) _and* you have also installed the proprietary NVidia drivers, you will have to manually install the package "`linux-headers-generic-pae`" after the upgrade has completed but before rebooting. Failure to do so will result in a system that hangs at boot. If you do forget to install this package before rebooting, select the "recovery" option from the boot menu to allow you to install this package using "`apt-get install linux-headers-generic-pae`". See bug Bug:772226.
+_ If you have manually installed a PAE kernel (for example to make use of >4GB of RAM) _and* you have also installed the proprietary NVidia drivers, you will have to manually install the package "`linux-headers-generic-pae`" after the upgrade has completed but before rebooting. Failure to do so will result in a system that freezes at boot. If you do forget to install this package before rebooting, select the "recovery" option from the boot menu to allow you to install this package using "`apt-get install linux-headers-generic-pae`". See bug Bug:772226.
 
 
 (downgrades-to-ubuntu-11-04)=
@@ -403,13 +403,13 @@ _ If you have manually installed a PAE kernel (for example to make use of >4GB o
 
 _ Video error "[drm:radeon_ttm_backend_bind] _ERROR* failed to bind 1772 pages" during installation (Bug:557261 and Bug:656486)
 
-* On certain systems, a bad interaction between Unity, the GL driver and the kernel may cause the system to hang. (Bug:740126)
+* On certain systems, a bad interaction between Unity, the GL driver and the kernel may cause the system to freeze. (Bug:740126)
 
 * On certain systems, the display may be corrupted after switching resolutions or connecting to an external display under Unity (Bug:753971)
 
 * Under certain conditions, on systems equipped with nvidia GPUs, focused or maximized windows may be blank. (Bug:763680)
 
-* Certain applications like Chromium, Xchat or Opera may expose rendering artifacts. (Bug:753369)
+* Certain applications like Chromium, `XChat` or Opera may expose rendering artifacts. (Bug:753369)
 
 
 (11-04-desktop)=
@@ -443,7 +443,7 @@ _ Video error "[drm:radeon_ttm_backend_bind] _ERROR* failed to bind 1772 pages" 
 
 * The "stracciatella GNOME session" uses the new small scrollbars instead of the standard GNOME ones. (Bug:766660)
 
-* The new [Ayatana Scrollbars](https://wiki.ubuntu.com/Ayatana/ScrollBars) are now enabled by default. Certain applications however are blacklisted, see [wiki.ubuntu.com/Ayatana/ScrollBars#Blacklist](https://wiki.ubuntu.com/Ayatana/ScrollBars#Blacklist)
+* The new [`Ayatana Scrollbars`](https://wiki.ubuntu.com/Ayatana/ScrollBars) are now enabled by default. Certain applications however are blocklisted, see [wiki.ubuntu.com/Ayatana/ScrollBars`#Blacklist`](https://wiki.ubuntu.com/Ayatana/ScrollBars#Blacklist)
 
 In general, the recommended HW configuration for running Unity is available at: [wiki.ubuntu.com/DesktopExperienceTeam/UnityHardwareRequirements](https://wiki.ubuntu.com/DesktopExperienceTeam/UnityHardwareRequirements)
 
@@ -463,7 +463,7 @@ In general, the recommended HW configuration for running Unity is available at: 
 (11-04-linux-kernel)=
 ### Linux kernel
 
-* Toshiba NB305 hangs for 5 minutes after suspend. Workaround: specify "nohz=off highres=off" as kernel parameters at boot. (Bug:508516)
+* Toshiba NB305 freezes for 5 minutes after suspend. Workaround: specify "nohz=off highres=off" as kernel parameters at boot. (Bug:508516)
 
 * ThinkPad BIOS/EC models may have outdated firmware. (Bug:745363)
 
@@ -473,11 +473,11 @@ In general, the recommended HW configuration for running Unity is available at: 
 
 _ X will flicker, and will dmesg: "[drm:drm_edid_block_valid] _ERROR* EDID checksum is invalid".  Intermittently the screen may go dark after one of these flickers.  This can be worked around by 'sudo get-edid'. (Bug:712075)
 
-* On 32 bit t1.micro server, instance hangs when installing Sun java. (Bug:634487)
+* On 32 bit t1.micro server, instance freezes when installing Sun java. (Bug:634487)
 
 _ Screenful of errors like "[drm:radeon_ttm_backend_bind] _ERROR* failed to bind 1772 pages" may be seen during a liveCD restart. (Bug:656486)
 
-* Samsung N150 hangs indefinitely after suspend. Workaround: specify "intel_idle.max_cstate=3" as kernel parameter at boot. (Bug:640100)
+* Samsung N150 freezes indefinitely after suspend. Workaround: specify "intel_idle.max_cstate=3" as kernel parameter at boot. (Bug:640100)
 
 * 10-30% increase in power consumption. (Bug:760131)
 
@@ -503,7 +503,7 @@ _ Screenful of errors like "[drm:radeon_ttm_backend_bind] _ERROR* failed to bind
 (11-04-ubuntu-server-for-uec-and-ec2)=
 ### Ubuntu Server for UEC and EC2
 
-* Installing Java in a 32 bit t1.micro instance will hang, as a work around you may install Java in a t1.small instance and then resize the instance (see [comment #13](https://bugs.launchpad.net/ubuntu-release-notes/+bug/634487/comments/13) for details).  (Bug:634487)
+* Installing Java in a 32 bit t1.micro instance will freeze, as a work around you may install Java in a t1.small instance and then resize the instance (see [comment #13](https://bugs.launchpad.net/ubuntu-release-notes/+bug/634487/comments/13) for details).  (Bug:634487)
 
 * User prompted for sudo changes on upgrade in ec2/uec image. (Bug:768625)
 
@@ -513,9 +513,9 @@ _ Screenful of errors like "[drm:radeon_ttm_backend_bind] _ERROR* failed to bind
 
 * Due to a bug in the OMAP4 video driver it can happen that the display loses its sync which results in a black screen. To overcome this state switching tty's (ctrl+alt+F1 and switching back to X with ctrl+alt+F7) helps to get your screen back (Bug:746133)
 
-* On the OMAP4 pandaboard the sound initialization does not work properly due to a race condition between udev  rules and upstart jobs. Calling "alsaucm set _verb HiFi" and "sudo alsactl store" in a terminal will work around this. An updated alsa-utils package that fixes this issue automatically is being prepared (Bug:746023)
+* On the OMAP4 `pandaboard` the sound initialization does not work properly due to a race condition between udev  rules and upstart jobs. Calling "`alsaucm` set _verb HiFi" and "sudo `alsactl` store" in a terminal will work around this. An updated alsa-utils package that fixes this issue automatically is being prepared (Bug:746023)
 
-* OMAP3 CPUs dont run at full speed by default. While we set the required mpurate commandline parameter on our images, the values for the different OMAP3 CPUs are not always correct, to work around this you can edit the cmdline in /boot/boot.script and call "sudo flash-kernel", the change will take effect on next reboot (Bug:771537)
+* OMAP3 CPUs don't run at full speed by default. While we set the required `mpurate` command line parameter on our images, the values for the different OMAP3 CPUs are not always correct, to work around this you can edit the cmdline in /boot/boot.script and call "sudo flash-kernel", the change will take effect on next reboot (Bug:771537)
 
 * Libreoffice database packages are currently not installable on ARM systems due to missing architecture support in the package metadata, fixed packages are being prepared in the natty-updates repository (Bug:770627)
 
@@ -533,7 +533,7 @@ _ Screenful of errors like "[drm:radeon_ttm_backend_bind] _ERROR* failed to bind
 
 * Existing Kubuntu is listed twice in grub boot page after auto-resize install. (Bug:759459)
 
-* After a new user is created in Kubuntu systemsettings, they will be prompted to change their password when they log in for the first time.  There is an issue that prevents the new password from being entered.  In order to avoid this problem, the X server needs to be restarted before the new user logs in.  After logout, click on the red logout button on the KDM screen and then click on "Restart X Server". Once the KDM login screen returns, the new user should be able to log in normally. (Bug:641712)
+* After a new user is created in Kubuntu `systemsettings`, they will be prompted to change their password when they log in for the first time.  There is an issue that prevents the new password from being entered.  In order to avoid this problem, the X server needs to be restarted before the new user logs in.  After logout, click on the red logout button on the KDM screen and then click on "Restart X Server". Once the KDM login screen returns, the new user should be able to log in normally. (Bug:641712)
 
 * The kernel may panic when trying to  install over btrfs partition in live installer. (Bug:759503)
 
