@@ -300,6 +300,8 @@ linkcheck_anchors_ignore_for_url = [
     r"https://doc\.dovecot\.org/.*",
     # Raspberry Pi docs restructure anchors
     r"https://www\.raspberrypi\.com/.*",
+    # Puppet docs moved to a GitHub archive without the old anchors
+    r"https?://docs\.puppetlabs\.com/.*",
 ]
 
 # How long the link checker will wait for a response for each request

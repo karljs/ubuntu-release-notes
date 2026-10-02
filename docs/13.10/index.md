@@ -66,7 +66,6 @@ Ubuntu 13.10 will only be supported for 9 months. Non-LTS releases prior to Ubun
 ### Download Ubuntu 13.10
 
 Images can be downloaded from a location near you.
-##
 **Note:** The Ubuntu Desktop images are now bigger than a standard CD, and you should use a USB or DVD for installation.
 
 You can download ISOs from:
@@ -729,8 +728,6 @@ An important part of Ubuntu for phones is running 3rd party software in a safe m
 
 (13-10-ubuntu-studio-2)=
 ### Ubuntu Studio
-
-##
 
 
 
