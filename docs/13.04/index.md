@@ -66,7 +66,6 @@ Ubuntu 13.04 will only be supported for 9 months. Previous non-LTS releases were
 ### Download Ubuntu 13.04
 
 13.04 images can be downloaded from a location near you.
-##
 **Note:** The Ubuntu Desktop images are now bigger than a standard CD, and you should use a USB or DVD for installation.
 
 You can download 13.04 ISOs from:
@@ -488,14 +487,11 @@ _ When using unattended reboots (preseeded), casper will still wait for ENTER to
 
 (13-04-maas-2)=
 #### MAAS
-
 * MAAS Server install fails without a network connection during install of maas-region-controller ([LP: #1172566](https://launchpad.net/bugs/1172566))
 
 
 
 
-
-##
 
 
 
