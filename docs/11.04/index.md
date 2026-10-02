@@ -161,7 +161,7 @@ The new Language Selector module allows you to add, remove, and manage system la
 
 An updated system-config-printer-kde brings a number of bug fixes to Kubuntu's printer management tool.
 
-Please see  www.kubuntu.org/news/11.04-release `http://www.kubuntu.org/news/11.04-release` for details.
+Please see `www.kubuntu.org/news/11.04-release` for details.
 
 
 (11-04-xubuntu)=
@@ -179,7 +179,7 @@ Xubuntu is using the Droid font by default, since it is a lightweight,
 good visibility font.
 
 The newly released Xfce 4.8 is included. The menus in Xfce 4.8 are now
-editable with any menu editor that meets the freedesktop.org standards.
+editable with any menu editor that meets the `freedesktop.org` standards.
 The suggested editor is `alacarte`.
 
 
@@ -187,7 +187,7 @@ The suggested editor is `alacarte`.
 ### Edubuntu
 
 You can test Edubuntu 11.04 directly from your web browser by going at
-www.edubuntu.org/weblive `http://www.edubuntu.org/weblive` (regular Ubuntu 11.04 is also available).
+`www.edubuntu.org/weblive` (regular Ubuntu 11.04 is also available).
 
 WebLive is also directly integrated in the Ubuntu Software Center
 letting you test the most popular apps without installing them on your
@@ -211,7 +211,7 @@ Edubuntu 11.04 ships with the classical Gnome desktop by default but
 Unity is available as an option in the installer.
 
 For more details on what has changed in Edubuntu 11.04, please refer to
-www.edubuntu.org/news/11.04-release `http://www.edubuntu.org/news/11.04-release` .
+`www.edubuntu.org/news/11.04-release`.
 
 
 (11-04-ubuntu-studio)=
@@ -269,23 +269,23 @@ In addition, they can be found at the following links:
 
 [releases.ubuntu.com/11.04/](http://releases.ubuntu.com/11.04/) (Ubuntu, Ubuntu Server)
 
-cdimage.ubuntu.com/releases/11.04/release/ `http://cdimage.ubuntu.com/releases/11.04/release/` (Ubuntu Netbook ARM, Ubuntu Headless ARM, Ubuntu DVD, 64-Bit for Mac, source)
+`http://cdimage.ubuntu.com/releases/11.04/release/` (Ubuntu Netbook ARM, Ubuntu Headless ARM, Ubuntu DVD, 64-Bit for Mac, source)
 
-uec-images.ubuntu.com/releases/11.04/ `http://uec-images.ubuntu.com/releases/11.04/` (Ubuntu Server for UEC and EC2)
+`http://uec-images.ubuntu.com/releases/11.04/` (Ubuntu Server for UEC and EC2)
 
-cdimage.ubuntu.com/netboot/11.04/ `http://cdimage.ubuntu.com/netboot/11.04/` (Ubuntu Netboot)
+`http://cdimage.ubuntu.com/netboot/11.04/` (Ubuntu Netboot)
 
-releases.ubuntu.com/kubuntu/11.04/ `http://releases.ubuntu.com/kubuntu/11.04/` (Kubuntu)
+`http://releases.ubuntu.com/kubuntu/11.04/` (Kubuntu)
 
-cdimage.ubuntu.com/kubuntu/releases/11.04/release/ `http://cdimage.ubuntu.com/kubuntu/releases/11.04/release/` (Kubuntu DVD, 64-Bit for Mac, preinstalled ARM images)
+`http://cdimage.ubuntu.com/kubuntu/releases/11.04/release/` (Kubuntu DVD, 64-Bit for Mac, preinstalled ARM images)
 
-cdimage.ubuntu.com/xubuntu/releases/11.04/release/ `http://cdimage.ubuntu.com/xubuntu/releases/11.04/release/` (Xubuntu)
+`http://cdimage.ubuntu.com/xubuntu/releases/11.04/release/` (Xubuntu)
 
-cdimage.ubuntu.com/edubuntu/releases/11.04/release/ `http://cdimage.ubuntu.com/edubuntu/releases/11.04/release/` (Edubuntu)
+`http://cdimage.ubuntu.com/edubuntu/releases/11.04/release/` (Edubuntu)
 
-cdimage.ubuntu.com/ubuntustudio/releases/11.04/release/ `http://cdimage.ubuntu.com/ubuntustudio/releases/11.04/release/` (Ubuntu Studio)
+`http://cdimage.ubuntu.com/ubuntustudio/releases/11.04/release/` (Ubuntu Studio)
 
-cdimage.ubuntu.com/mythbuntu/releases/11.04/release/ `http://cdimage.ubuntu.com/mythbuntu/releases/11.04/release/` (Mythbuntu)
+`http://cdimage.ubuntu.com/mythbuntu/releases/11.04/release/` (Mythbuntu)
 
 
 (11-04-system-requirements)=
