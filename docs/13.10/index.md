@@ -53,7 +53,7 @@ For further information on upgrading to 13.04, please see its [upgrade instructi
 (13-10-ubuntu-downloader-for-windows-discontinued)=
 ### Ubuntu downloader for Windows discontinued
 
-Due to various bugs in Wubi that were not addressed for 13.04, the Wubi installer is again not releasing with 13.10.  You can read more about this decision [here](https://lists.ubuntu.com/archives/ubuntu-devel/2013-April/036993.html).  Users who wish to try out Ubuntu without repartitioning a Windows system are encouraged to use a live system instead, booted from either a DVD or a USB disk.
+Due to various bugs in Wubi that were not addressed for 13.04, the Wubi installer is again not releasing with 13.10.  You can read more about this decision here `https://lists.ubuntu.com/archives/ubuntu-devel/2013-April/036993.html`.  Users who wish to try out Ubuntu without repartitioning a Windows system are encouraged to use a live system instead, booted from either a DVD or a USB disk.
 
 
 (13-10-support-lifespan)=
@@ -75,25 +75,25 @@ You can download ISOs from:
 
 [cloud-images.ubuntu.com/releases/13.10/release/](http://cloud-images.ubuntu.com/releases/13.10/release/) (Ubuntu Cloud Server)
 
-[cdimage.ubuntu.com/netboot/13.10/](http://cdimage.ubuntu.com/netboot/13.10/) (Ubuntu Netboot)
+`http://cdimage.ubuntu.com/netboot/13.10/` (Ubuntu Netboot)
 
-[cdimage.ubuntu.com/ubuntu-core/releases/13.10/release/](http://cdimage.ubuntu.com/ubuntu-core/releases/13.10/release/) (Ubuntu Core)
+`http://cdimage.ubuntu.com/ubuntu-core/releases/13.10/release/` (Ubuntu Core)
 
-[cdimage.ubuntu.com/edubuntu/releases/13.10/release/](http://cdimage.ubuntu.com/edubuntu/releases/13.10/release/) (Edubuntu DVD)
+`http://cdimage.ubuntu.com/edubuntu/releases/13.10/release/` (Edubuntu DVD)
 
-[cdimage.ubuntu.com/kubuntu/releases/13.10/release/](http://cdimage.ubuntu.com/kubuntu/releases/13.10/release/) (Kubuntu)
+`http://cdimage.ubuntu.com/kubuntu/releases/13.10/release/` (Kubuntu)
 
-[cdimage.ubuntu.com/lubuntu/releases/13.10/release/](http://cdimage.ubuntu.com/lubuntu/releases/13.10/release/) (Lubuntu)
+`http://cdimage.ubuntu.com/lubuntu/releases/13.10/release/` (Lubuntu)
 
-[cdimage.ubuntu.com/ubuntustudio/releases/13.10/release/](http://cdimage.ubuntu.com/ubuntustudio/releases/13.10/release/) (Ubuntu Studio)
+`http://cdimage.ubuntu.com/ubuntustudio/releases/13.10/release/` (Ubuntu Studio)
 
-[cdimage.ubuntu.com/ubuntu-gnome/releases/13.10/release/](http://cdimage.ubuntu.com/ubuntu-gnome/releases/13.10/release/) (Ubuntu-GNOME)
+`http://cdimage.ubuntu.com/ubuntu-gnome/releases/13.10/release/` (Ubuntu-GNOME)
 
-[cdimage.ubuntu.com/ubuntukylin/releases/13.10/release/](http://cdimage.ubuntu.com/ubuntukylin/releases/13.10/release/) (UbuntuKylin)
+`http://cdimage.ubuntu.com/ubuntukylin/releases/13.10/release/` (UbuntuKylin)
 
-[cdimage.ubuntu.com/xubuntu/releases/13.10/release/](http://cdimage.ubuntu.com/xubuntu/releases/13.10/release/) (Xubuntu)
+`http://cdimage.ubuntu.com/xubuntu/releases/13.10/release/` (Xubuntu)
 
-##[cdimage.ubuntu.com/kubuntu-active/releases/13.10/release/](http://cdimage.ubuntu.com/kubuntu-active/releases/13.10/release/) (Kubuntu Active)
+##`http://cdimage.ubuntu.com/kubuntu-active/releases/13.10/release/` (Kubuntu Active)
 
 To install Ubuntu 13.10 for phones, follow the instructions found at [Touch/Install](https://help.ubuntu.com/community/Touch/Install) to download and flash an image to your device.
 
@@ -155,7 +155,7 @@ If you had problems of disappearing CUPS configuration files in the past, this s
 
 cups-filters 1.0.40: Several improvements and bug fixes for better compatibility an reliability, like using Poppler for selected PostScript printer brands which do not work with Ghostscript's PostScript output, avoiding bogus filter chains, several memory leak fixes and more are done.
 
-Thanks to Tim Waugh and Jiri Popelka from Red Hat for contributing numerous bug fixes.
+Thanks to Tim Waugh and `Jiri Popelka` from Red Hat for contributing numerous bug fixes.
 
 Also activated both Bonjour and CUPS browsing by default to pick up shared printers from CUPS servers with any version of CUPS. You can adjust this in /etc/cups/cups-browsed.conf.
 
@@ -185,7 +185,7 @@ AppArmor has a number of new features in Ubuntu 13.10. Notably:
 
 * Better support for policy generation via the `aa-easyprof` tool and `apparmor-easyprof-ubuntu` policy
 
-AppArmor policy has been adjusted for packages that ship it to work with these changes, but local policy may need to be adjusted, especially for named AF_UNIX sockets where policy created after Ubuntu 8.04 LTS may have missing 'rw' rules allowing the access. For DBus policy, as a transitional step, existing policy for packages that use DBus will continue to have full access to DBus, but future Ubuntu releases may provide fine-grained DBus rules for this software.
+AppArmor policy has been adjusted for packages that ship it to work with these changes, but local policy may need to be adjusted, especially for named AF_UNIX sockets where policy created after Ubuntu 8.04 LTS may have missing `rw` rules allowing the access. For DBus policy, as a transitional step, existing policy for packages that use DBus will continue to have full access to DBus, but future Ubuntu releases may provide fine-grained DBus rules for this software.
 
 
 (13-10-libreoffice)=
@@ -201,9 +201,9 @@ LibreOffice has been updated to version 4.1.2~rc3 which misses no fixes from the
 
 * stepped lines charts
 
-* lots of interoperability improvements with Mircosoft Office
+* lots of interoperability improvements with Microsoft Office
 
-* see [LibreOffice 4.1 New Features and Fixes](http://www.libreoffice.org/download/4-1-new-features-and-fixes/) for more details ...
+* see LibreOffice 4.1 New Features and Fixes `http://www.libreoffice.org/download/4-1-new-features-and-fixes/` for more details ...
 
 (13-10-64-bit-arm-architecture)=
 ### 64-bit ARM architecture
@@ -225,20 +225,20 @@ This Ubuntu release includes Upstart User Sessions by default, allowing Upstart 
 To see details of the running Upstart session, either `echo $UPSTART_SESSION` to see the D-Bus address the Session Init process is listening to, or run the following command which lists the process id of the Upstart session along with the value of `$UPSTART_SESSION`:
 
 ```none
-$ initctl list-sessions
+initctl list-sessions
 ```
 
 The normal suite of Upstart commands is available (such as `initctl`, `start`, and `stop`). For example, to list all session jobs, run:
 
 ```none
-$ initctl list
+initctl list
 ```
 
 To list _system_ jobs from within a user session, run one of the following two commands:
 
 ```none
-$ initctl --system list
-$ sudo initctl list
+initctl --system list
+sudo initctl list
 ```
 
 Session jobs are read from `/usr/share/upstart/sessions/` and `$XDG_CONFIG_HOME/upstart/` (or `$HOME/.config/upstart` if `$XDG_CONFIG_HOME` is not set).
@@ -315,7 +315,7 @@ Ubuntu 13.10 includes the latest MAAS release (1.4). This new upstream release i
 
 * Support for HP Moonshot systems (users will need to provide iLO credentials for power management manually).
 
-For more information about the new features and bug fixes, please review the [MAAS ChangeLog](http://maas.ubuntu.com/docs/changelog.html).
+For more information about the new features and bug fixes, please review the MAAS ChangeLog `http://maas.ubuntu.com/docs/changelog.html`.
 
 MAAS 1.4 is also available for Ubuntu Server 12.04 LTS in the [Ubuntu Cloud Tools Archive](https://wiki.ubuntu.com/ServerTeam/CloudToolsArchive).
 
@@ -357,7 +357,7 @@ Qemu 1.5.0 and libvirt 1.1.1 are also available for Ubuntu Server 12.04 LTS as p
 
 Ubuntu 13.10 includes Apache 2.4 and PHP 5.5. Users of these packages should review their configuration prior to upgrade to ensure compatibility with Apache 2.4 directives and the new tooling and directory structure for managing configuration snippets in the Ubuntu packages.
 
-For more details refer to the Apache 2.4 [upgrade guide](http://httpd.apache.org/docs/2.4/upgrading.html) and the PHP 5.5 [migration guide](http://php.net/manual/en/migration55.changes.php).
+For more details refer to the Apache 2.4 [upgrade guide](http://httpd.apache.org/docs/2.4/upgrading.html) and the PHP 5.5 migration guide `http://php.net/manual/en/migration55.changes.php`.
 
 
 (13-10-ceph-0-67-4)=
@@ -381,7 +381,7 @@ The Open vSwitch switch daemons are now controlled using Upstart configurations 
 sudo start openvswitch-force-reload-kmod
 ```
 
-As of this release, the bridge compatibility module has been removed - users must migrate to using the native Open vSwitch integration for Ubuntu network scripts - see the package [README](http://bazaar.launchpad.net/~ubuntu-branches/ubuntu/saucy/openvswitch/saucy/view/head:/debian/openvswitch-switch.README.Debian) for more details.
+As of this release, the bridge compatibility module has been removed - users must migrate to using the native Open vSwitch integration for Ubuntu network scripts - see the package README `http://bazaar.launchpad.net/~ubuntu-branches/ubuntu/saucy/openvswitch/saucy/view/head:/debian/openvswitch-switch.README.Debian` for more details.
 
 Open vSwitch 1.10.2 is also available for Ubuntu Server 12.04 LTS as part of the [Ubuntu Cloud Archive](https://wiki.ubuntu.com/ServerTeam/CloudArchive) for OpenStack Havana.
 
@@ -397,7 +397,7 @@ Ubuntu 13.10 includes Cloud-Init 0.7.3, providing the following new features:
 
 * Support for partitioning and creating filesystems ephemeral disks. Enabled by default for Microsoft Azure and Joyent Cloud (SmartOS)
 
-Starting with 13.10, Joyent Cloud (SmartOS) is a supported target for the Ubuntu Cloud Images. Images will be delivered shortly after release. Cloud-init support for SmartOS includes user-data and user-scripts via the 'smartdc' tools. Users are advised to base64 encode their user-data.
+Starting with 13.10, Joyent Cloud (SmartOS) is a supported target for the Ubuntu Cloud Images. Images will be delivered shortly after release. Cloud-init support for SmartOS includes user-data and user-scripts via the `smartdc` tools. Users are advised to base64 encode their user-data.
 
 Cloud Images available on Windows Azure are now provisioned completely with cloud-init. Previously images were provisioned with cloud-init and walinuxagent. walinuxagent has had all provisioning functions disabled and cloud-init handles all provisioning functions.
 
@@ -433,7 +433,7 @@ For 13.10, Ubuntu primarily supports the Galaxy Nexus and Nexus 4 phones, though
 ### Kubuntu
 
 Further notes about this release of Kubuntu can be found at:
-[kubuntu.org/news/kubuntu-13.10](http://kubuntu.org/news/kubuntu-13.10)
+`http://kubuntu.org/news/kubuntu-13.10`
 
 
 (13-10-xubuntu)=
@@ -488,7 +488,7 @@ As is to be expected, at this stage of the release process, there are some signi
 (13-10-boot-installation-and-post-install)=
 ### Boot, installation and post-install
 
-* When deleting and recreating partitions in manual partitioning where the disk has many partitions the installer may hang when attempting to mark the partition to be formatted. Resetting and restarting the install will allow the installation to be completed.  (Bug:1240794)
+* When deleting and recreating partitions in manual partitioning where the disk has many partitions the installer may freeze when attempting to mark the partition to be formatted. Resetting and restarting the install will allow the installation to be completed.  (Bug:1240794)
 
 * The desktop image installer cannot unlock existing encrypted (LUKS) volumes.  If you need to make use of existing encrypted volumes during partitioning, then use the "Try Ubuntu without installing" boot option to start a live session, open the encrypted volumes (for example, by clicking on their icons in the Unity launcher), enter your password when prompted to unlock them, close them again, and run `ubiquity` to start the installer.  (Bug:1066480)
 
@@ -524,7 +524,7 @@ As is to be expected, at this stage of the release process, there are some signi
 
 * Gmail integration: message counters and labels support require an update to unity-webapps-gmail, which is available in a PPA: [launchpad.net/~webapps/+archive/staging](https://launchpad.net/~webapps/+archive/staging) (see Bug:1069576). The fix will be part of the next SRU batch.
 
-* Sometimes ability to swith keyboard layout in X is lost. (Bug:1215826, Bug:1218322) One of possible workarounds is to remove indicator-keyboard package, kill corresponding process and configure layout usning `setxkbmap`. Also, hotkeys are broken in non-latin layouts (Bug:1226962).
+* Sometimes ability to switch keyboard layout in X is lost. (Bug:1215826, Bug:1218322) One of possible workarounds is to remove indicator-keyboard package, kill corresponding process and configure layout using `setxkbmap`. Also, hotkeys are broken in non-latin layouts (Bug:1226962).
 
 
 (13-10-kernel)=
@@ -538,7 +538,7 @@ As is to be expected, at this stage of the release process, there are some signi
 (13-10-application-confinement)=
 #### Application Confinement
 
-An important part of Ubuntu for phones is running 3rd party software in a safe manner, and a lot of work in support of [ApplicationConfinement](https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement) was completed. Specifically, when applications are installed on Ubuntu for phones via the Ubuntu appstore, they are installed using [click packaging and run under AppArmor](http://developer.ubuntu.com/publish/apps/security-policy-for-click-packages/). While a very meaningful level of isolation between apps is achieved in Ubuntu 13.10 for Ubuntu for phones, the work is not completed and will continue in 14.04. Specifically:
+An important part of Ubuntu for phones is running 3rd party software in a safe manner, and a lot of work in support of [ApplicationConfinement](https://wiki.ubuntu.com/SecurityTeam/Specifications/ApplicationConfinement) was completed. Specifically, when applications are installed on Ubuntu for phones via the Ubuntu appstore, they are installed using click packaging and run under AppArmor `http://developer.ubuntu.com/publish/apps/security-policy-for-click-packages/`. While a very meaningful level of isolation between apps is achieved in Ubuntu 13.10 for Ubuntu for phones, the work is not completed and will continue in 14.04. Specifically:
 
 * Mir does not currently support a method for another process to display a confirmation dialog over the current foreground app (Bug:1224756). As such, users are not prompted for the following common services:
 
@@ -553,17 +553,17 @@ An important part of Ubuntu for phones is running 3rd party software in a safe m
 
 * Several shared memory files are not application-specific (Bug:1197060, Bug:1226569, Bug:1224751)
 
-* Android services accessed via binder are not properly mediated (ie, apps are able to access the sensors and camera service when policy doesn't explicitly allow it, Bug:1197134)
+* Android services accessed via binder are not properly mediated (i.e., apps are able to access the sensors and camera service when policy doesn't explicitly allow it, Bug:1197134)
 
-* AppArmor mediation for [signals, ptrace, abstract sockets and some other forms of IPC](https://blueprints.launchpad.net/ubuntu/+spec/appdev-s-appisolation-signals-ipc-ptrace) for processes with the same UID is not yet implemented
+* AppArmor mediation for [signals, `ptrace`, abstract sockets and some other forms of IPC](https://blueprints.launchpad.net/ubuntu/+spec/appdev-s-appisolation-signals-ipc-ptrace) for processes with the same UID is not yet implemented
 
 * AppArmor mediation for process-specific files in /proc in not implemented which discloses more information to apps than is required
 
 * AppArmor mediation of the environment is not implemented. Ubuntu 13.10 for phones AppArmor policy makes up for this by disallowing execution of less-restricted processes
 
-* X is not mediated (ie, keyboard/mouse sniffing, drag and drop, screen grabs, xsettings module loading). This is not a problem for Ubuntu for phones since it uses Mir, but is listed for people wanting to use Ubuntu appstore apps on X (eg, Ubuntu Desktop)
+* X is not mediated (i.e., keyboard/mouse sniffing, drag and drop, screen grabs, `xsettings` module loading). This is not a problem for Ubuntu for phones since it uses Mir, but is listed for people wanting to use Ubuntu appstore apps on X (eg, Ubuntu Desktop)
 
-* The YAMA kernel LSM is not available for Galaxy Nexus (maguro) and Nexus 7 (grouper) and not enabled on Nexus 4 (mako) and Nexus 10 (manta). As a result, kernel protections such as ptrace and link restrictions are not present.
+* The YAMA kernel LSM is not available for Galaxy Nexus (maguro) and Nexus 7 (grouper) and not enabled on Nexus 4 (mako) and Nexus 10 (manta). As a result, kernel protections such as `ptrace` and link restrictions are not present.
 
 
 (13-10-browser)=
@@ -596,7 +596,7 @@ An important part of Ubuntu for phones is running 3rd party software in a safe m
 
 * No detection of time zone change via settings. To detect the change, you’ll need to restart the app
 
-* Location detection is not done by GPS but by geoip, which might provide not so accurate results
+* Location detection is not done by GPS but by `geoip`, which might provide not so accurate results
 
 
 (13-10-dropping-letters)=
@@ -610,7 +610,7 @@ An important part of Ubuntu for phones is running 3rd party software in a safe m
 
 * After changing the system language, you need to reboot to get the shell picking your change (Bug:1240875)
 
-* Keyboard does not allow input on the left handside in landscape mode (Bug:1236489)
+* Keyboard does not allow input on the left-hand side in landscape mode (Bug:1236489)
 
 
 (13-10-location)=
@@ -632,7 +632,7 @@ An important part of Ubuntu for phones is running 3rd party software in a safe m
 #### Media Scanner
 
 * Maguro: incorrect color conversion when producing thumbnails (Bug:240264)
-* Copying large files over mtp causes mediascanner to consume CPU.
+* Copying large files over `mtp` causes `mediascanner` to consume CPU.
 
 
 (13-10-mir)=
@@ -654,7 +654,7 @@ An important part of Ubuntu for phones is running 3rd party software in a safe m
 (13-10-telephony)=
 #### Telephony
 
-* No vibration on ring or sms
+* No vibration on ring or SMS
 
 
 (13-10-shorts)=
@@ -673,7 +673,7 @@ An important part of Ubuntu for phones is running 3rd party software in a safe m
 (13-10-weather)=
 #### Weather
 
-* Location detection is not done by GPS but by geoip, which might provide not so accurate results
+* Location detection is not done by GPS but by `geoip`, which might provide not so accurate results
 
 
 (13-10-platform)=
@@ -681,7 +681,7 @@ An important part of Ubuntu for phones is running 3rd party software in a safe m
 
 * Session upstart leaks memory on Ubuntu Touch (Bug:1235649)
 
-* On maguro omapfb spams the system with uevents from the graphics driver (Bug:1234743)
+* On maguro `omapfb` spams the system with uevents from the graphics driver (Bug:1234743)
 
 
 (13-10-ubuntu-server-2)=
@@ -748,7 +748,7 @@ An important part of Ubuntu for phones is running 3rd party software in a safe m
 
 Your comments, bug reports, patches and suggestions will help fix bugs and improve the quality of future releases. Please [report bugs using the tools provided](http://help.ubuntu.com/community/ReportingBugs).
 
-If you want to help out with bugs, the [Bug Squad](http://wiki.ubuntu.com/BugSquad) is always looking for help.
+If you want to help out with bugs, the Bug Squad `http://wiki.ubuntu.com/BugSquad` is always looking for help.
 
 
 (13-10-participate-in-ubuntu)=
