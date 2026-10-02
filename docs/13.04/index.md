@@ -53,7 +53,7 @@ For further information on upgrading to 12.10, please see its [upgrade instructi
 (13-04-ubuntu-downloader-for-windows-discontinued)=
 ### Ubuntu downloader for Windows discontinued
 
-Due to various bugs in Wubi that have not been addressed in time for the final release, the Ubuntu team will not be releasing the Wubi installer with 13.04.  You can read more about this decision [here](https://lists.ubuntu.com/archives/ubuntu-devel/2013-April/036993.html).  Users who wish to try out Ubuntu without repartitioning a Windows system are encouraged to use a live system instead, booted from either a DVD or a USB disk.
+Due to various bugs in Wubi that have not been addressed in time for the final release, the Ubuntu team will not be releasing the Wubi installer with 13.04.  You can read more about this decision here `https://lists.ubuntu.com/archives/ubuntu-devel/2013-April/036993.html`.  Users who wish to try out Ubuntu without repartitioning a Windows system are encouraged to use a live system instead, booted from either a DVD or a USB disk.
 
 
 (13-04-support-lifespan-reduced)=
@@ -75,25 +75,25 @@ You can download 13.04 ISOs from:
 
 [cloud-images.ubuntu.com/releases/13.04/release/](http://cloud-images.ubuntu.com/releases/13.04/release/) (Ubuntu Cloud Server)
 
-[cdimage.ubuntu.com/netboot/13.04/](http://cdimage.ubuntu.com/netboot/13.04/) (Ubuntu Netboot)
+`http://cdimage.ubuntu.com/netboot/13.04/` (Ubuntu Netboot)
 
-[cdimage.ubuntu.com/ubuntu-core/releases/13.04/release/](http://cdimage.ubuntu.com/ubuntu-core/releases/13.04/release/) (Ubuntu Core)
+`http://cdimage.ubuntu.com/ubuntu-core/releases/13.04/release/` (Ubuntu Core)
 
-[cdimage.ubuntu.com/edubuntu/releases/13.04/release/](http://cdimage.ubuntu.com/edubuntu/releases/13.04/release/) (Edubuntu DVD)
+`http://cdimage.ubuntu.com/edubuntu/releases/13.04/release/` (Edubuntu DVD)
 
-[cdimage.ubuntu.com/kubuntu/releases/13.04/release/](http://cdimage.ubuntu.com/kubuntu/releases/13.04/release/) (Kubuntu)
+`http://cdimage.ubuntu.com/kubuntu/releases/13.04/release/` (Kubuntu)
 
-[cdimage.ubuntu.com/lubuntu/releases/13.04/release/](http://cdimage.ubuntu.com/lubuntu/releases/13.04/release/) (Lubuntu)
+`http://cdimage.ubuntu.com/lubuntu/releases/13.04/release/` (Lubuntu)
 
-[cdimage.ubuntu.com/ubuntustudio/releases/13.04/release/](http://cdimage.ubuntu.com/ubuntustudio/releases/13.04/release/) (Ubuntu Studio)
+`http://cdimage.ubuntu.com/ubuntustudio/releases/13.04/release/` (Ubuntu Studio)
 
-[cdimage.ubuntu.com/ubuntu-gnome/releases/13.04/release/](http://cdimage.ubuntu.com/ubuntu-gnome/releases/13.04/release/) (Ubuntu-GNOME)
+`http://cdimage.ubuntu.com/ubuntu-gnome/releases/13.04/release/` (Ubuntu-GNOME)
 
-[cdimage.ubuntu.com/ubuntukylin/releases/13.04/release/](http://cdimage.ubuntu.com/ubuntukylin/releases/13.04/release/) (UbuntuKylin)
+`http://cdimage.ubuntu.com/ubuntukylin/releases/13.04/release/` (UbuntuKylin)
 
-[cdimage.ubuntu.com/xubuntu/releases/13.04/release/](http://cdimage.ubuntu.com/xubuntu/releases/13.04/release/) (Xubuntu)
+`http://cdimage.ubuntu.com/xubuntu/releases/13.04/release/` (Xubuntu)
 
-##[cdimage.ubuntu.com/kubuntu-active/releases/13.04/release/](http://cdimage.ubuntu.com/kubuntu-active/releases/13.04/release/) (Kubuntu Active)
+##`http://cdimage.ubuntu.com/kubuntu-active/releases/13.04/release/` (Kubuntu Active)
 
 
 (new-features-in-13-04)=
@@ -161,7 +161,7 @@ for all details, see: [wiki.documentfoundation.org/ReleaseNotes/4.0](https://wik
 
 * Support for Firefox Personas in LibreOffice
 
-* Document Management Systems Integration for Alfresco, Nuxeo, SharePoint via libcmis
+* Document Management Systems Integration for Alfresco, Nuxeo, SharePoint via `libcmis`
 
 * Less Java dependencies: e.g. more Wizards available even in the default install
 
@@ -169,7 +169,7 @@ for all details, see: [wiki.documentfoundation.org/ReleaseNotes/4.0](https://wik
 
 * PDF Import, the Presenter Console, and the Python Scripting Provider are core features now
 
-* **dropping legacy binfilter and a lot of obsolete UNO-API interfaces**
+* **dropping legacy `binfilter` and a lot of obsolete UNO-API interfaces**
 
 
 (13-04-writer)=
@@ -183,7 +183,7 @@ for all details, see: [wiki.documentfoundation.org/ReleaseNotes/4.0](https://wik
 
 
 (13-04-calc)=
-##### Calc
+##### `Calc`
 
 * Various performance improvements of ODS document import
 * Increased size limit on (uncompressed) ODF documents from 2Gb to 4Gb
@@ -193,11 +193,11 @@ for all details, see: [wiki.documentfoundation.org/ReleaseNotes/4.0](https://wik
 (13-04-impress-draw)=
 ##### Impress/Draw
 
-* **Impress Remote control** for controling presentations via Bluetooth/Wifi from a Smartphone
+* **Impress Remote control** for controlling presentations via Bluetooth/Wifi from a Smartphone
 
 * Import for MS Publisher files
 
-* Import for _all_ Visio file formats, even MS Office 2013
+* Import for _all_ `Visio` file formats, even MS Office 2013
 
 * various PPTX import fixes
 
@@ -209,7 +209,7 @@ for all details, see: [wiki.documentfoundation.org/ReleaseNotes/4.0](https://wik
 (13-04-base)=
 ##### Base
 
-* Native support (mork driver) for accessing Thunderbird address books
+* Native support (`mork` driver) for accessing Thunderbird address books
 
 
 (13-04-cups-1-6-2-and-cups-filters-1-0-34)=
@@ -217,7 +217,7 @@ for all details, see: [wiki.documentfoundation.org/ReleaseNotes/4.0](https://wik
 
 We had already switched to CUPS 1.6.x in Quantal (12.10) but had to apply a huge, awkward Ubuntu-specific patch to avoid regressions. Now we are up to all new standards without needing to do anything Ubuntu-specific.
 
-Most important change here is the way how network printing works. Formerly, a CUPS-specific mechanism was used. The server broadcasted information about the printers it shares and the clients listen to these broadcasts making the printers available on the client side, looking like local print queues for the applications.
+Most important change here is the way how network printing works. Formerly, a CUPS-specific mechanism was used. The server broadcast information about the printers it shares and the clients listen to these broadcasts making the printers available on the client side, looking like local print queues for the applications.
 
 Recently, the [Printer Working Group (PWG)](http://www.pwg.org/), an association of printer and software industry for developing standards related to digital printing, has created a standard for broadcasting information about shared printers. This standard is broadcasting the information via Bonjour, a protocol also used for many other network services, like shared files systems, screens, music/video servers, ...
 
@@ -272,20 +272,20 @@ To disable, simply comment out "`ubuntu`", logout and log back in again.
 To see details of the running Upstart session, either `echo $UPSTART_SESSION` to see the D-Bus address the Session Init process is listening to, or run the following command which lists the process id of the Upstart session along with the value of `$UPSTART_SESSION`:
 
 ```none
-$ initctl list-sessions
+initctl list-sessions
 ```
 
 The normal suite of Upstart commands is available (such as `initctl`, `start`, and `stop`). For example, to list all session jobs, run:
 
 ```none
-$ initctl list
+initctl list
 ```
 
 To list _system_ jobs from within a user session, run one of the following two commands:
 
 ```none
-$ initctl --system list
-$ sudo initctl list
+initctl --system list
+sudo initctl list
 ```
 
 Session jobs are read from `/usr/share/upstart/sessions/` and `$XDG_CONFIG_HOME/upstart/` (or `$HOME/.config/upstart` if `$XDG_CONFIG_HOME` is not set).
@@ -298,7 +298,7 @@ See `init(5)` for full details.
 (13-04-friends)=
 #### Friends
 
-Social networking for 13.04 is now handled by the Friends service, which replaces the backend Gwibber provided in previous Ubuntu releases.  There is no transition required, if you have social networking accounts setup in Ubuntu Online Accounts, the Friends service will just work.  The Gwibber lens in Unity has been replaced with a Friends lens and works in much the same way.  The Gwibber client application is no longer included by default, for similar functionality friends-app can be installed from Software Center.
+Social networking for 13.04 is now handled by the Friends service, which replaces the backend `Gwibber` provided in previous Ubuntu releases.  There is no transition required, if you have social networking accounts setup in Ubuntu Online Accounts, the Friends service will just work.  The `Gwibber` lens in Unity has been replaced with a Friends lens and works in much the same way.  The `Gwibber` client application is no longer included by default, for similar functionality friends-app can be installed from Software Center.
 
 
 (13-04-ubuntu-server)=
@@ -312,7 +312,7 @@ Ubuntu 13.04 includes the Grizzly release of Openstack. OpenStack projects suppo
 
 Openstack Grizzly is also available for Ubuntu Server 12.04 LTS in the [Ubuntu Cloud Archive](https://wiki.ubuntu.com/ServerTeam/CloudArchive).
 
-OpenStack continues to be deployable using Juju Charms; for the Grizzly release this also includes deploying OpenStack in a highly avaliable configuration as demonstrated at the OpenStack Summit in Portland. See the [OpenStack HA Reference architecture](https://wiki.ubuntu.com/ServerTeam/OpenStackHA) documentation for more details.
+OpenStack continues to be deployable using Juju Charms; for the Grizzly release this also includes deploying OpenStack in a highly available configuration as demonstrated at the OpenStack Summit in Portland. See the [OpenStack HA Reference architecture](https://wiki.ubuntu.com/ServerTeam/OpenStackHA) documentation for more details.
 
 
 (13-04-juju)=
@@ -325,13 +325,13 @@ The initial release (1.10.0) of the Go rewrite of Juju ('juju-core' package) is 
 You can revert to the default (0.7) version by using the following:
 
 ```none
-$ sudo update-alternatives --set juju /usr/lib/juju-0.7/bin/juju
+sudo update-alternatives --set juju /usr/lib/juju-0.7/bin/juju
 ```
 
 or to the new 1.10.0 release using:
 
 ```none
-$ sudo update-alternatives --set juju /usr/lib/juju-1.10.0/bin/juju
+sudo update-alternatives --set juju /usr/lib/juju-1.10.0/bin/juju
 ```
 
 Please note that the 1.10.0 (Go version) release is not yet end-user feature complete compared to 0.7 - for example, the LXC local provider is not yet implemented in 1.10.0; if you install both you will get 0.7 by default.
@@ -353,7 +353,7 @@ Ubuntu 13.04 includes the latest MAAS release (1.3). This new upstream release i
 (13-04-simple-streams)=
 #### Simple Streams
 
-There is now machine formated JSON data describing all downloadable content for Ubuntu cloud images.  The data format is called "simple streams", and can be found at [cloud-images.ubuntu.com/releases/streams/](http://cloud-images.ubuntu.com/releases/streams/) . There is a sample client included in Ubuntu in the 'simplestreams' package.  The client can be used to keep cloud or local downloads in sync with what is available from Ubuntu.
+There is now machine formatted JSON data describing all downloadable content for Ubuntu cloud images.  The data format is called "simple streams", and can be found at [cloud-images.ubuntu.com/releases/streams/](http://cloud-images.ubuntu.com/releases/streams/) . There is a sample client included in Ubuntu in the `simplestreams` package.  The client can be used to keep cloud or local downloads in sync with what is available from Ubuntu.
 
 
 (13-04-ceph-0-56-4)=
@@ -416,14 +416,14 @@ For information about the Ubuntu Studio Beta release, please see [RaringRingtail
 ### UbuntuKylin
 
 [UbuntuKylin](https://help.ubuntu.com/community/UbuntuKylin) has had several bug fixes applied to chinese-calendar and
-indicator-china-weather, made fcitx as default and improved the theme since
+indicator-china-weather, made `fcitx` as default and improved the theme since
 Beta 1. For information about the UbuntuKylin Beta release, please see [UbuntuKylin/1304-ReleaseNotes](https://help.ubuntu.com/community/UbuntuKylin/1304-ReleaseNotes).
 
 
 (13-04-ubuntu-gnome)=
 ### Ubuntu GNOME
 
-* In coordination with the Ubuntu Desktop Team, we have decided to stick with GNOME 3.6 for Ubuntu 13.04. For an overview of what's new in GNOME 3.6, please see the [Release Notes](https://help.gnome.org/misc/release-notes/3.6/).
+* In coordination with the Ubuntu Desktop Team, we have decided to stick with GNOME 3.6 for Ubuntu 13.04. For an overview of what's new in GNOME 3.6, please see the Release Notes `https://help.gnome.org/misc/release-notes/3.6/`.
 
 * The [GNOME3 PPA](https://launchpad.net/~gnome3-team/+archive/gnome3/) offers an early look at GNOME 3.8 for Ubuntu. Please note that you need to do a dist-upgrade instead of a regular upgrade or else GDM or GNOME Shell won't run after upgrading. In case of problems, please make yourself familiar with ppa-purge before using the GNOME3 PPAs.
 
@@ -435,7 +435,7 @@ Beta 1. For information about the UbuntuKylin Beta release, please see [UbuntuKy
 
 * Ubuntu Software Center and Update Manager instead of GNOME Software (gnome-packagekit)
 
-* LibreOffice instead of Abiword and Gnumeric
+* LibreOffice instead of AbiWord and `Gnumeric`
 
 * The other apps are still available for install; they just aren't included in the default install.
 
@@ -455,7 +455,7 @@ As is to be expected, at this stage of the release process, there are some signi
 
 * Installs on very small memory systems may fail to start or exit without completing with no error. It is recommended that swap be created before install for such systems. Please see advice about adding and activating swap at: [help.ubuntu.com/community/SwapFaq](https://help.ubuntu.com/community/SwapFaq) ([LP: #1172161](https://bugs.launchpad.net/ubuntu-release-notes/+bug/1172161))
 
-_ When using unattended reboots (preseeded), casper will still wait for ENTER to be preseed by the user. This can be worked around by calling "sed -i 's/eject -p -m._/&; ["$prompt"] || return 0/' /etc/init.d/casper" before rebooting the machine (as a late_command for example). ([LP: #1172653](https://bugs.launchpad.net/bugs/1172653))
+_ When using unattended reboots (preseeded), casper will still wait for ENTER to be preseed by the user. This can be worked around by calling `sed -i 's/eject -p -m._/&; ["$prompt"] || return 0/' /etc/init.d/casper` before rebooting the machine (as a late_command for example). ([LP: #1172653](https://bugs.launchpad.net/bugs/1172653))
 
 * In rare circumstances the 'Next' button on the installer 'Install Type' screen is non-functional.  This is intermittent and may be resolved by hitting 'Back' and retrying.  ([LP: #1172572](https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1172572))
 
@@ -505,7 +505,7 @@ _ When using unattended reboots (preseeded), casper will still wait for ENTER to
 
 * The "Install Alongside" option doesn't work (Bug:1164592).
 
-* There are two Online Accounts entries in System Settings. One is the GNOME tool which you can use for Contacts, Documents, and Evolution. The other is Ubuntu's tool for Empathy, Gwibber, Shotwell, and if you install it, Unity. (Bug:1040193)
+* There are two Online Accounts entries in System Settings. One is the GNOME tool which you can use for Contacts, Documents, and Evolution. The other is Ubuntu's tool for Empathy, `Gwibber`, Shotwell, and if you install it, Unity. (Bug:1040193)
 
 ---
 
@@ -517,7 +517,7 @@ _ When using unattended reboots (preseeded), casper will still wait for ENTER to
 
 It should come as no surprise that this release of Ubuntu 13.04 contains other bugs. Your comments, bug reports, patches and suggestions will help fix bugs and improve the quality of future releases. Please [report bugs using the tools provided](http://help.ubuntu.com/community/ReportingBugs).
 
-If you want to help out with bugs, the [Bug Squad](http://wiki.ubuntu.com/BugSquad) is always looking for help.
+If you want to help out with bugs, the Bug Squad `http://wiki.ubuntu.com/BugSquad` is always looking for help.
 
 
 (13-04-ubuntu-project-contributors)=
