@@ -45,29 +45,29 @@ You can download ISOs and flashable images from from:
 
 [releases.ubuntu.com/16.10/](http://releases.ubuntu.com/16.10/) (Ubuntu Desktop and Server)
 
-[cdimage.ubuntu.com/ubuntu/releases/16.10/](http://cdimage.ubuntu.com/ubuntu/releases/16.10/) (Less Popular Ubuntu Images)
+[old-releases.ubuntu.com/releases/16.10/](https://old-releases.ubuntu.com/releases/16.10/) (Less Popular Ubuntu Images)
 
 [cloud-images.ubuntu.com/releases/16.10/](http://cloud-images.ubuntu.com/releases/16.10/) (Ubuntu Cloud Server)
 
-[cdimage.ubuntu.com/netboot/16.10/](http://cdimage.ubuntu.com/netboot/16.10/) (Ubuntu Netboot)
+`cdimage.ubuntu.com/netboot/16.10/` (Ubuntu Netboot)
 
-[cdimage.ubuntu.com/kubuntu/releases/16.10/](http://cdimage.ubuntu.com/kubuntu/releases/16.10/) (Kubuntu)
+`cdimage.ubuntu.com/kubuntu/releases/16.10/` (Kubuntu)
 
-[cdimage.ubuntu.com/lubuntu/releases/16.10/](http://cdimage.ubuntu.com/lubuntu/releases/16.10/) (Lubuntu)
+`cdimage.ubuntu.com/lubuntu/releases/16.10/` (Lubuntu)
 
-[cdimage.ubuntu.com/ubuntustudio/releases/16.10/](http://cdimage.ubuntu.com/ubuntustudio/releases/16.10/) (Ubuntu Studio)
+`cdimage.ubuntu.com/ubuntustudio/releases/16.10/` (Ubuntu Studio)
 
-[cdimage.ubuntu.com/ubuntu-gnome/releases/16.10/](http://cdimage.ubuntu.com/ubuntu-gnome/releases/16.10/) (Ubuntu GNOME)
+`cdimage.ubuntu.com/ubuntu-gnome/releases/16.10/` (Ubuntu GNOME)
 
-[cdimage.ubuntu.com/ubuntukylin/releases/16.10/](http://cdimage.ubuntu.com/ubuntukylin/releases/16.10/) (Ubuntu Kylin)
+`cdimage.ubuntu.com/ubuntukylin/releases/16.10/` (Ubuntu Kylin)
 
-[cdimage.ubuntu.com/ubuntu-mate/releases/16.10/](http://cdimage.ubuntu.com/ubuntu-mate/releases/16.10/) (Ubuntu MATE)
+`cdimage.ubuntu.com/ubuntu-mate/releases/16.10/` (Ubuntu MATE)
 
-[cdimage.ubuntu.com/xubuntu/releases/16.10/](http://cdimage.ubuntu.com/xubuntu/releases/16.10/) (Xubuntu)
+`cdimage.ubuntu.com/xubuntu/releases/16.10/` (Xubuntu)
 
-##[cdimage.ubuntu.com/mythbuntu/releases/16.10/](http://cdimage.ubuntu.com/mythbuntu/releases/16.10/) (Mythbuntu)
+`cdimage.ubuntu.com/mythbuntu/releases/16.10/` (Mythbuntu)
 
-##[cdimage.ubuntu.com/edubuntu/releases/16.10/](http://cdimage.ubuntu.com/edubuntu/releases/16.10/) (Edubuntu DVD)
+`cdimage.ubuntu.com/edubuntu/releases/16.10/` (Edubuntu DVD)
 
 
 (16-10-upgrading-from-ubuntu-16-04-lts)=
@@ -135,7 +135,7 @@ _ The _gpg* binary is now provided by [gnupg2](https://debian-administration.org
 
 * The **Nautilus** file browser has been [updated](https://csorianognome.wordpress.com/2015/09/04/nautilus-3-18-comunicating-changes/) to [3.20](https://csorianognome.wordpress.com/2016/02/08/nautilus-3-20-and-looking-forward/).
 
-* **systemd** is now used for [user sessions](https://lists.ubuntu.com/archives/ubuntu-devel/2016-July/039465.html). System sessions had already been provided by systemd in previous Ubuntu releases.
+* **systemd** is now used for user sessions `https://lists.ubuntu.com/archives/ubuntu-devel/2016-July/039465.html`. System sessions had already been provided by systemd in previous Ubuntu releases.
 
 
 (16-10-ubuntu-server)=
@@ -179,7 +179,7 @@ Qemu has been updated to the 2.6.1 release.
 See the [Changelog](http://wiki.qemu.org/ChangeLog/2.6) for details.
 This already includes a stable releases, more about that can be found at [2.6.1 stable release](https://lists.gnu.org/archive/html/qemu-devel/2016-08/msg03137.html).
 
-Additionally this includes a backport to enable GPU Passthru for ppc64le.
+Additionally this includes a backport to enable GPU passthrough for ppc64le.
 
 
 (16-10-dpdk-16-07)=
@@ -190,7 +190,7 @@ Ubuntu 16.10 includes the latest release of DPDK, 16.07.
 See the [Release Notes](http://dpdk.org/doc/guides/rel_notes/release_16_07.html) for details.
 
 Noteworthy for DPDK application developers is that upstream deprecated the old mechanism of a combined shared library.
-libdpdk.so is now a linker script referring to the - individually packaged - sub-libraries librte-*.
+`libdpdk.so` is now a linker script referring to the - individually packaged - sub-libraries librte-*.
 Furthermore the DPDK related kernel modules are now provided as dkms based packages.
 
 
@@ -208,11 +208,11 @@ In order to reduce the Debian delta, the main libvirt service has been renamed t
 
 Open vSwitch has been updated to the latest release, 2.6.
 
-See the Open vSwitch [News](http://openvswitch.org/releases/NEWS-2.6.0) for mroe details.
+See the Open vSwitch [News](http://openvswitch.org/releases/NEWS-2.6.0) for more details.
 
 The enablement of openvswitch-switch-dpdk has changed upstream.
 So if you are upgrading from a previously dpdk enabled configuration then you will need to update your enablement appropriately.
-See associated Readme at /usr/share/doc/openvswitch-switch-dpdk/README.Debian for details.
+See associated `Readme` at /usr/share/doc/openvswitch-switch-dpdk/README.Debian for details.
 
 
 (16-10-lxd-2-4-1)=
@@ -222,7 +222,7 @@ Ubuntu 16.10 ships with LXD 2.4.1. The main highlights for this new version of L
 
 * Support for AppArmor profile stacking. This allows containers to load their own AppArmor profiles, further securing tasks running inside LXD containers.
 
-* Building on the new AppArmor feature, it is now possible to install Snap packages inside LXD containers. For the time being, this is only possible with Ubuntu 16.10 containers that have the "squashfuse" package installed.
+* Building on the new AppArmor feature, it is now possible to install Snap packages inside LXD containers. For the time being, this is only possible with Ubuntu 16.10 containers that have the `squashfuse` package installed.
 
 * New network management features have been added to LXD, allowing the creation and management of bridges, DHCP settings, tunnels, ... More information can be found from "lxc network help" and in the upstream [documentation](https://github.com/lxc/lxd/blob/master/doc/configuration.md#network-configuration).
 
@@ -246,7 +246,7 @@ Some recent improvements include:
 
 * new format for [configuring apt](https://git.launchpad.net/cloud-init/tree/doc/examples/cloud-config-apt.txt)
 
-* support for [configuring ntp](http://cloudinit.readthedocs.io/en/latest/topics/modules.html#ntp)
+* support for [configuring `ntp`](http://cloudinit.readthedocs.io/en/latest/topics/modules.html#ntp)
 
 * support for [configuring lxd](http://cloudinit.readthedocs.io/en/latest/topics/modules.html#lxd) 2.3+.
 
@@ -264,10 +264,10 @@ The docker.io package has been updated to version 1.12.1.  See the associated up
 
 There are many improvements specific to the IBM mainframe s390x architecture, in addition to all of the above mentioned features:
 
-* s390-tools updated to 1.36.1 with support for dasd quick format
+* s390-tools updated to 1.36.1 with support for `dasd` quick format
 * Addition of the numactl package
 * Hardware acceleration enabled in OpenSSL
-* zfcpdump kernel is now available
+* `zfcpdump` kernel is now available
 
 And many other general bugfixes and improvements.
 
@@ -281,7 +281,7 @@ As is to be expected, with any release, there are some significant known bugs th
 (16-10-boot-installation-and-post-install)=
 ### Boot, installation and post-install
 
-* Wifi shows no ap in oem end user mode, work around reboot the machine and then everything should work as expected (Bug:1633012)
+* Wifi shows no `ap` in oem end user mode, work around reboot the machine and then everything should work as expected (Bug:1633012)
 
 * Bluetooth driver on XPS13 9434 not functioning at all (Bug:1633019)
 
@@ -364,7 +364,7 @@ The release notes for the official flavours can be found at the following links:
 
 Your comments, bug reports, patches and suggestions will help fix bugs and improve the quality of future releases. Please [report bugs using the tools provided](http://help.ubuntu.com/community/ReportingBugs).
 
-If you want to help out with bugs, the [Bug Squad](http://wiki.ubuntu.com/BugSquad) is always looking for help.
+If you want to help out with bugs, the Bug Squad `http://wiki.ubuntu.com/BugSquad` is always looking for help.
 
 
 (16-10-participate-in-ubuntu)=
