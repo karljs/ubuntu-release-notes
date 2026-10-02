@@ -55,14 +55,11 @@ Refer to the respective release notes for more information:
 
 [HAProxy](https://launchpad.net/ubuntu/+source/haproxy) jumped two feature releases, from 3.2 to upstream version 3.4.2. HAProxy 3.4 is an LTS branch, supported upstream until 2031-Q2.
 
-Some defaults were changed, and some functionality is deprecated:
+Some defaults were changed:
 
 * The default load balancing algorithm changed from `roundrobin` to `random` (power of two choices).
 * `cpu-policy` now defaults to `performance`, and the number of threads is no longer capped at 64.
 * Backends in `mode http` now enable `option abortonclose` by default.
-* The `program` section was removed, and the `master-worker` global directive, `dispatch` and `option transparent` were deprecated.
-* Duplicate `frontend`, `backend`, `listen`, `defaults` and `log-forward` section names, as well as duplicate server names inside a backend, are now rejected as errors instead of warnings.
-* `http-send-name-header` can no longer target the `connection`, `content-length`, `host` or `transfer-encoding` headers, and multiple `-m` match types in a single ACL are no longer accepted.
 
 See the [HAProxy 3.3](https://www.haproxy.com/blog/announcing-haproxy-3-3) and [HAProxy 3.4](https://www.haproxy.com/blog/announcing-haproxy-3-4) announcements for the complete list of changes.
 
@@ -74,8 +71,6 @@ See the [HAProxy 3.3](https://www.haproxy.com/blog/announcing-haproxy-3-3) and [
  * OpenSSL 4.x support and a more complete PKCS#11 provider.
  * Memory-safety and concurrency fixes.
  * And many other improvements and bug fixes.
-
-Since Ubuntu now ships OpenSSL 4, which no longer supports engines, the `libengine-pkcs11-openssl` package only ships the PKCS#11 provider (installed under `ossl-modules/`) and no longer ships the OpenSSL ENGINE (see [LP: #2155023](https://bugs.launchpad.net/ubuntu/+source/libp11/+bug/2155023)). Configurations still referencing the `pkcs11` engine need to be migrated to the provider.
 
 See the [0.4.19](https://github.com/OpenSC/libp11/releases/tag/libp11-0.4.19) and [0.4.20](https://github.com/OpenSC/libp11/releases/tag/libp11-0.4.20) upstream release notes for full details.
 
@@ -200,6 +195,22 @@ Both `openssh` and `openssh-gssapi` are now on version 10.5, containing various 
 Since Ubuntu 26.04 LTS, the binary `libsasl2-modules-sql` package no longer supports the PostgreSQL database on the i386 architecture. On all the other supported architectures, this package continues to support PostgreSQL.
 
 See bug [LP: #2142320](https://bugs.launchpad.net/ubuntu/+source/cyrus-sasl2/+bug/2142320) for more details.
+
+#### The PKCS#11 provider replaces the PKCS#11 engine
+
+Since Ubuntu now ships OpenSSL 4, which no longer supports engines, the `libengine-pkcs11-openssl` package only ships the PKCS#11 provider, installed under `ossl-modules/`. The OpenSSL `ENGINE` has been removed.
+
+Configurations still referencing the `pkcs11` engine need to be migrated to the provider.
+
+See [LP: #2155023](https://bugs.launchpad.net/ubuntu/+source/libp11/+bug/2155023).
+
+#### Removed or deprecated features in HAProxy
+
+* The `program` section was removed, and the `master-worker` global directive, `dispatch` and `option transparent` were deprecated.
+* Duplicate `frontend`, `backend`, `listen`, `defaults` and `log-forward` section names, as well as duplicate server names inside a backend, are now rejected as errors instead of warnings.
+* `http-send-name-header` can no longer target the `connection`, `content-length`, `host` or `transfer-encoding` headers, and multiple `-m` match types in a single ACL are no longer accepted.
+
+See the [HAProxy 3.3](https://www.haproxy.com/blog/announcing-haproxy-3-3) and [HAProxy 3.4](https://www.haproxy.com/blog/announcing-haproxy-3-4) announcements for the complete list of changes.
 
 ### Development changes
 
