@@ -123,7 +123,7 @@ For more information about netplan, please refer to the manual page using the `m
 
 * The Ubuntu Desktop now uses **GNOME** instead of Unity.
 
-_ On supported systems, **Wayland** is now the default display server. The older display server is still available: just choose _Ubuntu on Xorg* from the cog on the log in screen.
+On supported systems, **Wayland** is now the default display server. The older display server is still available: just choose **Ubuntu on Xorg** from the cog on the log in screen.
 
 * **GDM** has replaced LightDM as the default display manager. The login screen now uses virtual terminal 1 instead of virtual terminal 7.
 
