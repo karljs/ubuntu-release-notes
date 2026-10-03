@@ -33,34 +33,34 @@ Find the links to release notes for official flavors [here](https://wiki.ubuntu.
 ### Download Ubuntu 14.04 LTS
 
 Images can be downloaded from a location near you.
-##
+
 **Note:** The Ubuntu Desktop images are now bigger than a standard CD, and you should use a USB or DVD for installation.
 
 You can download ISOs from:
 
 [releases.ubuntu.com/14.04.5/](http://releases.ubuntu.com/14.04.5/) (Ubuntu Desktop and Server)
 
-[cloud-images.ubuntu.com/releases/14.04.5/release/](http://cloud-images.ubuntu.com/releases/14.04.5/release/) (Ubuntu Cloud Server)
+[cloud-images.ubuntu.com/releases/14.04/release/](https://cloud-images.ubuntu.com/releases/14.04/release/) (Ubuntu Cloud Server)
 
 [cdimage.ubuntu.com/netboot/14.04.5/](http://cdimage.ubuntu.com/netboot/14.04.5/) (Ubuntu Netboot)
 
 [cdimage.ubuntu.com/ubuntu-base/releases/14.04.5/release/](http://cdimage.ubuntu.com/ubuntu-base/releases/14.04.5/release/) (Ubuntu Base)
 
-[cdimage.ubuntu.com/edubuntu/releases/14.04.5/release/](http://cdimage.ubuntu.com/edubuntu/releases/14.04.5/release/) (Edubuntu DVD)
+`cdimage.ubuntu.com/edubuntu/releases/14.04.5/release/` (Edubuntu DVD)
 
-[cdimage.ubuntu.com/kubuntu/releases/14.04.5/release/](http://cdimage.ubuntu.com/kubuntu/releases/14.04.5/release/) (Kubuntu)
+`cdimage.ubuntu.com/kubuntu/releases/14.04.5/release/` (Kubuntu)
 
-[cdimage.ubuntu.com/lubuntu/releases/14.04.5/release/](http://cdimage.ubuntu.com/lubuntu/releases/14.04.5/release/) (Lubuntu)
+`cdimage.ubuntu.com/lubuntu/releases/14.04.5/release/` (Lubuntu)
 
-[cdimage.ubuntu.com/ubuntustudio/releases/14.04.5/release/](http://cdimage.ubuntu.com/ubuntustudio/releases/14.04.5/release/) (Ubuntu Studio)
+`cdimage.ubuntu.com/ubuntustudio/releases/14.04.5/release/` (Ubuntu Studio)
 
-[cdimage.ubuntu.com/ubuntu-gnome/releases/14.04.5/release/](http://cdimage.ubuntu.com/ubuntu-gnome/releases/14.04.5/release/) (Ubuntu GNOME)
+`cdimage.ubuntu.com/ubuntu-gnome/releases/14.04.5/release/` (Ubuntu GNOME)
 
-[cdimage.ubuntu.com/ubuntukylin/releases/14.04.5/release/](http://cdimage.ubuntu.com/ubuntukylin/releases/14.04.5/release/) (UbuntuKylin)
+`cdimage.ubuntu.com/ubuntukylin/releases/14.04.5/release/` (UbuntuKylin)
 
-[cdimage.ubuntu.com/xubuntu/releases/14.04.5/release/](http://cdimage.ubuntu.com/xubuntu/releases/14.04.5/release/) (Xubuntu)
+`cdimage.ubuntu.com/xubuntu/releases/14.04.5/release/` (Xubuntu)
 
-[cdimage.ubuntu.com/mythbuntu/releases/14.04.5/release/](http://cdimage.ubuntu.com/mythbuntu/releases/14.04.5/release/) (Mythbuntu)
+`cdimage.ubuntu.com/mythbuntu/releases/14.04.5/release/` (Mythbuntu)
 
 
 
@@ -122,9 +122,9 @@ For anyone interested, the specifics regarding the exact policies and procedures
 
 
 (fglrx-and-the-14-04-5-hwe-stack)=
-#### fglrx and the 14.04.5 HWE stack
+#### `fglrx` and the 14.04.5 HWE stack
 
-With 14.04.5, 14.04.2 through 14.04.4 have gone EOL. End-users may have previously used the proprietary fglrx driver, but as documented [here](https://help.ubuntu.com/community/RadeonDriver) fglrx will not work with the 14.04.5 kernel/X stack. If users want to continue using fglrx, the will need to use the 14.04.1 kernel/X stack:
+With 14.04.5, 14.04.2 through 14.04.4 have gone EOL. End-users may have previously used the proprietary `fglrx` driver, but as documented [here](https://help.ubuntu.com/community/RadeonDriver) `fglrx` will not work with the 14.04.5 kernel/X stack. If users want to continue using `fglrx`, the will need to use the 14.04.1 kernel/X stack:
 
 ` sudo apt-get install --install-recommends linux-generic xserver-xorg-core xserver-xorg xserver-xorg-video-all xserver-xorg-input-all libwayland-egl1-mesa libcheese-gtk23 libcheese7 libclutter-1.0.0 libclutter-gtk-1.0.0 libcogl15 libclutter-gst-2.0.0 gstreamer1.0-clutter `
 
@@ -166,7 +166,7 @@ AppArmor has a number of new features in Ubuntu 14.04 LTS LTS. Notably:
 
 * New abstractions for applications running under Unity
 
-* Several new tunables supporting XDG user directories, dovecot and more
+* Several new `tunables` supporting XDG user directories, dovecot and more
 
 * Various policy updates in support of new features and bug fixes
 
@@ -174,13 +174,13 @@ AppArmor has a number of new features in Ubuntu 14.04 LTS LTS. Notably:
 
 * New Python and Python3 AppArmor libraries (python-apparmor and python3-apparmor)
 
-AppArmor policy has been adjusted for packages that ship it to work with these changes, but local policy may need to be adjusted, especially for signal and ptrace rules. See `man 5 apparmor.d` for details.
+AppArmor policy has been adjusted for packages that ship it to work with these changes, but local policy may need to be adjusted, especially for signal and `ptrace` rules. See `man 5 apparmor.d` for details.
 
 
 (14-04-lts-oxide)=
 #### Oxide
 
-Oxide is a webview based on Chromium to deliver web content. Oxide allows us to better support 3rd party developers and applications within the Ubuntu archive by providing a fast, secure and up to date webengine library for the duration of the LTS. While other web content libraries such as those based on webkit are available, their maintenance will be limited to new upstream minor version releases only, and application developers are encouraged to use Oxide instead.
+Oxide is a `webview` based on Chromium to deliver web content. Oxide allows us to better support 3rd party developers and applications within the Ubuntu archive by providing a fast, secure and up to date `webengine` library for the duration of the LTS. While other web content libraries such as those based on `webkit` are available, their maintenance will be limited to new upstream minor version releases only, and application developers are encouraged to use Oxide instead.
 
 
 (14-04-lts-upstart-1-12-1)=
@@ -217,7 +217,7 @@ Unity Desktop has been streamlined for the 14.04 LTS release. Important new feat
 
 The rest of the Ubuntu desktop also received many updates. Some important changes include:
 
-* Nautilus now defaults to type-ahead find instead of intiating a search when you are looking for files within a directory
+* Nautilus now defaults to type-ahead find instead of initiating a search when you are looking for files within a directory
 
 * Many default applications regained well-integrated menu bars under Unity
 
@@ -233,7 +233,7 @@ The LibreOffice office suite has been updated to the latest and greatest version
 
   * A new [start center](https://wiki.documentfoundation.org/images/5/5e/UbuntuStartCenter.png) gives previews and easy access to recently used documents
 
-  * A new [flat icon theme: sifr](http://skyfromme.files.wordpress.com/2014/01/cat.png), installable with apt-get install libreoffice-style-sifr
+  * A new flat icon theme: sifr `http://skyfromme.files.wordpress.com/2014/01/cat.png`, installable with apt-get install libreoffice-style-sifr
 
   * initial [HiDPI support](https://wiki.documentfoundation.org/Development/HiDpi)
 
@@ -253,9 +253,9 @@ The LibreOffice office suite has been updated to the latest and greatest version
 
   * spellcheck and change tracking consolidated
 
-* Calc
+* `Calc`
 
-  * trendline enhancements: multiple trendlines, force intercept, extrapolation, polynominals, moving averages
+  * trendline enhancements: multiple trendlines, force intercept, extrapolation, polynomials, moving averages
 
   * a new calculation engine, paving the way for high performance calculation on graphics cards with OpenCL
 
@@ -305,7 +305,7 @@ Users of OpenStack 2012.1 (Essex) on Ubuntu 12.04 should note that several compo
 
 * Neutron has been introduced alongside Nova Network (deprecated but not removed yet).
 
-* The configuration file format has changed from a flags based format to a section based ini style format - configuration files should be reviewed and updated accordingly.
+* The configuration file format has changed from a flags based format to a section based `ini` style format - configuration files should be reviewed and updated accordingly.
 
 Existing OpenStack installations must be step upgraded through interim OpenStack releases (Folsom, Grizzly and Havana) using the [Ubuntu Cloud Archive](https://wiki.ubuntu.com/ServerTeam/CloudArchive) for Ubuntu 12.04.  The Ubuntu Cloud Archive also provides the Icehouse release for 12.04; Users may prefer to upgrade to this release on 12.04 prior to upgrading the base Ubuntu operating system to Ubuntu 14.04 LTS.
 
@@ -325,11 +325,11 @@ Please review the upstream [release notes](http://docs.puppetlabs.com/puppet/3/r
 
 Ubuntu 14.04 LTS includes Xen 4.4. This is a significant upgrade from the previous release.  Of particular note the xen hypervisor no longer supports 32bit only CPUs on the x86 architecture; 32bit Dom 0 running on the 64bit hypervisor is still supported.  The hypervisor will automatically be upgraded to the 64bit version (the Dom 0 does not need to change).  Ensure your host is 64bit capable _before_ upgrading.
 
-Also the XM (xend) management stack has been deprecated since Xen 4.1 and will be removed in the next version of Xen (4.5). Therefore we urge all users to start using the new xl toolstack. For that reason the default toolstack setting (/etc/default/xen) is changed to xl.
+Also the XM (`xend`) management stack has been deprecated since Xen 4.1 and will be removed in the next version of Xen (4.5). Therefore we urge all users to start using the new `xl` toolstack. For that reason the default toolstack setting (/etc/default/xen) is changed to `xl`.
 
-The format of normal configuration files is mostly identical, only usage of Python inside the config file is [no longer supported](http://wiki.xenproject.org/wiki/MigrationGuideToXen4.1%2B#Toolstack_upgrade_notes). Also managed domains, which were managed by xend and stored in a different (sxpr) format will need to be migrated. When upgrading to Xen-4.4 an automatic migration of xend managed domains into xen and libvirt config files is attempted. However, due to many dependencies, this is failing more often than not. So when upgrade has been done and the host is running the new Xen hypervisor, the migration into xen config files can be started by calling "sudo /usr/lib/xen-4.4/bin/xen-migrate-xend-managed-domains". The resulting config files are written into /etc/xen and should be reviewed before usage.
+The format of normal configuration files is mostly identical, only usage of Python inside the config file is [no longer supported](http://wiki.xenproject.org/wiki/MigrationGuideToXen4.1%2B#Toolstack_upgrade_notes). Also managed domains, which were managed by `xend` and stored in a different (`sxpr`) format will need to be migrated. When upgrading to Xen-4.4 an automatic migration of `xend` managed domains into xen and libvirt config files is attempted. However, due to many dependencies, this is failing more often than not. So when upgrade has been done and the host is running the new Xen hypervisor, the migration into xen config files can be started by calling "sudo /usr/lib/xen-4.4/bin/xen-migrate-xend-managed-domains". The resulting config files are written into /etc/xen and should be reviewed before usage.
 
-Likewise, when libvirt is used to manage machines, the xend managed domains can be migrated into libvirt xml definitions by calling "sudo libvirt-migrate-xend-managed-domains". The resulting definitions should also get reviewed before usage (either virt-manager, virsh or looking in /etc/libvirt/libxl).
+Likewise, when libvirt is used to manage machines, the `xend` managed domains can be migrated into libvirt xml definitions by calling "sudo libvirt-migrate-xend-managed-domains". The resulting definitions should also get reviewed before usage (either virt-manager, virsh or looking in /etc/libvirt/libxl).
 
 Once the new VM configs are working, it is recommended to remove the old ones (/var/lib/xend/domains/). This is not done automatically for safety reasons.
 
@@ -347,7 +347,7 @@ Ubuntu 14.04 LTS includes Qemu 2.0.0.  Due to incompatibilities in the emulated 
 
 User emulation of arm64 binaries is now supported, and support for armhf and arm64 kvm-accelerated virtual machines is now available.
 
-From 12.04 to 14.04, the default vmware vga memory size for machine type pc-1.0 has been reduced.  If you are using a desktop image and being placed in low graphics mode, then switching to a new machine type, for instance pc-1.2 pc-i440fx-1.7, should solve the problem.
+From 12.04 to 14.04, the default vmware VGA memory size for machine type pc-1.0 has been reduced.  If you are using a desktop image and being placed in low graphics mode, then switching to a new machine type, for instance pc-1.2 pc-i440fx-1.7, should solve the problem.
 
 
 (14-04-lts-open-vswitch-2-0-1)=
@@ -374,15 +374,15 @@ support.
 (14-04-lts-maas-1-7)=
 #### MAAS 1.7
 
-Ubuntu 14.04 LTS contains [MAAS version 1.7](http://maas.ubuntu.com/docs1.7/).  In addition to bug fixes and minor improvements, MAAS version 1.7 contains the following major features:
+Ubuntu 14.04 LTS contains MAAS version 1.7 `http://maas.ubuntu.com/docs1.7/`.  In addition to bug fixes and minor improvements, MAAS version 1.7 contains the following major features:
 
-* [Advanced Networking](http://maas.ubuntu.com/docs1.7/networks.html#networks): MAAS now supports multiple managed network interfaces in a single cluster, and has support for VLANs.
+* Advanced Networking `http://maas.ubuntu.com/docs1.7/networks.html#networks`: MAAS now supports multiple managed network interfaces in a single cluster, and has support for VLANs.
 
-* [Zones](http://maas.ubuntu.com/docs1.7/physical-zones.html): A Zone is arbitrary grouping of nodes.  This grouping can then be used as a constraint for deployment.
+* Zones `http://maas.ubuntu.com/docs1.7/physical-zones.html`: A Zone is arbitrary grouping of nodes.  This grouping can then be used as a constraint for deployment.
 
-* [Hardware Enablement Kernels](http://maas.ubuntu.com/docs1.7/hardware-enablement-kernels.html): MAAS now supports using kernels other than the default kernel for an Ubuntu release.  This includes enlistment, commissioning and deployment and is primarily focused on allowing users to use [Hardware Enablement Kernels](https://wiki.ubuntu.com/Kernel/LTSEnablementStack).
+* Hardware Enablement Kernels `http://maas.ubuntu.com/docs1.7/hardware-enablement-kernels.html`: MAAS now supports using kernels other than the default kernel for an Ubuntu release.  This includes enlistment, commissioning and deployment and is primarily focused on allowing users to use [Hardware Enablement Kernels](https://wiki.ubuntu.com/Kernel/LTSEnablementStack).
 
-See the upstream [changelog](http://maas.ubuntu.com/docs1.5/changelog.html) for full change information.
+See the upstream changelog `http://maas.ubuntu.com/docs1.5/changelog.html` for full change information.
 
 
 (14-04-lts-juju-1-22-6)=
@@ -410,7 +410,7 @@ Ubuntu 14.04 LTS continues to provide official support for MySQL 5.5. Three othe
 * Percona XtraDB Cluster 5.5 - a Galera based Active/Active MySQL solution.
 * MySQL 5.6 - the next release of Oracle's MySQL.
 
-Note that upgrading to MySQL 5.6 is an automatic one way process; it is possible to downgrade manually - see the [upstream documentation](http://dev.mysql.com/doc/refman/5.6/en/downgrading-to-previous-series.html) on details of how to perform this process.
+Note that upgrading to MySQL 5.6 is an automatic one way process; it is possible to downgrade manually - see the upstream documentation `http://dev.mysql.com/doc/refman/5.6/en/downgrading-to-previous-series.html` on details of how to perform this process.
 
 
 (14-04-lts-apache-2-4)=
@@ -423,16 +423,16 @@ Ubuntu 14.04 LTS includes Apache 2.4; this is a major version upgrade from Apach
 #### PHP 5.5
 
 PHP has been updated to 5.5, which is a major upgrade from 5.3 as available in
-the previous LTS. Upstream introduced some incompabilities in this update, and
+the previous LTS. Upstream introduced some incompatibilities in this update, and
 recommend testing before upgrading production environments. For more details,
-see the [PHP migration guide](http://php.net/manual/en/migration55.changes.php).
+see the PHP migration guide `http://php.net/manual/en/migration55.changes.php`.
 
 Due to licensing problems, Debian dropped the PHP-supplied json module in
 [Debian bug 692613](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=692613),
 replacing it with a compatible json module instead. Ubuntu is aligned with
 Debian by default, and thus has picked up this change in 14.04 LTS, first
 in 13.10. The upgrade process will automatically pull in the new module.
-There have been claims of some edge case incompabilities in
+There have been claims of some edge case incompatibilities in
 [bug 1287726](https://bugs.launchpad.net/ubuntu/+source/php-json/+bug/1287726); testing is advised.
 
 
@@ -482,15 +482,15 @@ The home screen and scope experience has seen a complete overhaul, delivering an
 
 
 (14-04-lts-webapp-story-gets-upgraded-through-oxide-engine)=
-##### Webapp story gets upgraded through oxide engine
+##### Web app story gets upgraded through oxide engine
 
-The Web applications story just got boosted through integration of the oxide engine, a new web container featuring the V8 javascript engine and chromium rendering. With this we are now delivering an even faster web experience than before. Note that our browser is also using the same technology for a reliable and relaxing daily browsing experience.
+The Web applications story just got boosted through integration of the oxide engine, a new web container featuring the V8 JavaScript engine and chromium rendering. With this we are now delivering an even faster web experience than before. Note that our browser is also using the same technology for a reliable and relaxing daily browsing experience.
 
 
 (14-04-lts-plumbing-layer-comes-with-all-the-latest-from-ubuntu-and-android-4-4-and-qt-5-2)=
 ##### Plumbing layer comes with all the latest from Ubuntu and Android 4.4 and Qt 5.2
 
-On top of the usual freshness of the core stack that comes with an Ubuntu release, we upgraded our UI toolkit to Qt 5.2, featuring the new v4 javascript engine, and also uplevelled our enablement stack to Android 4.4 to better support latest android devices.
+On top of the usual freshness of the core stack that comes with an Ubuntu release, we upgraded our UI toolkit to Qt 5.2, featuring the new v4 JavaScript engine, and also upleveled our enablement stack to Android 4.4 to better support latest android devices.
 
 
 (14-04-lts-developers-get-more-features-and-convenience)=
@@ -500,7 +500,7 @@ On the developer side, a new layout framework and new facilities like tabulation
 
 
 (14-04-lts-and-more)=
-##### And more ...
+##### And more
 
 On top of the highlighted items above, there are many user noticeable improvements.  Here is a short list:
 
@@ -542,7 +542,7 @@ Learn more and get involved:
 
 * For real-time chat: [webchat.freenode.net/?channels=ubuntu-touch](http://webchat.freenode.net/?channels=ubuntu-touch)
 
-* Contribute: [wiki.ubuntu.com/Touch/Contribute](http://wiki.ubuntu.com/Touch/Contribute)
+* Contribute: `wiki.ubuntu.com/Touch/Contribute`
 
 * Got questions? [askubuntu.com/questions/ask?tags=ubuntu-touch](http://askubuntu.com/questions/ask?tags=ubuntu-touch)
 
@@ -585,13 +585,13 @@ As is to be expected, at this stage of the release process, there are some signi
 
 * Configuration of the package tex-common fails when 12.04 LTS is upgraded to 14.04 LTS (Bug:1304972)
 
-* Configuration of flightgear fails during upgrade from 12.04 LTS to 14.04 LTS (Bug:1308338)
+* Configuration of `flightgear` fails during upgrade from 12.04 LTS to 14.04 LTS (Bug:1308338)
 
 
 (14-04-lts-power-management)=
 ### Power Management
 
-* On some systems, when opening lid, there is a kerneloops with a suspend/resume failure message seen. (Bug:1054732)
+* On some systems, when opening lid, there is a `kerneloops` with a suspend/resume failure message seen. (Bug:1054732)
 
 
 (14-04-lts-desktop)=
@@ -660,7 +660,7 @@ The release notes for the official flavours can be found at the following links:
 
 Your comments, bug reports, patches and suggestions will help fix bugs and improve the quality of future releases. Please [report bugs using the tools provided](http://help.ubuntu.com/community/ReportingBugs).
 
-If you want to help out with bugs, the [Bug Squad](http://wiki.ubuntu.com/BugSquad) is always looking for help.
+If you want to help out with bugs, the Bug Squad `http://wiki.ubuntu.com/BugSquad` is always looking for help.
 
 
 (14-04-lts-participate-in-ubuntu)=
