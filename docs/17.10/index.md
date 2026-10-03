@@ -133,7 +133,7 @@ _ On supported systems, **Wayland** is now the default display server. The older
 
 * **Driverless printing support** is now available for [IPP Everywhere](http://www.pwg.org/dynamo/eveprinters.php), [Apple AirPrint](https://support.apple.com/en-us/HT201311), [Wi-Fi Direct](https://www.wi-fi.org/discover-wi-fi/wi-fi-direct) devices. Follow the [instructions from 17.04](https://wiki.ubuntu.com/ZestyZapus/ReleaseNotes#Driverless_Printing).
 
-_ Printer configuration is now done in the Settings app: Choose _Devices_ and then _Printers_. The tool uses the same algorithms for identifying printers and choosing drivers as the formerly used system-config-printer, and makes full use of driverless printing to support as many printers as possible. Note that some options, like printer sharing, are missing. To reach them, click the _Additional Printer Settings…* button at the end of the list of available print queues and you get good old system-config-printer.
+Printer configuration is now done in the Settings app: Choose _Devices_ and then _Printers_. The tool uses the same algorithms for identifying printers and choosing drivers as the formerly used system-config-printer, and makes full use of driverless printing to support as many printers as possible. Note that some options, like printer sharing, are missing. To reach them, click the **Additional Printer Settings…** button at the end of the list of available print queues and you get good old system-config-printer.
 
 * The **Amazon** app now loads in the default web browser.
 
