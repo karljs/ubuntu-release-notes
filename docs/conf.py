@@ -199,6 +199,7 @@ if os.environ.get("READTHEDOCS"):
 # A regex list of URLs that are ignored by 'make linkcheck'
 linkcheck_ignore = [
     "http://127.0.0.1:8000",
+    r"http://localhost:?\d*/.*",
     "https://github.com/canonical/ACME/*",
     # The link checker tries to treat the part after # as an anchor and fails.
     "https://matrix.to/*",
@@ -207,12 +208,16 @@ linkcheck_ignore = [
     r"https://github\.com/.*/blob/.*",
     # Ubuntu wiki (rate-limited)
     r"https://wiki\.ubuntu\.com/.*",
+    # Ubuntu wiki over HTTP (connect timeouts)
+    r"http://wiki\.ubuntu\.com.*",
     # Rate-blocked or bot-challenged (418 / 5xx responses)
     r"https?://ceph\.com.*",
     r"https://dev\.mysql\.com/.*",
     r"https://blogs\.oracle\.com/.*",
     r"https://gitlab\.gnome\.org/.*",
     r"https://discourse\.lubuntu\.me/.*",
+    # Mythbuntu: page is live but blocks bots with 403
+    r"http://www\.mythbuntu\.org/.*",
     r"https://downloads\.apache\.org/.*",
     r"https://www\.freedesktop\.org/.*",
     r"https://gstreamer\.freedesktop\.org/.*",
@@ -251,6 +256,8 @@ linkcheck_ignore = [
     r"https://www.monitoring-plugins\.org/news/.*",
     r"https://kernelnewbies\.org/.*",
     r"https://cairographics\.org/news/.*",
+    r"https?://dark-net\.net/.*",
+    # 22.10 release notes: dead (404) and (403) external links
     # 20.04 release notes: bot-challenged links (kept live)
     r"https?://help\.ubuntu\.com/.*",
     r"https://en\.wikipedia\.org/.*",
@@ -279,9 +286,14 @@ linkcheck_ignore = [
     r"http://psubuntu\.com/.*",
     # 8.04 release notes: archive.canonical.com times out from CI
     r"https?://archive\.canonical\.com/.*",
-    # 17.04 release notes: local-only CUPS / printer web admin interfaces
-    r"http://localhost:631",
-    r"http://localhost:60000/",
+    # 11.10 release notes: bot-challenged (timeout / 418) external links
+    r"https?://www\.compiz\.org.*",
+    r"http://www\.freedesktop\.org/.*",
+    r"https?://paste\.ubuntu\.com/.*",
+    # Debian wiki serves a bot challenge page without the expected anchors
+    r"https?://wiki\.debian\.org/.*",
+    # KDE Bugzilla rejects CI runners (403 / unreachable); live for humans
+    r"https://bugs\.kde\.org/.*",
 ]
 
 # A regex list of URLs where anchors are ignored by 'make linkcheck'
