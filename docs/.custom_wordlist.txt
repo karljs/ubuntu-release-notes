@@ -286,6 +286,7 @@ dpkg
 dput
 dracut
 Dracut
+driverless
 dropins
 dsp
 du
@@ -739,6 +740,7 @@ NVDIMM
 NVDIMMs
 oauth
 objtool
+Ocata
 oem
 OEMs
 Ollama
@@ -1270,6 +1272,7 @@ Yaru
 Yoshio
 YouTube
 Zak
+Zapus
 Zaqar
 ZBook
 zcrypt

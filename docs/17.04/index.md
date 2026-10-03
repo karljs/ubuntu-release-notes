@@ -45,31 +45,31 @@ You can download ISOs and flashable images from from:
 
 [releases.ubuntu.com/17.04/](http://releases.ubuntu.com/17.04/) (Ubuntu Desktop and Server)
 
-[cdimage.ubuntu.com/ubuntu/releases/17.04/release/](http://cdimage.ubuntu.com/ubuntu/releases/17.04/release/) (Less Popular Ubuntu Images)
+`http://cdimage.ubuntu.com/ubuntu/releases/17.04/release/` (Less Popular Ubuntu Images)
 
 [cloud-images.ubuntu.com/releases/17.04/release/](http://cloud-images.ubuntu.com/releases/17.04/release/) (Ubuntu Cloud Server)
 
-[cdimage.ubuntu.com/netboot/17.04/](http://cdimage.ubuntu.com/netboot/17.04/) (Ubuntu Netboot)
+`http://cdimage.ubuntu.com/netboot/17.04/` (Ubuntu Netboot)
 
-[cdimage.ubuntu.com/kubuntu/releases/17.04/release/](http://cdimage.ubuntu.com/kubuntu/releases/17.04/release/) (Kubuntu)
+`http://cdimage.ubuntu.com/kubuntu/releases/17.04/release/` (Kubuntu)
 
-[cdimage.ubuntu.com/lubuntu/releases/17.04/release/](http://cdimage.ubuntu.com/lubuntu/releases/17.04/release/) (Lubuntu)
+`http://cdimage.ubuntu.com/lubuntu/releases/17.04/release/` (Lubuntu)
 
-[cdimage.ubuntu.com/ubuntu-budgie/releases/17.04/release/](http://cdimage.ubuntu.com/ubuntu-budgie/releases/17.04/release/) (Ubuntu Budgie)
+`http://cdimage.ubuntu.com/ubuntu-budgie/releases/17.04/release/` (Ubuntu Budgie)
 
-[cdimage.ubuntu.com/ubuntu-gnome/releases/17.04/release/](http://cdimage.ubuntu.com/ubuntu-gnome/releases/17.04/release/) (Ubuntu GNOME)
+`http://cdimage.ubuntu.com/ubuntu-gnome/releases/17.04/release/` (Ubuntu GNOME)
 
-[cdimage.ubuntu.com/ubuntukylin/releases/17.04/release/](http://cdimage.ubuntu.com/ubuntukylin/releases/17.04/release/) (Ubuntu Kylin)
+`http://cdimage.ubuntu.com/ubuntukylin/releases/17.04/release/` (Ubuntu Kylin)
 
-[cdimage.ubuntu.com/ubuntu-mate/releases/17.04/release/](http://cdimage.ubuntu.com/ubuntu-mate/releases/17.04/release/) (Ubuntu MATE)
+`http://cdimage.ubuntu.com/ubuntu-mate/releases/17.04/release/` (Ubuntu MATE)
 
-[cdimage.ubuntu.com/ubuntustudio/releases/17.04/release/](http://cdimage.ubuntu.com/ubuntustudio/releases/17.04/release/) (Ubuntu Studio)
+`http://cdimage.ubuntu.com/ubuntustudio/releases/17.04/release/` (Ubuntu Studio)
 
-[cdimage.ubuntu.com/xubuntu/releases/17.04/release/](http://cdimage.ubuntu.com/xubuntu/releases/17.04/release/) (Xubuntu)
+`http://cdimage.ubuntu.com/xubuntu/releases/17.04/release/` (Xubuntu)
 
-##[cdimage.ubuntu.com/mythbuntu/releases/17.04/](http://cdimage.ubuntu.com/mythbuntu/releases/17.04/) (Mythbuntu)
+`http://cdimage.ubuntu.com/mythbuntu/releases/17.04/` (Mythbuntu)
 
-##[cdimage.ubuntu.com/edubuntu/releases/17.04/](http://cdimage.ubuntu.com/edubuntu/releases/17.04/) (Edubuntu DVD)
+`http://cdimage.ubuntu.com/edubuntu/releases/17.04/` (Edubuntu DVD)
 
 
 (17-04-upgrading-from-ubuntu-16-10)=
@@ -148,7 +148,7 @@ We now support printers which allow printing without printer-specific drivers. T
 
 * The printers can get connected via network or USB.
 
-* The setup of IPP Everywhere and Apple Airprint printers should occur fully automatically. You only need to plug in your USB printer or connect your network printer to the local network.
+* The setup of IPP Everywhere and Apple AirPrint printers should occur fully automatically. You only need to plug in your USB printer or connect your network printer to the local network.
 
 * If you do not want to set up IPP network printers automatically edit /etc/cups/cups-browsed.conf to have a line "CreateIPPPrinterQueues No", and if you also want suitable PDF, Postscript, or PCL printers automatically set up have a line "CreateIPPPrinterQueues All". Reboot after modifying /etc/cups/cups-browsed.conf.
 
@@ -174,7 +174,7 @@ We now support printers which allow printing without printer-specific drivers. T
 
 * The Calendar app now has a **Week** view.
 
-* **gconf** is no longer installed by default since it has long been superseded by gsettings. Note that statistics and preferences for the Aisleriot card games will be reset when upgrading to 17.04.
+* `gconf` is no longer installed by default since it has long been superseded by gsettings. Note that statistics and preferences for the AisleRiot card games will be reset when upgrading to 17.04.
 
 * Unity 8 is available as an alternative session
 
@@ -215,7 +215,7 @@ Ubuntu 17.04 includes the latest release of DPDK, 16.11.1.
 
 See the [Release Notes](http://dpdk.org/doc/guides/rel_notes/release_16_11.html) as well as the stable release [announcement](http://dpdk.org/ml/archives/dev/2017-March/058930.html) for more detail.
 
-As a tech preview DPDK is now also available for ppc64el. This includes the latest improvements made in version 16.11.1 in general, but also further improvements to enable the i40e PMD and vfio-pci scanning on spapr platforms.
+As a tech preview DPDK is now also available for ppc64el. This includes the latest improvements made in version 16.11.1 in general, but also further improvements to enable the i40e PMD and vfio-pci scanning on `spapr` platforms.
 
 
 (17-04-openstack-ocata)=
@@ -228,7 +228,7 @@ Ubuntu 17.04 includes the latest OpenStack release, Ocata, including the followi
 * OpenStack Block Storage - Cinder
 * OpenStack Compute - Nova
 * OpenStack Networking - Neutron
-* OpenStack Telemetry - Ceilometer, Aodh and Gnochi
+* OpenStack Telemetry - Ceilometer, Aodh and Gnocchi
 * OpenStack Orchestration - Heat
 * OpenStack Dashboard - Horizon
 * OpenStack Object Storage - Swift
@@ -276,7 +276,7 @@ As is to be expected, with any release, there are some significant known bugs th
 
 * Partitioning step allows to configure LVM across multiple devices without requiring to setup a separate /boot partition. This may lead to failure to install the bootloader at the end of the installation, and failures to boot the resultant installations. (Bug:1680101)
 
-* Partitioner does not support installation when multiple conflicting/identical volume groups have been detected. For example reinstalling Ubuntu with LVM across multiple disk drives that had individual LVM installations of Ubuntu. As a workaround, please format disk drives prior to installation, or from the built in shell provided in the installer. (Bug:1679184)
+* `Partitioner` does not support installation when multiple conflicting/identical volume groups have been detected. For example reinstalling Ubuntu with LVM across multiple disk drives that had individual LVM installations of Ubuntu. As a workaround, please format disk drives prior to installation, or from the built in shell provided in the installer. (Bug:1679184)
 
 * Installer by default no longer create swap partitions, and uses swapfiles. However, some filesystems can be used for rootfs which do not support swapfiles. Notably, btrfs. If one desires swap to be available with btrfs as rootfs one should perform manual partitioning and create a swap partition. (Bug:1656915)
 
@@ -336,7 +336,7 @@ The release notes for the official flavours can be found at the following links:
 
 Your comments, bug reports, patches and suggestions will help fix bugs and improve the quality of future releases. Please [report bugs using the tools provided](http://help.ubuntu.com/community/ReportingBugs).
 
-If you want to help out with bugs, the [Bug Squad](http://wiki.ubuntu.com/BugSquad) is always looking for help.
+If you want to help out with bugs, the Bug Squad `http://wiki.ubuntu.com/BugSquad` is always looking for help.
 
 
 (17-04-participate-in-ubuntu)=
