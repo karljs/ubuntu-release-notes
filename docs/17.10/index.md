@@ -43,27 +43,17 @@ Images can be downloaded from a location near you.
 
 You can download ISOs and flashable images from:
 
-[releases.ubuntu.com/17.10/](http://releases.ubuntu.com/17.10/) (Ubuntu Desktop and Server)
-
-[old-releases.ubuntu.com/releases/17.10/](https://old-releases.ubuntu.com/releases/17.10/) (Less Popular Ubuntu Images)
-
-`cloud-images.ubuntu.com/daily/server/artful/current/` (Ubuntu Cloud Images)
-
-`cdimage.ubuntu.com/netboot/17.10/` (Ubuntu Netboot)
-
-`cdimage.ubuntu.com/kubuntu/releases/17.10/release/` (Kubuntu)
-
-`cdimage.ubuntu.com/lubuntu/releases/17.10/release/` (Lubuntu and Lubuntu Alternate)
-
-`cdimage.ubuntu.com/ubuntu-budgie/releases/17.10/release/` (Ubuntu Budgie)
-
-`cdimage.ubuntu.com/ubuntukylin/releases/17.10/release/` (Ubuntu Kylin)
-
-[ubuntu-mate.org/download/](https://ubuntu-mate.org/download/) (Ubuntu MATE)
-
-`cdimage.ubuntu.com/ubuntustudio/releases/17.10/release/` (Ubuntu Studio)
-
-`cdimage.ubuntu.com/xubuntu/releases/17.10/release/` (Xubuntu)
+* [releases.ubuntu.com/17.10/](http://releases.ubuntu.com/17.10/) (Ubuntu Desktop and Server)
+* [old-releases.ubuntu.com/releases/17.10/](https://old-releases.ubuntu.com/releases/17.10/) (Less Popular Ubuntu Images)
+* `cloud-images.ubuntu.com/daily/server/artful/current/` (Ubuntu Cloud Images)
+* `cdimage.ubuntu.com/netboot/17.10/` (Ubuntu Netboot)
+* `cdimage.ubuntu.com/kubuntu/releases/17.10/release/` (Kubuntu)
+* `cdimage.ubuntu.com/lubuntu/releases/17.10/release/` (Lubuntu and Lubuntu Alternate)
+* `cdimage.ubuntu.com/ubuntu-budgie/releases/17.10/release/` (Ubuntu Budgie)
+* `cdimage.ubuntu.com/ubuntukylin/releases/17.10/release/` (Ubuntu Kylin)
+* [ubuntu-mate.org/download/](https://ubuntu-mate.org/download/) (Ubuntu MATE)
+* `cdimage.ubuntu.com/ubuntustudio/releases/17.10/release/` (Ubuntu Studio)
+* `cdimage.ubuntu.com/xubuntu/releases/17.10/release/` (Xubuntu)
 
 As fixes will be included in new images between now and release, any daily cloud image from today or later (i.e. a serial of 20170926 or higher) should be considered a beta image.  Bugs found should be filed against the appropriate packages or, failing that, the cloud-images project in Launchpad.
 
