@@ -267,25 +267,16 @@ You can now reinstall or upgrade an existing copy of Ubuntu with the Desktop CD 
 
 In addition, they can be found at the following links:
 
-[releases.ubuntu.com/11.04/](http://releases.ubuntu.com/11.04/) (Ubuntu, Ubuntu Server)
-
-`http://cdimage.ubuntu.com/releases/11.04/release/` (Ubuntu Netbook ARM, Ubuntu Headless ARM, Ubuntu DVD, 64-Bit for Mac, source)
-
-`http://uec-images.ubuntu.com/releases/11.04/` (Ubuntu Server for UEC and EC2)
-
-`http://cdimage.ubuntu.com/netboot/11.04/` (Ubuntu Netboot)
-
-`http://releases.ubuntu.com/kubuntu/11.04/` (Kubuntu)
-
-`http://cdimage.ubuntu.com/kubuntu/releases/11.04/release/` (Kubuntu DVD, 64-Bit for Mac, preinstalled ARM images)
-
-`http://cdimage.ubuntu.com/xubuntu/releases/11.04/release/` (Xubuntu)
-
-`http://cdimage.ubuntu.com/edubuntu/releases/11.04/release/` (Edubuntu)
-
-`http://cdimage.ubuntu.com/ubuntustudio/releases/11.04/release/` (Ubuntu Studio)
-
-`http://cdimage.ubuntu.com/mythbuntu/releases/11.04/release/` (Mythbuntu)
+* [releases.ubuntu.com/11.04/](http://releases.ubuntu.com/11.04/) (Ubuntu, Ubuntu Server)
+* `http://cdimage.ubuntu.com/releases/11.04/release/` (Ubuntu Netbook ARM, Ubuntu Headless ARM, Ubuntu DVD, 64-Bit for Mac, source)
+* `http://uec-images.ubuntu.com/releases/11.04/` (Ubuntu Server for UEC and EC2)
+* `http://cdimage.ubuntu.com/netboot/11.04/` (Ubuntu Netboot)
+* `http://releases.ubuntu.com/kubuntu/11.04/` (Kubuntu)
+* `http://cdimage.ubuntu.com/kubuntu/releases/11.04/release/` (Kubuntu DVD, 64-Bit for Mac, preinstalled ARM images)
+* `http://cdimage.ubuntu.com/xubuntu/releases/11.04/release/` (Xubuntu)
+* `http://cdimage.ubuntu.com/edubuntu/releases/11.04/release/` (Edubuntu)
+* `http://cdimage.ubuntu.com/ubuntustudio/releases/11.04/release/` (Ubuntu Studio)
+* `http://cdimage.ubuntu.com/mythbuntu/releases/11.04/release/` (Mythbuntu)
 
 
 (11-04-system-requirements)=
