@@ -9,6 +9,8 @@
 22.10 (Kinetic Kudu) <22.10/index>
 20.04 LTS (Focal Fossa) <20.04/index>
 16.04 LTS (Xenial Xerus) <16.04/index>
+12.10 (Quantal Quetzal) <12.10/index>
+12.04 LTS (Precise Pangolin) <12.04/index>
 11.10 (Oneiric Ocelot) <11.10/index>
 11.04 (Natty Narwhal) <11.04/index>
 10.10 (Maverick Meerkat) <10.10/index>
