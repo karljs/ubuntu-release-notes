@@ -24,15 +24,15 @@ Images can be downloaded from a location near you.
 You can download ISOs and flashable images from:
 
   * [Ubuntu Desktop and Server for 64-bit x86 (AMD64) ](http://releases.ubuntu.com/21.10/)
-  * [Less Frequently Downloaded Ubuntu Images](http://cdimage.ubuntu.com/ubuntu/releases/21.10/release/)
-  * [Ubuntu Cloud Images](http://cloud-images.ubuntu.com/daily/server/hirsute/current/)
-  * [Lubuntu](http://cdimage.ubuntu.com/lubuntu/releases/21.10/release/)
-  * [Kubuntu](http://cdimage.ubuntu.com/kubuntu/releases/21.10/release/)
-  * [Ubuntu Budgie](http://cdimage.ubuntu.com/ubuntu-budgie/releases/21.10/release/)
-  * [Ubuntu Kylin](http://cdimage.ubuntu.com/ubuntukylin/releases/21.10/release/)
-  * [Ubuntu MATE](http://cdimage.ubuntu.com/ubuntu-mate/releases/21.10/release/)
-  * [Ubuntu Studio](http://cdimage.ubuntu.com/ubuntustudio/releases/21.10/release/)
-  * [Xubuntu](http://cdimage.ubuntu.com/xubuntu/releases/21.10/release/)
+  * Less Frequently Downloaded Ubuntu Images `http://cdimage.ubuntu.com/ubuntu/releases/21.10/release/`
+  * Ubuntu Cloud Images `http://cloud-images.ubuntu.com/daily/server/hirsute/current/`
+  * Lubuntu `http://cdimage.ubuntu.com/lubuntu/releases/21.10/release/`
+  * Kubuntu `http://cdimage.ubuntu.com/kubuntu/releases/21.10/release/`
+  * Ubuntu Budgie `http://cdimage.ubuntu.com/ubuntu-budgie/releases/21.10/release/`
+  * Ubuntu Kylin `http://cdimage.ubuntu.com/ubuntukylin/releases/21.10/release/`
+  * Ubuntu MATE `http://cdimage.ubuntu.com/ubuntu-mate/releases/21.10/release/`
+  * Ubuntu Studio `http://cdimage.ubuntu.com/ubuntustudio/releases/21.10/release/`
+  * Xubuntu `http://cdimage.ubuntu.com/xubuntu/releases/21.10/release/`
 
 ## Upgrading from Ubuntu 21.04
 
@@ -97,7 +97,7 @@ nftables is now the default backend for the firewall.
 
 ### GNOME 👣
 
-Ubuntu 21.10 includes [GNOME version 40](https://help.gnome.org/misc/release-notes/40.0/), including a new and improved Activities Overview design. Workspaces are now arranged horizontally, and the overview and app grid are accessed vertically. Each direction has accompanying keyboard shortcuts, touchpad gestures and mouse actions.
+Ubuntu 21.10 includes GNOME version 40 `https://help.gnome.org/misc/release-notes/40.0/`, including a new and improved Activities Overview design. Workspaces are now arranged horizontally, and the overview and app grid are accessed vertically. Each direction has accompanying keyboard shortcuts, touchpad gestures and mouse actions.
 
 ### Updated Applications
  
@@ -135,7 +135,7 @@ Ubuntu 21.10 includes [GNOME version 40](https://help.gnome.org/misc/release-not
 * Adds SSL related inquiry functions to the server API, to ease the identification and loading of the right SSL modules.
 * Adds OCSP response provisioning as a core feature, allowing `mod_md` and `mod_ssl` to exchange X.509 digital certificate data with each other.
 
-### QEMU was updated to the 6.0 release.
+### QEMU was updated to the 6.0 release
 
 * This version adds the `ES` extension to AMD SEV which adds guest register state to the protected assets.
 * Furthermore in regard to emulation RISC-V got many improvements and ARMv8.1M as well as several ARM extensions were added.
@@ -165,7 +165,7 @@ Ubuntu 21.10 includes [GNOME version 40](https://help.gnome.org/misc/release-not
 
 ### Bind9 has been updated to 9.16.15
 
-* Ubuntu Impish’s BIND9 software received a [major update since hirsute’s 9.16.8](https://bind9.readthedocs.io/en/v9_16_15/notes.html#notes-for-bind-9-16-15), which includes performance improvements for zone queries, and better control over purging old keys and stale data.
+* Ubuntu Impish’s BIND9 software received a major update since hirsute’s 9.16.8 `https://bind9.readthedocs.io/en/v9_16_15/notes.html#notes-for-bind-9-16-15`, which includes performance improvements for zone queries, and better control over purging old keys and stale data.
 * Of note, BIND9 now prefers the SPNEGO implementation from the system GSSAPI library rather than the prior ISC implementation.
 
 ### Containerd has been updated to version 1.5.5
@@ -175,7 +175,7 @@ Ubuntu 21.10 includes [GNOME version 40](https://help.gnome.org/misc/release-not
 
 ### Runc has been updated to version 1.0.1
 
-* This is the first stable release of runc to be shipped in Ubuntu. As a consequence of this version update, there are some changes to the libcontainer API that break compatibility with older versions of the library.
+* This is the first stable release of runc to be shipped in Ubuntu. As a consequence of this version update, there are some changes to the `libcontainer` API that break compatibility with older versions of the library.
 * There are also a bunch of performance improvements and bug fixes. More details about what changed since the last Ubuntu release can be found in the [upstream release page](https://github.com/opencontainers/runc/releases).
 
 ### Corosync has been updated to version 3.1.2
@@ -226,7 +226,7 @@ Make sure you read the [OpenStack Charm Release Notes](https://docs.openstack.or
 ### Cloud Images ☁
 
  * AWS EC2 AMIs use now chrony as a time sync service together with the [AWS provided timeserver](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html) 
-* query data EOL. Impish Indri is the last release to be contained in Cloud Images legacy querydata format. starting in 22.04, new Ubuntu versions will not be in query data. Scripts using query data should move to the currently supported file, [streams](https://cloud-images.ubuntu.com/releases/streams/v1/). Streams is supported by [simplestreams](https://code.launchpad.net/simplestreams), which is installable from source, [as a snap](https://snapcraft.io/simplestreams), or as a [debian package](https://packages.ubuntu.com/search?suite=impish&searchon=names&keywords=simplestreams).
+* query data EOL. Impish Indri is the last release to be contained in Cloud Images legacy querydata format. starting in 22.04, new Ubuntu versions will not be in query data. Scripts using query data should move to the currently supported file, [streams](https://cloud-images.ubuntu.com/releases/streams/v1/). Streams is supported by [`simplestreams`](https://code.launchpad.net/simplestreams), which is installable from source, [as a snap](https://snapcraft.io/simplestreams), or as a [debian package](https://packages.ubuntu.com/search?suite=impish&searchon=names&keywords=simplestreams).
 * md5 checksum deprecation for Streams. This is a notice of the deprecation of MD5 checksums from Ubuntu Cloud Images Streams starting in 22.04. All streams currently produce sha256 checksums. Users should migrate scripts doing checksum validation to using sha256.
 * MD5SUMS and SHA1SUMS file deprecation for images listed on https://cloud-images.ubuntu.com/ .  From 22.04 onwards, those files will no longer be generated. Please use the SHA256SUM files instead.
 
@@ -242,7 +242,7 @@ Starting with Ubuntu 20.04, the minimal architectural level set was raised to z1
 
 IBM Z and LinuxONE / s390x-specific enhancements since 21.04 (partially not limited to s390x):
 
-  * Like with every new Ubuntu release (respectively its kernel) the s390-tools package needs to be upgraded, this time to v2.17 ([bug 1929024](https://bugs.launchpad.net/bugs/1929024)), including zdsfs transparent data set conversion, allowing Linux to transparently read and write EBCDIC-encoded data sets as ASCII ([bug 1926749](https://bugs.launchpad.net/bugs/1926749)), the integration option for the zkey repository into an enterprise key-mangement system with a KMIP interface ([bug 1932521](https://bugs.launchpad.net/bugs/1932521)) and changes in the Secure Execution Header defaults for plaintext control flags, PCF ([bug 1932177](https://bugs.launchpad.net/bugs/1932177)).
+  * Like with every new Ubuntu release (respectively its kernel) the s390-tools package needs to be upgraded, this time to v2.17 ([bug 1929024](https://bugs.launchpad.net/bugs/1929024)), including `zdsfs` transparent data set conversion, allowing Linux to transparently read and write EBCDIC-encoded data sets as ASCII ([bug 1926749](https://bugs.launchpad.net/bugs/1926749)), the integration option for the zkey repository into an enterprise key-mangement system with a KMIP interface ([bug 1932521](https://bugs.launchpad.net/bugs/1932521)) and changes in the Secure Execution Header defaults for plaintext control flags, PCF ([bug 1932177](https://bugs.launchpad.net/bugs/1932177)).
 
   * In addition to moving to gcc 11.2 as default, further tool-chain updates where made, like updating to LLVM 13 (that derived s390x optimizations from 12 ([bug 1926709](https://bugs.launchpad.net/bugs/1926709)) and z15 support in Valgrind ([bug 1853271](https://bugs.launchpad.net/bugs/1853271)). 
 
@@ -251,13 +251,13 @@ IBM Z and LinuxONE / s390x-specific enhancements since 21.04 (partially not limi
   * Several KVM enhancements specific to s390x were picked up, like performance improvements due to Spinlock Yield Forwarding ([bug 1905021](https://bugs.launchpad.net/bugs/1905021)) and allowing KVM to let SIE interpret specification exceptions ([bug 1932157](https://bugs.launchpad.net/bugs/1932157)), adding support to indicate secure (execution) guests ([bug 1933173](https://bugs.launchpad.net/bugs/1933173)) and improved persistence in vfio-ccw device assignments in libvirt ([bug 1887929](https://bugs.launchpad.net/bugs/1887929)).
 
   * Another area of improvements is cryptography. With the upgrade of opencryptoki to 3.16 ([bug 1928767](https://bugs.launchpad.net/bugs/1928767)) cca token import and export of secure key objects is now supported ([bug 1913301](https://bugs.launchpad.net/bugs/1913301)), ep11 token support for attribute bound keys ([bug 1913303](https://bugs.launchpad.net/bugs/1913303)) and ep11 token protected key support ([bug 1914215](https://bugs.launchpad.net/bugs/1914215)) got added.
-And with the upgrade to libica v3.8.0 ([bug 1928799](https://bugs.launchpad.net/bugs/1928799)) there are now software fallback calls to openSSL/libcrypto ([bug 1929176](https://bugs.launchpad.net/bugs/1929176)). cryptsetup got upgraded too, to v2.3.6 ([bug 1929046](https://bugs.launchpad.net/bugs/1929046)), as well as openssl-ibmca to v2.2.0 ([bug 1929052](https://bugs.launchpad.net/bugs/1929052)), that now makes the ibmca engine call libica without software fall backs (only register ibmca functions if libica confirms it as hardware function) and let ibmca do the fallback ([bug 1929175](https://bugs.launchpad.net/bugs/1929175)).
+And with the upgrade to libica v3.8.0 ([bug 1928799](https://bugs.launchpad.net/bugs/1928799)) there are now software fallback calls to openSSL/libcrypto ([bug 1929176](https://bugs.launchpad.net/bugs/1929176)). cryptsetup got upgraded too, to v2.3.6 ([bug 1929046](https://bugs.launchpad.net/bugs/1929046)), as well as openssl-ibmca to v2.2.0 ([bug 1929052](https://bugs.launchpad.net/bugs/1929052)), that now makes the `ibmca` engine call libica without software fall backs (only register `ibmca` functions if libica confirms it as hardware function) and let `ibmca` do the fallback ([bug 1929175](https://bugs.launchpad.net/bugs/1929175)).
 On the kernel level AP bus and zcrypt uevent extensions were added to the zcrypt driver ([bug 1933496](https://bugs.launchpad.net/bugs/1933496)) and CEX8 toleration included ([bug 1933805](https://bugs.launchpad.net/bugs/1933805)).
 
   * In addition preparation were included in the kernel ([bug 1932174](https://bugs.launchpad.net/bugs/1932174)) and qemu ([bug 1932175](https://bugs.launchpad.net/bugs/1932175)) for new IBM Z hardware.
 
   * The Query Capacity library (qclib) got bumped to it's latest version 2.3.0 ([bug 1926586](https://bugs.launchpad.net/bugs/1926586)), the upgraded glibc v2.34 library comes with several s390x related improvements ([bug 1927079](https://bugs.launchpad.net/bugs/1927079)), similar with the binutils update to v2.37 ([bug 1927080](https://bugs.launchpad.net/bugs/1927080)). On top zlib received CRC32 optimization for s390x ([bug 1932010](https://bugs.launchpad.net/bugs/1932010)) and also PCRE2 got performance and JIT improvements for s390x ([bug 1931857](https://bugs.launchpad.net/bugs/1931857)).
-And upport for SMC statistics was introduced to the kernel ([bug 1853290](https://bugs.launchpad.net/bugs/1853290)) and the smc-tools package updated to it's latest v1.6.0, plus some fixes on top ([bug 1853301](https://bugs.launchpad.net/bugs/1853301)).
+And support for SMC statistics was introduced to the kernel ([bug 1853290](https://bugs.launchpad.net/bugs/1853290)) and the smc-tools package updated to it's latest v1.6.0, plus some fixes on top ([bug 1853301](https://bugs.launchpad.net/bugs/1853301)).
 
 ## Known Issues
 
@@ -272,7 +272,7 @@ As is to be expected, with any release, there are some significant known bugs th
 
 * The Ubuntu Desktop images can be slow to boot (taking up to 10 minutes) when booted from a USB drive on a BIOS system. The issue is being [investigated](https://bugs.launchpad.net/ubuntu/+source/casper/+bug/1922342). Once the system is installed this is not an issue.
 * The Ubuntu Desktop images can be very slow to boot (taking up to 30 minutes) when booted from optical media (DVD) on a a BIOS or UEFI system. This is due to an integrity checker being run against the installation media. A workaround (setting "fsck.mode=skip") is documented in [the relevant bug](https://bugs.launchpad.net/ubuntu/+source/casper/+bug/1930880).
-* A hang of the Ubuntu Desktop installer, Ubiquity, [has been observed](https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1946828),  where it is scanning NTFS partitions to determine if they can be resized.  The symptom of this is a spinning ball cursor when attempting to continue past the installer 'Updates and other software' screen.  If this occurs, please reboot and try again.
+* A freeze of the Ubuntu Desktop installer, Ubiquity, [has been observed](https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1946828),  where it is scanning NTFS partitions to determine if they can be resized.  The symptom of this is a spinning ball cursor when attempting to continue past the installer 'Updates and other software' screen.  If this occurs, please reboot and try again.
 * The firefox snap has [a known renderer process crash](https://bugs.launchpad.net/ubuntu/+source/firefox/+bug/1946599) when switching VTs or resuming from suspend. This is caused by the same issue that renders [WebGL non-functional in Wayland sessions](https://bugzilla.mozilla.org/show_bug.cgi?id=1732580). The problem is fixed in the upcoming 94.0 release (beta at the time impish is released), so a possible workaround is to temporarily switch the snap to the beta channel:
 
       snap refresh firefox --beta
@@ -308,7 +308,7 @@ Nothing yet.
 
 ### General
 
-* This is not an issue per-se, but enough visible to be release-note worthy. Starting with 20.04.3 useradd will not allow creating full-numeric usernames (e.g. 123, 1337). Such usernames cause issues with components such as systemd, so it was safer to disallow them altogether ([bug 1927078](https://bugs.launchpad.net/bugs/1927078)).
+* This is not an issue per-se, but enough visible to be release-note worthy. Starting with 20.04.3 `useradd` will not allow creating full-numeric usernames (e.g. 123, 1337). Such usernames cause issues with components such as systemd, so it was safer to disallow them altogether ([bug 1927078](https://bugs.launchpad.net/bugs/1927078)).
 * After installing a Xubuntu system during the shutdown process you will not see a message about removing the installation media and pressing enter, instead you might just see a Xubuntu logo, a black screen with an underscore in the upper left hand corner, or just a black screen. If you press enter the system will reboot though. ([bug 1944519](https://bugs.launchpad.net/ubuntu-release-notes/+bug/1944519))
 
 ## Official flavours
