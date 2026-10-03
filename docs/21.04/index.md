@@ -28,15 +28,15 @@ Images can be downloaded from a location near you.
 You can download ISOs and flashable images from:
 
   * [Ubuntu Desktop and Server for 64-bit x86 (AMD64) ](http://releases.ubuntu.com/21.04/)
-  * [Less Frequently Downloaded Ubuntu Images](http://cdimage.ubuntu.com/ubuntu/releases/21.04/release/)
-  * [Ubuntu Cloud Images](http://cloud-images.ubuntu.com/daily/server/hirsute/current/)
-  * [Lubuntu](http://cdimage.ubuntu.com/lubuntu/releases/21.04/release/)
-  * [Kubuntu](http://cdimage.ubuntu.com/kubuntu/releases/21.04/release/)
-  * [Ubuntu Budgie](http://cdimage.ubuntu.com/ubuntu-budgie/releases/21.04/release/)
-  * [Ubuntu Kylin](http://cdimage.ubuntu.com/ubuntukylin/releases/21.04/release/)
-  * [Ubuntu MATE](http://cdimage.ubuntu.com/ubuntu-mate/releases/21.04/release/)
-  * [Ubuntu Studio](http://cdimage.ubuntu.com/ubuntustudio/releases/21.04/release/)
-  * [Xubuntu](http://cdimage.ubuntu.com/xubuntu/releases/21.04/release/)
+  * Less Frequently Downloaded Ubuntu Images `http://cdimage.ubuntu.com/ubuntu/releases/21.04/release/`
+  * Ubuntu Cloud Images `http://cloud-images.ubuntu.com/daily/server/hirsute/current/`
+  * Lubuntu `http://cdimage.ubuntu.com/lubuntu/releases/21.04/release/`
+  * Kubuntu `http://cdimage.ubuntu.com/kubuntu/releases/21.04/release/`
+  * Ubuntu Budgie `http://cdimage.ubuntu.com/ubuntu-budgie/releases/21.04/release/`
+  * Ubuntu Kylin `http://cdimage.ubuntu.com/ubuntukylin/releases/21.04/release/`
+  * Ubuntu MATE `http://cdimage.ubuntu.com/ubuntu-mate/releases/21.04/release/`
+  * Ubuntu Studio `http://cdimage.ubuntu.com/ubuntustudio/releases/21.04/release/`
+  * Xubuntu `http://cdimage.ubuntu.com/xubuntu/releases/21.04/release/`
 
 <!--
 2021-04-21 Release upgrades have not been enabled due to bug 1925010.
@@ -99,7 +99,7 @@ GCC was updated to the 10.3.0 release, binutils to 2.36.1, and glibc to 2.33. Py
 
 In addition to OpenJDK 11, OpenJDK 16 is now provided (but not used for package builds).
 
-Ruby was updated from v2.7.0 to v2.7.2, and rubygems has been extracted from ruby2.7 source and is provided as a [separate package](https://launchpad.net/ubuntu/+source/rubygems/).
+Ruby was updated from v2.7.0 to v2.7.2, and `rubygems` has been extracted from ruby2.7 source and is provided as a [separate package](https://launchpad.net/ubuntu/+source/rubygems/).
 
 ## Security Improvements 🔒
 
@@ -144,17 +144,17 @@ For more details, check the upstream’s [Rails 6 release notes](https://guides.
 
 
 
-### QEMU was updated to the 5.2 release.
+### QEMU was updated to the 5.2 release
 
 *   One noteworthy new feature is the addition of a first version of [virtio-mem](https://virtio-mem.gitlab.io/) which allows which allows fine-grained, NUMA-aware memory hot(un)plug for VMs, avoiding many limitations known from memory ballooning (virtio-balloon)
 *   Furthermore RISC-V emulation made major steps adding various further CPU types.
 *   See the upstream changelog for [5.1](https://wiki.qemu.org/ChangeLog/5.1) and [5.2](https://wiki.qemu.org/ChangeLog/5.2) for an overview of the many improvements.
 
 
-### Libvirt has been updated to version 7.0.
+### Libvirt has been updated to version 7.0
 
 *   Since Libvirt 6.10 TLS based connections will  do client TLS certificate validation by default for `chardev`, `migration`, and `backup` servers
-*   Since 6.9.0 one can use transient disks and vdpa devices with the qemu hypervisor
+*   Since 6.9.0 one can use transient disks and `vdpa` devices with the qemu hypervisor
 *   Since 6.7.0 iSCSI passthrough devices can also configure an initiator
 *   See the upstream [Changelogs](https://libvirt.org/news.html) for the many improvements and fixes since version 6.6 that was in [Groovy](https://discourse.ubuntu.com/t/groovy-gorilla-release-notes/15533).
 
@@ -167,25 +167,25 @@ For more details, check the upstream’s [Rails 6 release notes](https://guides.
 
 ### Open vSwitch has been updated to 2.15
 
-*   The ovsdb transaction format in the database files has been changed. New ovsdb-server process will be able to read old database format, but old processes will *fail* to read database created by the new one. For cluster and active-backup service models follow upgrade instructions in 'Upgrading from version 2.14 and earlier to 2.15 and later' section of ovsdb(7).
+*   The `ovsdb` transaction format in the database files has been changed. New ovsdb-server process will be able to read old database format, but old processes will *fail* to read database created by the new one. For cluster and active-backup service models follow upgrade instructions in 'Upgrading from version 2.14 and earlier to 2.15 and later' section of ovsdb(7).
 *   Further changes and improvements can be found in the [changelog](https://www.openvswitch.org/releases/NEWS-2.15.0.txt)
 
 
 ### Chrony has been updated to version 4.0
 
-*   Chronyd's configuration can now be fragmented. Please see
+*   `Chronyd`'s configuration can now be fragmented. Please see
     /etc/chrony/conf.d/README for more information.
 *   NTP sources can be specified in /etc/chrony/sources.d. Please see          
     /etc/chrony/sources.d/README for more information.
 *   The seccomp filtering was further improved and is now enabled by default
 *   Better security with AES-CMAC keys (AES128, AES256) via  Nettle and support for Network Time Security (NTS) authentication
-*   More details what changed since the former version 3.5 can be found on the[ upstreams news page](https://chrony.tuxfamily.org/news.html).
+*   More details what changed since the former version 3.5 can be found on the[ upstream news page](https://chrony.tuxfamily.org/news.html).
 
 
 ### Strongswan has been updated to 5.9.1
 
 *   AEAD algorithms are now preferred for ESP and therefore openvpn puts AES-GCM in a default AEAD proposal in front of the previous default proposal
-*   Various fixes for the Networkmanager frontend and backend
+*   Various fixes for the NetworkManager frontend and backend
 *   These and more changes since the former 5.8.4 can be found in [the upstream changelog](https://wiki.strongswan.org/projects/strongswan/wiki/Changelog59)
 
 
@@ -224,7 +224,7 @@ For more details, check the upstream’s [Rails 6 release notes](https://guides.
 
 ### SSSD has been updated to 2.40
 
-*   Support for libnss has been dropped.  SSSD now supports only openssl cryptography.
+*   Support for `libnss` has been dropped.  SSSD now supports only openssl cryptography.
 
 
 ### Net-SNMP has been updated to 5.9
@@ -234,7 +234,7 @@ For more details, check the upstream’s [Rails 6 release notes](https://guides.
 
 ### Rsyslog has been updated to 8.2102.0
 
-*   A new module “imhttp” has been added, which allows rsyslog to receive log data via HTTP.
+*   A new module “`imhttp`” has been added, which allows rsyslog to receive log data via HTTP.
 
 
 ### Containerd has been updated to 1.4.4
@@ -254,13 +254,13 @@ For more details, check the upstream’s [Rails 6 release notes](https://guides.
 ### Docker.io has been updated to 20.10.2
 
 *   Support cgroups v2
-*   Deprecate aufs storage driver. For more deprecations take a look at [Deprecated Engine Features](https://docs.docker.com/engine/deprecated/)
+*   Deprecate `aufs` storage driver. For more deprecations take a look at [Deprecated Engine Features](https://docs.docker.com/engine/deprecated/)
 
 
-### Targetcli-fb replaces tgt
+### Targetcli-fb replaces `tgt`
 
-*   Already in Ubuntu 20.10 [targetcli-fb](https://github.com/open-iscsi/targetcli-fb) which controls the [kernels LIO support](http://linux-iscsi.org/wiki/Main_Page) was fully supported. That was the first step to replace the aging [tgt](http://stgt.sourceforge.net/). Now in 21.04 the last remaining ties to tgt were cut (and thereby tgt got demoted) making targetcli-fb the single recommended tool to provide iSCSI targets.
-*   Compared to tgt It provides better performance for iSCSI targets, full SCSI 3 reservations (for clustering) and a multitude of further features missing from the narrower implementation of tgt.
+*   Already in Ubuntu 20.10 [targetcli-fb](https://github.com/open-iscsi/targetcli-fb) which controls the [kernels LIO support](http://linux-iscsi.org/wiki/Main_Page) was fully supported. That was the first step to replace the aging [`tgt`](http://stgt.sourceforge.net/). Now in 21.04 the last remaining ties to `tgt` were cut (and thereby `tgt` got demoted) making targetcli-fb the single recommended tool to provide iSCSI targets.
+*   Compared to `tgt` It provides better performance for iSCSI targets, full SCSI 3 reservations (for clustering) and a multitude of further features missing from the narrower implementation of `tgt`.
 
 
 ### Other noteworthy changes
@@ -317,7 +317,7 @@ Azure images will use /dev/ptp_hyperv as the main PTP refclock, to avoid conflic
 ### Raspberry Pi 🍓
 
 * Support for accelerated Wayland-based desktop
-* Support for GPIO via libgpiod and the new liblgpio ([bug 1916901](https://bugs.launchpad.net/ubuntu/+bug/1916901)), and an updated gpiozero library with liblgpio support integrated
+* Support for GPIO via `libgpiod` and the new `liblgpio` ([bug 1916901](https://bugs.launchpad.net/ubuntu/+bug/1916901)), and an updated `gpiozero` library with `liblgpio` support integrated
 * Support for WiFi and Bluetooth on the Compute Module 4 ([bug 1912905](https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/1912905) and [bug 1921915](https://bugs.launchpad.net/ubuntu/+source/pi-bluetooth/+bug/1921915))
 
 ### RISC-V 5️⃣
@@ -345,13 +345,13 @@ IBM Z and LinuxONE / s390x-specific enhancements since 20.10 (partially not limi
 
   * The s390-tools were updated to latest version 2.16.0 ([bug 1914574](https://bugs.launchpad.net/bugs/1914574)), which includes zkey integration with EKMF stage1 ([bug 1887806](https://bugs.launchpad.net/bugs/1887806)) and zkey LUKS2 enhancements ([bug 1914214](https://bugs.launchpad.net/bugs/1914214)).
 
-  * The zcrypt device driver was improved to provide indications that ap bus initialization and bindings are complete ([bug 1901674](https://bugs.launchpad.net/bugs/1901674)), additional state for 'offline due to error' was added to the kernel ([bug 1902866](https://bugs.launchpad.net/bugs/1902866)) and the s390-tools ([bug 1902865](https://bugs.launchpad.net/bugs/1902865)) and EP11 related enhancements for the pkey module and the zkey tool were done ([bug 1902862](https://bugs.launchpad.net/bugs/1902862)). Opencryptoki was bumped to the latest version 3.15.1 with patches on top ([bug 1906369](https://bugs.launchpad.net/bugs/1906369)), including PKCS #11 3.0 baseline provider support ([bug 1904558](https://bugs.launchpad.net/bugs/1904558)), enhanced EP11 token functionality ([bug 1904560](https://bugs.launchpad.net/bugs/1904560)) and improved key management tool support for key deletion ([bug 1904561](https://bugs.launchpad.net/bugs/1904561)).
+  * The zcrypt device driver was improved to provide indications that AP bus initialization and bindings are complete ([bug 1901674](https://bugs.launchpad.net/bugs/1901674)), additional state for 'offline due to error' was added to the kernel ([bug 1902866](https://bugs.launchpad.net/bugs/1902866)) and the s390-tools ([bug 1902865](https://bugs.launchpad.net/bugs/1902865)) and EP11 related enhancements for the pkey module and the zkey tool were done ([bug 1902862](https://bugs.launchpad.net/bugs/1902862)). Opencryptoki was bumped to the latest version 3.15.1 with patches on top ([bug 1906369](https://bugs.launchpad.net/bugs/1906369)), including PKCS #11 3.0 baseline provider support ([bug 1904558](https://bugs.launchpad.net/bugs/1904558)), enhanced EP11 token functionality ([bug 1904560](https://bugs.launchpad.net/bugs/1904560)) and improved key management tool support for key deletion ([bug 1904561](https://bugs.launchpad.net/bugs/1904561)).
 
   * qclib was upgraded to latest version 2.2.1 ([bug 1902870](https://bugs.launchpad.net/bugs/1902870)), that includes utility commands for displaying the virtualization stack and info about the hardware platform ([bug 1902874](https://bugs.launchpad.net/bugs/1902874)).
 
   * Additional s390x specific improvements were added to binutils v2.35.1 ([bug 1903874](https://bugs.launchpad.net/bugs/1903874)) and OpenBLAS v0.3.12 ([bug 1904194](https://bugs.launchpad.net/bugs/1904194)).
 
-  * Missing kernel debug infos for the decompressor stage were added to the kernel-debug package ([bug 1905020](https://bugs.launchpad.net/bugs/1905020)) and some kernel config options were adjusted ([bug 1906370](https://bugs.launchpad.net/bugs/1906370)) and ([bug 1908414](https://bugs.launchpad.net/bugs/1908414)).
+  * Missing kernel debug info for the decompressor stage were added to the kernel-debug package ([bug 1905020](https://bugs.launchpad.net/bugs/1905020)) and some kernel config options were adjusted ([bug 1906370](https://bugs.launchpad.net/bugs/1906370)) and ([bug 1908414](https://bugs.launchpad.net/bugs/1908414)).
 
   * By making use of SCLP's 'extended-length-SCCB facility' to read SCP and CPU info, current 4k limitations are solved and the preparation for future hardware take its course ([bug 1925030](https://bugs.launchpad.net/bugs/1925030)).
 
@@ -372,7 +372,7 @@ As is to be expected, with any release, there are some significant known bugs th
 
  * [s390x KVM guests only] Hirsute KVM guests do not react correctly to the detachment of KVM disks initiated from the host, leaving stale block devices that can cause hung processes. It is advisable to defer upgrading s390x KVM guests to Hirsute until [bug 1925211](https://bugs.launchpad.net/ubuntu/+source/systemd/+bug/1925211) is fixed if disks are to be detached from the VM.
 
-* KVM postcopy migration will - with the new default settings of kernel v5.11 - no more work out of the box. This is due to [userfaultfd: add user-mode only option to unprivileged_userfaultfd sysctl knob](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=d0d4730ac2) which for security reasons has a default that prohibits this kind of  migrations. If an admin wants to enable unrestricted userfaults he can do so via `sudo sysctl -w "vm.unprivileged_userfaultfd=1"` then postcopy migrations will work again.
+* KVM postcopy migration will - with the new default settings of kernel v5.11 - no more work out of the box. This is due to [`userfaultfd`: add user-mode only option to unprivileged_userfaultfd sysctl knob](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=d0d4730ac2) which for security reasons has a default that prohibits this kind of  migrations. If an admin wants to enable unrestricted userfaults he can do so via `sudo sysctl -w "vm.unprivileged_userfaultfd=1"` then postcopy migrations will work again.
 
 ### Ubuntu Desktop
 
@@ -401,7 +401,7 @@ Container hosts running other operating systems may need manual updates. ([bug 1
 * After initial user setup on the desktop image, several packages can still be autoremoved ([bug 1925265](https://bugs.launchpad.net/ubuntu/+source/ubuntu-meta/+bug/1925265)); run `sudo apt autoremove` to work around this
 * The FKMS overlay has been switched to KMS on the desktop image to fix corruption of X11 applications; this affects the display functionality of the Raspberry Pi camera applications (`raspivid` and `raspistill` from the `libraspberrypi-bin` package). As a result the camera firmware is disabled in `config.txt` (and will be disabled, if found, for upgraders from Groovy). You may enable it again, and recording / capture functionality of these applications should work but be aware that preview will not
 * On the desktop image, the wrong audio output device is selected on each boot. A workaround is available in the bug report ([bug 1899962](https://bugs.launchpad.net/ubuntu/+source/pulseaudio/+bug/1899962))
-* On the desktop image, the default user does not belong to the "dialout" group with the result that they do not have non-root access to the GPIO pins ([bug 1923363](https://bugs.launchpad.net/ubuntu/+source/user-setup/+bug/1923363)); run `sudo adduser $USER dialout` then logout and login if you wish to work around this
+* On the desktop image, the default user does not belong to the "`dialout`" group with the result that they do not have non-root access to the GPIO pins ([bug 1923363](https://bugs.launchpad.net/ubuntu/+source/user-setup/+bug/1923363)); run `sudo adduser $USER dialout` then logout and login if you wish to work around this
 * On the Pi Foundation’s IO Board for the Compute Module 4, the USB ports are routed to the DWC2 USB2 controller (which is attached to the USB-C port on the Pi 4). This is not in host-mode by default meaning that keyboards (and other devices) will not work. Add the following line to the `config.txt` in order to enable the USB ports on the IO board:
   ```
   dtoverlay=dwc2,dr_mode=host
