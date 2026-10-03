@@ -1303,3 +1303,4 @@ zpwr
 Zstack
 zstd
 Zstd
+Quantal
