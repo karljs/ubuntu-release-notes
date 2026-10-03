@@ -279,6 +279,8 @@ linkcheck_ignore = [
     r"http://psubuntu\.com/.*",
     # 8.04 release notes: archive.canonical.com times out from CI
     r"https?://archive\.canonical\.com/.*",
+    # 17.10 release notes: read timeout from CI (page exists)
+    r"https://www\.icann\.org/resources/pages/ksk-rollover/.*",
 ]
 
 # A regex list of URLs where anchors are ignored by 'make linkcheck'
@@ -298,6 +300,8 @@ linkcheck_anchors_ignore_for_url = [
     r"https://doc\.dovecot\.org/.*",
     # Raspberry Pi docs restructure anchors
     r"https://www\.raspberrypi\.com/.*",
+    # Fedora wiki anchors drift between revisions
+    r"https://fedoraproject\.org/wiki/How_to_debug_Wayland_problems.*",
 ]
 
 # How long the link checker will wait for a response for each request

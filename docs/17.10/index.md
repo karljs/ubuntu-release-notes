@@ -45,25 +45,25 @@ You can download ISOs and flashable images from:
 
 [releases.ubuntu.com/17.10/](http://releases.ubuntu.com/17.10/) (Ubuntu Desktop and Server)
 
-[cdimage.ubuntu.com/ubuntu/releases/17.10/release/](http://cdimage.ubuntu.com/ubuntu/releases/17.10/release/) (Less Popular Ubuntu Images)
+[old-releases.ubuntu.com/releases/17.10/](https://old-releases.ubuntu.com/releases/17.10/) (Less Popular Ubuntu Images)
 
-[cloud-images.ubuntu.com/daily/server/artful/current/](http://cloud-images.ubuntu.com/daily/server/artful/current/) (Ubuntu Cloud Images)
+`cloud-images.ubuntu.com/daily/server/artful/current/` (Ubuntu Cloud Images)
 
-[cdimage.ubuntu.com/netboot/17.10/](http://cdimage.ubuntu.com/netboot/17.10/) (Ubuntu Netboot)
+`cdimage.ubuntu.com/netboot/17.10/` (Ubuntu Netboot)
 
-[cdimage.ubuntu.com/kubuntu/releases/17.10/release/](http://cdimage.ubuntu.com/kubuntu/releases/17.10/release/) (Kubuntu)
+`cdimage.ubuntu.com/kubuntu/releases/17.10/release/` (Kubuntu)
 
-[cdimage.ubuntu.com/lubuntu/releases/17.10/release/](http://cdimage.ubuntu.com/lubuntu/releases/17.10/release/) (Lubuntu and Lubuntu Alternate)
+`cdimage.ubuntu.com/lubuntu/releases/17.10/release/` (Lubuntu and Lubuntu Alternate)
 
-[cdimage.ubuntu.com/ubuntu-budgie/releases/17.10/release/](http://cdimage.ubuntu.com/ubuntu-budgie/releases/17.10/release/) (Ubuntu Budgie)
+`cdimage.ubuntu.com/ubuntu-budgie/releases/17.10/release/` (Ubuntu Budgie)
 
-[cdimage.ubuntu.com/ubuntukylin/releases/17.10/release/](http://cdimage.ubuntu.com/ubuntukylin/releases/17.10/release/) (Ubuntu Kylin)
+`cdimage.ubuntu.com/ubuntukylin/releases/17.10/release/` (Ubuntu Kylin)
 
 [ubuntu-mate.org/download/](https://ubuntu-mate.org/download/) (Ubuntu MATE)
 
-[cdimage.ubuntu.com/ubuntustudio/releases/17.10/release/](http://cdimage.ubuntu.com/ubuntustudio/releases/17.10/release/) (Ubuntu Studio)
+`cdimage.ubuntu.com/ubuntustudio/releases/17.10/release/` (Ubuntu Studio)
 
-[cdimage.ubuntu.com/xubuntu/releases/17.10/release/](http://cdimage.ubuntu.com/xubuntu/releases/17.10/release/) (Xubuntu)
+`cdimage.ubuntu.com/xubuntu/releases/17.10/release/` (Xubuntu)
 
 As fixes will be included in new images between now and release, any daily cloud image from today or later (i.e. a serial of 20170926 or higher) should be considered a beta image.  Bugs found should be filed against the appropriate packages or, failing that, the cloud-images project in Launchpad.
 
@@ -117,9 +117,9 @@ Ubuntu 17.10 is based on the Linux release series **4.13**. It includes support 
 (17-10-network-configuration)=
 #### Network configuration
 
-**ifupdown** has been deprecated in favor of **netplan** and is no longer present on new installs. The installer will generate a configuration file for netplan in _/etc/netplan_, which will set up the system to configure the network via systemd-networkd or NetworkManager. Desktop users will see their system fully managed via NetworkManager as it has been the case in previous releases, but Server users now have their network devices managed via systemd-networkd on new installs. This only applies to new installations.
+`ifupdown` has been deprecated in favor of **netplan** and is no longer present on new installs. The installer will generate a configuration file for netplan in _/etc/netplan_, which will set up the system to configure the network via systemd-networkd or NetworkManager. Desktop users will see their system fully managed via NetworkManager as it has been the case in previous releases, but Server users now have their network devices managed via systemd-networkd on new installs. This only applies to new installations.
 
-Given that ifupdown is no longer installed by default, its commands will not be present: _ifup_ and _ifdown_ are thus unavailable, replaced by `ip link set $device up` and `ip link set $device down`.
+Given that `ifupdown` is no longer installed by default, its commands will not be present: `ifup` and `ifdown` are thus unavailable, replaced by `ip link set $device up` and `ip link set $device down`.
 
 The `networkctl` command is also available for users to see a summary of the network devices. `networkctl status` will display the current global state of IP addresses on the system; and `networkctl status $device` can display the details specific to a network device.
 
@@ -139,7 +139,7 @@ _ On supported systems, **Wayland** is now the default display server. The older
 
 * Window control buttons are back on the **right** for the first time since 2010.
 
-* Apps provided by GNOME have been updated to **3.26**. For more details about GNOME 3.26, see their [Release Notes](https://help.gnome.org/misc/release-notes/3.26/).
+* Apps provided by GNOME have been updated to **3.26**. For more details about GNOME 3.26, see their Release Notes `https://help.gnome.org/misc/release-notes/3.26/`.
 
 * **Driverless printing support** is now available for [IPP Everywhere](http://www.pwg.org/dynamo/eveprinters.php), [Apple AirPrint](https://support.apple.com/en-us/HT201311), [Wi-Fi Direct](https://www.wi-fi.org/discover-wi-fi/wi-fi-direct) devices. Follow the [instructions from 17.04](https://wiki.ubuntu.com/ZestyZapus/ReleaseNotes#Driverless_Printing).
 
@@ -179,7 +179,7 @@ Qemu has been updated to the 2.10 release.
 
 Since the last version was 2.8 see both Changelogs of [2.9](http://wiki.qemu.org/ChangeLog/2.9) and [2.10](http://wiki.qemu.org/ChangeLog/2.10) for details.
 
-Among many other changes there is one that might need follow on activity by the user/admin: Image locking is added and enabled by default. This generally makes execution much safer, but can break some old use cases that now explicitly have to opt-in to ignore/share the locks by [tools](https://git.qemu.org/?p=qemu.git;a=commit;h=335e9937) and [subcommands](https://git.qemu.org/?p=qemu.git;a=commit;h=459571f7) using the _--force-share_ option or the [share-rw dqev property](https://git.qemu.org/?p=qemu.git;a=commit;h=dabd18f6).
+Among many other changes there is one that might need follow on activity by the user/admin: Image locking is added and enabled by default. This generally makes execution much safer, but can break some old use cases that now explicitly have to opt-in to ignore/share the locks by [tools](https://git.qemu.org/?p=qemu.git;a=commit;h=335e9937) and [subcommands](https://git.qemu.org/?p=qemu.git;a=commit;h=459571f7) using the _--force-share_ option or the [share-rw `qdev` property](https://git.qemu.org/?p=qemu.git;a=commit;h=dabd18f6).
 
 
 (17-10-libvirt-3-6)=
@@ -248,7 +248,7 @@ The version was updated to [17.1](https://launchpad.net/cloud-init/trunk/17.1). 
 * Support for netplan yaml in cloud-init
 * Add cloud-init subcommands collect-logs, analyze and schema for developers
 * Apport integration from cloud-init via ‘ubuntu-bug  cloud-init’
-* Significant unittest and integration test coverage improvements
+* Significant `unittest` and integration test coverage improvements
 
 
 (17-10-curtin)=
@@ -256,11 +256,11 @@ The version was updated to [17.1](https://launchpad.net/cloud-init/trunk/17.1). 
 
 The version was updated to [0.1.0~bzr519-0ubuntu1](https://launchpad.net/ubuntu/+source/curtin/0.1.0~bzr519-0ubuntu1). Notable new features include:
 
-* Network configuration passthrough for ubuntu and centos
+* Network configuration passthrough for ubuntu and CentOS
 * More resilient UEFI/grub interaction
 * Better support for mdadm arrays
 * Ubuntu Core 16 Support
-* Improved bcache support
+* Improved `bcache` support
 
 
 (17-10-samba)=
@@ -268,7 +268,7 @@ The version was updated to [0.1.0~bzr519-0ubuntu1](https://launchpad.net/ubuntu/
 
 Samba was updated to version [4.6.7](https://www.samba.org/samba/history/samba-4.6.7.html).
 
-Noteable changes in the 4.6.x series include:
+Notable changes in the 4.6.x series include:
 
 * Multi-process Netlogon support
 * New options for controlling TCP ports used for RPC services
@@ -276,7 +276,7 @@ Noteable changes in the 4.6.x series include:
 * DNS improvements
 
 The OS Version for the printing server has been increased to announce Windows Server 2003 R2 SP2
-ID mapping checks added to the testparm(1) tool. There are some ID mapping backends which are not allowed to be used for the default backend. Winbind will no longer start if an invalid backend is configured as the default backend.
+ID mapping checks added to the testparm(1) tool. There are some ID mapping backends which are not allowed to be used for the default backend. `Winbind` will no longer start if an invalid backend is configured as the default backend.
 
 
 (17-10-known-issues)=
@@ -300,7 +300,7 @@ If you have already installed Ubuntu 17.10 on an affected system, you may not im
 (17-10-desktop)=
 ### Desktop
 
-* Bluetooth audio devices cannot be used in the Greeter.  This will cause issues for people using the accessibility features such as screenreaders at the login screen.  Once logged in everything should work as expected.
+* Bluetooth audio devices cannot be used in the Greeter.  This will cause issues for people using the accessibility features such as screen readers at the login screen.  Once logged in everything should work as expected.
 
 * Some admin utilities will not work with GNOME on Wayland since the apps have not been adapted to use PolicyKit to only use admin privileges for the specific functions needed. Also, some screenshot and screencast apps and all remote desktop server apps do not currently work on GNOME on Wayland. As a workaround, you can use the Ubuntu on Xorg session. For more details read upstream notes about [known issues and major changes](https://fedoraproject.org/wiki/How_to_debug_Wayland_problems#Known_issues.2C_frequent_complaints.2C_fundamental_changes).
 
@@ -334,9 +334,9 @@ If you have already installed Ubuntu 17.10 on an affected system, you may not im
 
 * Partitioning step allows to configure LVM across multiple devices without requiring to setup a separate /boot partition. This may lead to failure to install the bootloader at the end of the installation, and failures to boot the resultant installations. (Bug:1680101)
 
-* LVM configuration cannot be removed when volume groups with the same name are found during installation. Partitioner does not support installation when multiple conflicting/identical volume groups have been detected. For example reinstalling Ubuntu with LVM across multiple disk drives that had individual LVM installations of Ubuntu. As a workaround, please format disk drives prior to installation, or from the built in shell provided in the installer. (Bug:1679184)
+* LVM configuration cannot be removed when volume groups with the same name are found during installation. `Partitioner` does not support installation when multiple conflicting/identical volume groups have been detected. For example reinstalling Ubuntu with LVM across multiple disk drives that had individual LVM installations of Ubuntu. As a workaround, please format disk drives prior to installation, or from the built in shell provided in the installer. (Bug:1679184)
 
-* cio_ignore blacklist is no longer active after installation, because not all install-time parameters, like cio_ignore (s390x), are propagated to the installed system. Workaround is to edit /etc/zipl.conf to apply these and re-run sudo zipl to update the IPL. (Bug:1571561)
+* cio_ignore blocklist is no longer active after installation, because not all install-time parameters, like cio_ignore (s390x), are propagated to the installed system. Workaround is to edit /etc/zipl.conf to apply these and re-run sudo zipl to update the IPL. (Bug:1571561)
 
 
 (17-10-printing)=
@@ -377,7 +377,7 @@ The release notes for the official flavours can be found at the following links:
 
 Your comments, bug reports, patches and suggestions will help fix bugs and improve the quality of future releases. Please [report bugs using the tools provided](http://help.ubuntu.com/community/ReportingBugs).
 
-If you want to help out with bugs, the [Bug Squad](http://wiki.ubuntu.com/BugSquad) is always looking for help.
+If you want to help out with bugs, the Bug Squad `http://wiki.ubuntu.com/BugSquad` is always looking for help.
 
 
 (17-10-participate-in-ubuntu)=
