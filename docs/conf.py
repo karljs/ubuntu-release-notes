@@ -279,7 +279,8 @@ linkcheck_ignore = [
     r"http://psubuntu\.com/.*",
     # 8.04 release notes: archive.canonical.com times out from CI
     r"https?://archive\.canonical\.com/.*",
-    # 17.04 release notes: printer web admin interface on the user's own device
+    # 17.04 release notes: local-only CUPS / printer web admin interfaces
+    r"http://localhost:631",
     r"http://localhost:60000/",
 ]
 
