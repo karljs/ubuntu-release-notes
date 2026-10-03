@@ -466,7 +466,7 @@ X will flicker, and will dmesg: `[drm:drm_edid_block_valid] *ERROR* EDID checksu
 
 * On 32 bit t1.micro server, instance freezes when installing Sun java. (Bug:634487)
 
-_ Screenful of errors like "[drm:radeon_ttm_backend_bind] _ERROR* failed to bind 1772 pages" may be seen during a liveCD restart. (Bug:656486)
+Screenful of errors like `[drm:radeon_ttm_backend_bind] *ERROR* failed to bind 1772 pages` may be seen during a liveCD restart. (Bug:656486)
 
 * Samsung N150 freezes indefinitely after suspend. Workaround: specify "intel_idle.max_cstate=3" as kernel parameter at boot. (Bug:640100)
 
