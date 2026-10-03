@@ -376,7 +376,7 @@ The btrfs filesystem is considered experimental in this release.  It can general
 
 * In some cases (particularly if different kernel parameters from the default are in use), upgrades from Ubuntu 10.10 may prompt to resolve conflicts in the `/etc/default/grub` configuration file even when it has not been manually changed.  Performing a three-way merge should normally be sufficient if presented with this prompt, although you should check afterwards to ensure that `/etc/default/grub` still looks correct. (Bug:759545)
 
-_ If you have manually installed a PAE kernel (for example to make use of >4GB of RAM) _and* you have also installed the proprietary NVidia drivers, you will have to manually install the package "`linux-headers-generic-pae`" after the upgrade has completed but before rebooting. Failure to do so will result in a system that freezes at boot. If you do forget to install this package before rebooting, select the "recovery" option from the boot menu to allow you to install this package using "`apt-get install linux-headers-generic-pae`". See bug Bug:772226.
+If you have manually installed a PAE kernel (for example to make use of >4GB of RAM) *and* you have also installed the proprietary NVidia drivers, you will have to manually install the package `linux-headers-generic-pae` after the upgrade has completed but before rebooting. Failure to do so will result in a system that freezes at boot. If you do forget to install this package before rebooting, select the "recovery" option from the boot menu to allow you to install this package using `apt-get install linux-headers-generic-pae`. See bug Bug:772226.
 
 
 (downgrades-to-ubuntu-11-04)=
