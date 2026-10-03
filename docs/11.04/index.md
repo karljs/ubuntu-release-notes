@@ -462,7 +462,7 @@ In general, the recommended HW configuration for running Unity is available at: 
 
 * On amd64/Mac the main physical screen (iMac display) is detected by the OS radeon driver as output eDP-0, name 'Color LCD', and it is connected but not lit. (Bug:542660)
 
-_ X will flicker, and will dmesg: "[drm:drm_edid_block_valid] _ERROR* EDID checksum is invalid".  Intermittently the screen may go dark after one of these flickers.  This can be worked around by 'sudo get-edid'. (Bug:712075)
+X will flicker, and will dmesg: `[drm:drm_edid_block_valid] *ERROR* EDID checksum is invalid`.  Intermittently the screen may go dark after one of these flickers.  This can be worked around by `sudo get-edid`. (Bug:712075)
 
 * On 32 bit t1.micro server, instance freezes when installing Sun java. (Bug:634487)
 
