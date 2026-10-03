@@ -45,25 +45,25 @@ You can download ISOs and flashable images from:
 
 [releases.ubuntu.com/18.10/](http://releases.ubuntu.com/18.10/) (Ubuntu Desktop and Server)
 
-[cdimage.ubuntu.com/ubuntu/releases/18.10/release/](http://cdimage.ubuntu.com/ubuntu/releases/18.10/release/) (Less Popular Ubuntu Images)
+`cdimage.ubuntu.com/ubuntu/releases/18.10/release/` (Less Popular Ubuntu Images)
 
-[cloud-images.ubuntu.com/daily/server/cosmic/current/](http://cloud-images.ubuntu.com/daily/server/cosmic/current/) (Ubuntu Cloud Images)
+`cloud-images.ubuntu.com/daily/server/cosmic/current/` (Ubuntu Cloud Images)
 
-[cdimage.ubuntu.com/netboot/18.10/](http://cdimage.ubuntu.com/netboot/18.10/) (Ubuntu Netboot)
+`cdimage.ubuntu.com/netboot/18.10/` (Ubuntu Netboot)
 
-[cdimage.ubuntu.com/kubuntu/releases/18.10/release/](http://cdimage.ubuntu.com/kubuntu/releases/18.10/release/) (Kubuntu)
+`cdimage.ubuntu.com/kubuntu/releases/18.10/release/` (Kubuntu)
 
-[cdimage.ubuntu.com/lubuntu/releases/18.10/release/](http://cdimage.ubuntu.com/lubuntu/releases/18.10/release/) (Lubuntu and Lubuntu Alternate)
+`cdimage.ubuntu.com/lubuntu/releases/18.10/release/` (Lubuntu and Lubuntu Alternate)
 
-[cdimage.ubuntu.com/ubuntu-budgie/releases/18.10/release/](http://cdimage.ubuntu.com/ubuntu-budgie/releases/18.10/release/) (Ubuntu Budgie)
+`cdimage.ubuntu.com/ubuntu-budgie/releases/18.10/release/` (Ubuntu Budgie)
 
-[cdimage.ubuntu.com/ubuntukylin/releases/18.10/release/](http://cdimage.ubuntu.com/ubuntukylin/releases/18.10/release/) (Ubuntu Kylin)
+`cdimage.ubuntu.com/ubuntukylin/releases/18.10/release/` (Ubuntu Kylin)
 
 [ubuntu-mate.org/download/](https://ubuntu-mate.org/download/) (Ubuntu MATE)
 
-[cdimage.ubuntu.com/ubuntustudio/releases/18.10/release/](http://cdimage.ubuntu.com/ubuntustudio/releases/18.10/release/) (Ubuntu Studio)
+`cdimage.ubuntu.com/ubuntustudio/releases/18.10/release/` (Ubuntu Studio)
 
-[cdimage.ubuntu.com/xubuntu/releases/18.10/release/](http://cdimage.ubuntu.com/xubuntu/releases/18.10/release/) (Xubuntu)
+`cdimage.ubuntu.com/xubuntu/releases/18.10/release/` (Xubuntu)
 
 
 (18-10-upgrading-from-ubuntu-18-04)=
@@ -131,7 +131,7 @@ Ubuntu 18.10 is based on the Linux release series **4.18**. It includes support 
 (18-10-toolchain-upgrades)=
 #### Toolchain Upgrades 🛠️
 
-Ubuntu 18.10 comes with refreshed state of the art toolchain including new upstream releases of glibc 2.28, ☕ OpenJDK 11, boost 1.67, rustc 1.28, and updated GCC 8.2, 🐍 python 3.6.7 as default, python 3.7.1 as supported, 💎 ruby 2.5.1, php 7.2.10, 🐪 perl 5.26.2, golang 1.10.4. There are new improvements on the cross-compilers front as well with POWER toolchain enabled to cross-compile for ARM targets.
+Ubuntu 18.10 comes with refreshed state of the art toolchain including new upstream releases of glibc 2.28, ☕ OpenJDK 11, boost 1.67, rustc 1.28, and updated GCC 8.2, 🐍 python 3.6.7 as default, python 3.7.1 as supported, 💎 ruby 2.5.1, `php` 7.2.10, 🐪 `perl` 5.26.2, golang 1.10.4. There are new improvements on the cross-compilers front as well with POWER toolchain enabled to cross-compile for ARM targets.
 
 
 
@@ -168,7 +168,7 @@ The latest releases of Firefox (63.0) and LibreOffice (6.1.2) are available and 
 (18-10-yaru-theme-updates)=
 #### Yaru Theme Updates
 
-Yaru theme, the bold, the frivolous, yet distinctly Ubuntu saw further improvements and touchups. Integrates beautifully with GNOME v3.20 Desktop and improves usability with its careful use of semantic colors.
+Yaru theme, the bold, the frivolous, yet distinctly Ubuntu saw further improvements and touch-ups. Integrates beautifully with GNOME v3.20 Desktop and improves usability with its careful use of semantic colors.
 
 
 (18-10-ubuntu-server)=
@@ -222,7 +222,7 @@ The version was updated to [18.4](https://launchpad.net/cloud-init/trunk/18.4). 
 
 * Azure: allow azure to generate network configuration from IMDS per boot.
 
-* Support access to platform meta-data in cloud-config and user-data via jinja rendering.
+* Support access to platform meta-data in cloud-config and user-data via `jinja` rendering.
 
 * OpenStack now runs at local time frame paving the way for network
    configuration in the next release.
@@ -240,7 +240,7 @@ The version was updated to 18.1.59. Notable new features include:
 
 * Handle zpool/zfs clear when wiping disks
 
-* Rescan for lvm devices after assembling raid arrays
+* Rescan for `lvm` devices after assembling raid arrays
 
 * Add timing and logging functions
 
@@ -250,7 +250,7 @@ The version was updated to 18.1.59. Notable new features include:
 
 * block: use uuid4 (random) when auto-generating UUIDS for filesystems
 
-* reread ptable after wiping disks with partitions
+* reread `ptable` after wiping disks with partitions
 
 * Fix WorkingDir class to support already existing target directory. (LP: #1775622)
 
@@ -258,7 +258,7 @@ The version was updated to 18.1.59. Notable new features include:
 
 * Fix tip-pyflakes imported but unused call to util.get_platform_arch
 
-* subp: update return value of subp with combine_capture=True.
+* `subp`: update return value of `subp` with combine_capture=True.
 
 * Continuous Integration test improvements
 
@@ -268,9 +268,9 @@ The version was updated to 18.1.59. Notable new features include:
 
 IBM Z and LinuxONE / s390x-specific enhancements (since 18.04) include:
 
-* s390-tools package update to 2.6.0 (Bug:1776907), (Bug:1786460) that brings improvements for fast dump of early boot problems (Bug:1775632), adds NVMe related debug data to dbginfo script (Bug:1772876), protected key management tool (zkey) was added (Bug:1775627) (Bug:1794290) and more.
+* s390-tools package update to 2.6.0 (Bug:1776907), (Bug:1786460) that brings improvements for fast dump of early boot problems (Bug:1775632), adds NVMe related debug data to `dbginfo` script (Bug:1772876), protected key management tool (zkey) was added (Bug:1775627) (Bug:1794290) and more.
 
-* Protected key infrastructural support was added and expanded for cryptsetup (Bug:781912), (Bug:1785610) and support for 4k sectors for fast clear key dm-crypt (crypttab) added (Bug:1776626).
+* Protected key infrastructural support was added and expanded for cryptsetup (Bug:781912), (Bug:1785610) and support for 4k sectors for fast clear key dm-crypt (`crypttab`) added (Bug:1776626).
 
 * SMC (shared memory communications) support and exploitation was introduced in the kernel (Bug:1784647), SMC-Direct (Bug:1786902) and SMC-R/D (Bug:1789934) as well as a new SMC tools package introduced (Bug:1689782).
 
@@ -286,7 +286,7 @@ IBM Z and LinuxONE / s390x-specific enhancements (since 18.04) include:
 
 * Configurable IFCC handling was added to the kernel (upstream since 4.17) (Bug:1776216).
 
-* Upgrade of opencryptoki to 3.10 with elliptic curve support for libica and icatoken (Bug:1776210), (Bug:1776210).
+* Upgrade of opencryptoki to 3.10 with elliptic curve support for libica and `icatoken` (Bug:1776210), (Bug:1776210).
 
 * Upgrade of openssl-ibmca to 2.0.0 that comes with elliptic curve support (Bug:1776209), (Bug:1777641).
 
@@ -294,7 +294,7 @@ IBM Z and LinuxONE / s390x-specific enhancements (since 18.04) include:
 
 * Introduced support for the kexec_file_load system call in kernel (Bug:1783088) and kexec-tools (Bug:1783086).
 
-* Version bump to gcc-8 (version 8.2) brings brings serveral s390x optimizations (Bug:1777835).
+* Version bump to gcc-8 (version 8.2) brings brings several s390x optimizations (Bug:1777835).
 
 * Upgrade to LLVM 7.0 brings performance improvements, some new functions and improved support for z13/14 systems (Bug:1777869).
 
@@ -325,7 +325,7 @@ As is to be expected, with any release, there are some significant known bugs th
 * The screen reader doesn't read the installer when executed from a live session (bug Bug:1797861), is not auto-enabled on first login even if it's been enabled during installation (bug Bug:1796275) and the pages of the first run wizard are not read properly (bug Bug:1797868)
 
 * When disconnecting from VPNs, DNS resolution may become broken requiring a restart of resolved.  $ sudo systemctl restart systemd-resolved.service [Bug 1797415](https://bugs.launchpad.net/ubuntu/+source/systemd/+bug/1797415)
-##* In some cases gdm may fail to start and you will be presented with a flashing cursor instead of a login screen.  Switching to vt 2 and then back to 1 (ctrl-alt-f2 & ctrl-alt-f1) will cause gdm to start and you can log in.  [Bug 1795637](https://bugs.launchpad.net/ubuntu/+source/gdm3/+bug/1795637)
+##* In some cases gdm may fail to start and you will be presented with a flashing cursor instead of a login screen.  Switching to `vt` 2 and then back to 1 (ctrl-alt-f2 & ctrl-alt-f1) will cause gdm to start and you can log in.  [Bug 1795637](https://bugs.launchpad.net/ubuntu/+source/gdm3/+bug/1795637)
 
 * In an OEM installation, during user setup, the language selected is not taken into account (bug Bug:1798554)
 
@@ -367,7 +367,7 @@ The release notes for the official flavours can be found at the following links:
 
 Your comments, bug reports, patches and suggestions will help fix bugs and improve the quality of future releases. Please [report bugs using the tools provided](http://help.ubuntu.com/community/ReportingBugs).
 
-If you want to help out with bugs, the [Bug Squad](http://wiki.ubuntu.com/BugSquad) is always looking for help.
+If you want to help out with bugs, the Bug Squad `http://wiki.ubuntu.com/BugSquad` is always looking for help.
 
 
 (18-10-participate-in-ubuntu)=
