@@ -24,6 +24,7 @@ Ubuntu 23.04 will be supported for 9 months until January 2024. If you need Long
 Ubuntu 23.04 is shipped with the new 6.2 Linux kernel that brings many new features.
 
 Notable Ubuntu kernel features:
+
  - Support to build and run [out-of-tree Rust 🦀 modules](https://discourse.ubuntu.com/t/ubuntu-kernel-is-getting-rusty-in-lunar/34977) with generic and lowlatency kernels
  - Newer LSM stacking and AppArmor patch set
 
@@ -57,9 +58,9 @@ The rustc compiler was updated to v1.67 and the cargo package manager was update
 ### Python
 Python was updated to v3.11
 
-### debuginfod service
+### `debuginfod` service
 
-A lot of work has been done during this cycle to improve our [debuginfod service](https://debuginfod.ubuntu.com).
+A lot of work has been done during this cycle to improve our [`debuginfod` service](https://debuginfod.ubuntu.com).
 
 * The service now indexes and serves source-code for a considerable number of packages (those that honor `dpkg-buildflags` during build time).  Ultimately, this means that users will not need to manually download a package's source-code (using `apt-get source`, for example), nor will they need to fiddle with GDB's `dir` or `set substitute-path` commands.  Source-code fetching will be done transparently by the debugger, which will save a considerable amount of time.
 
@@ -88,7 +89,7 @@ The ca-certificates package has been updated to the 2.60 version of the Mozilla 
 - The Minimal install is now faster than the Full install which wasn't true with the old installer.
 - Installs the available security updates on the target system
 - [MOK Enrollment](https://wiki.ubuntu.com/UEFI/SecureBoot#MOK_generation_and_signing_process) is not yet supported.  While `ubuntu-drivers` will be run if the "Install third-party software" checkbox is selected, drivers that also required MOK enrollment will need to do so after installation is complete.
-- The legacy installer is [still available](https://cdimage.ubuntu.com/releases/23.04/) in case of issues with the new installer.
+- The legacy installer is still available `https://cdimage.ubuntu.com/releases/23.04/` in case of issues with the new installer.
 
 ### GNOME 👣
 - GNOME has been updated to include new features and fixes from the latest GNOME release, [GNOME 44](https://release.gnome.org/44/)
@@ -133,7 +134,7 @@ Previously, `rsyslog` did have an apparmor profile, but it was disabled by defau
 
 ### Cloud images
 
-* Cloud Images updated default fstab entry for ext4 root filesystem to use `commit=30 seconds` option, previously 30 seconds was implicit default on amd64 images with `linux-kvm` kernel flavour, and 5 seconds on all other cases. This improves performance and power efficiency at the expense of data-safety. See [bug](https://bugs.launchpad.net/bugs/2006511) and [merge proposal](https://code.launchpad.net/~ubuntu-core-dev/livecd-rootfs/+git/livecd-rootfs/+merge/436977) for further details.
+* Cloud Images updated default `fstab` entry for ext4 root filesystem to use `commit=30 seconds` option, previously 30 seconds was implicit default on amd64 images with `linux-kvm` kernel flavour, and 5 seconds on all other cases. This improves performance and power efficiency at the expense of data-safety. See [bug](https://bugs.launchpad.net/bugs/2006511) and [merge proposal](https://code.launchpad.net/~ubuntu-core-dev/livecd-rootfs/+git/livecd-rootfs/+merge/436977) for further details.
 * AWS amd64 images use now the new `uefi-preferred` boot mode. See [AWS documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-boot.html) for details.
 
 ### Cloud-init
@@ -153,7 +154,7 @@ cloud-init was updated from 22.4 to the 23.1 release. The new release includes t
  * Ansible: Ansible galaxy install, control module and pip bootstrap
  * ssh: support config for multiple host certs
  * cloud-config schema
-   - Allow jinja template and variable expansion of instance-data.json values in /etc/cloud
+   - Allow `jinja` template and variable expansion of instance-data.json values in /etc/cloud
    - `cloud-init schema --system` validates user-data and vendor-data
  * machine-readable output --format yaml/json in `cloud-init status`
  * `cloud-init clean --machine-id` better support for installed image clone
@@ -169,7 +170,7 @@ It was updated to version 20.10.21. This new version comes with many security an
 
 It was updated to version 1.6.12. Some interesting changes are:
 
-* Migrate from k8s.gcr.io to registry.k8s.io
+* Migrate from `k8s.gcr.io` to registry.k8s.io
 * Add support for CAP_BPF and CAP_PERFMON
 * Seccomp: Allow clock_settime64 with CAP_SYS_TIME
 * Allow ptrace(2) by default for kernels >= 4.8
@@ -181,7 +182,7 @@ Plus some security fixes. For the complete list of changes please refer to the [
 It was updated to version 1.1.4. Some interesting changes are:
 
 * Our seccomp -ENOSYS stub now correctly handles multiplexed syscalls on s390 and s390x. This solves the issue where syscalls the host kernel did not support would return -EPERM despite the existence of the -ENOSYS stub code (this was due to how s390x does syscall multiplexing).
-* Retry on dbus disconnect logic in libcontainer/cgroups/systemd now works as intended; this fix does not affect runc binary itself but is important for libcontainer users such as Kubernetes.
+* Retry on dbus disconnect logic in libcontainer/cgroups/systemd now works as intended; this fix does not affect runc binary itself but is important for `libcontainer` users such as Kubernetes.
 
 All the improvements and bug fixes can be found in the [upstream release page](https://github.com/opencontainers/runc/releases).
 
@@ -242,7 +243,7 @@ Tracking the releases of libvirt continuously version v9.0.0 is now provided in 
    * external backend for swtpm
    * passing FDs instead of opening files for <disk>
    * Allow multiple nodes for preferred policy
-   * Report Hyper-V Enlightenments in domcapabilities
+   * Report Hyper-V Enlightenments in `domcapabilities`
    * Support for SGX EPC (enclave page cache)
    * Support migration of vTPM state of QEMU vms on shared storage
    * qemu: Core Scheduling support (not enabled by default)
@@ -251,7 +252,7 @@ Tracking the releases of libvirt continuously version v9.0.0 is now provided in 
 
 ### Net SNMP
 
-In addition to a few security and stability fixes, support is now included for recognizing Docker's overlay filesystem (LP: #2007856), such as when running snmpwalk against a Docker container.
+In addition to a few security and stability fixes, support is now included for recognizing Docker's overlay filesystem (LP: #2007856), such as when running `snmpwalk` against a Docker container.
 
 ### Open vSwitch
 
@@ -339,7 +340,7 @@ An important thing to keep in mind is that the following gems are not bundled in
 * net-imap
 * net-pop
 * net-smtp
-* matric
+* matrix
 * prime
 * debug
 
@@ -358,7 +359,7 @@ Many new configuration options have been introduced in version 2.8.0.  You can s
 
 Subiquity 23.04.2 has been released.  For full change details, please see the [Subiquity 23.04.2](https://github.com/canonical/subiquity/releases/tag/23.04.2) release post on Github.
 
-### virglrenderer
+### `virglrenderer`
 
 In the upgrade from 0.9.1 to 0.10.4, Vulkan support has been implemented, which promises more efficient 3D performance on certain hardware.
 
@@ -377,7 +378,7 @@ In the upgrade from 0.9.1 to 0.10.4, Vulkan support has been implemented, which 
 Starting with Ubuntu Server 20.04 LTS, the minimal architectural level set was raised to z13 (and LinuxONE Rockhopper / Emperor) - this still applies to Ubuntu Server 23.04 and support also includes all newer hardware that is in service as of today (23.04 release date) until announced otherwise. Support for additional future hardware might be added later.
 Ubuntu Server 23.04 can be installed in an LPAR (classic or DPM systems), as IBM z/VM guest, as KVM virtual machine and in different container environments, such as LXD, docker or kubernetes.
 
-* The key package for IBM Z and LinuxONE, the s390-tools package, got updated to 2.26.0 [(bug 2003284)](https://bugs.launchpad.net/bugs/2003284) and with that site-aware device configuration introduced [(bug 1982339)](https://bugs.launchpad.net/bugs/1982339) as well as vmconvert and zgetdump consolidated [(bug 2008785)](https://bugs.launchpad.net/bugs/2008785).
+* The key package for IBM Z and LinuxONE, the s390-tools package, got updated to 2.26.0 [(bug 2003284)](https://bugs.launchpad.net/bugs/2003284) and with that site-aware device configuration introduced [(bug 1982339)](https://bugs.launchpad.net/bugs/1982339) as well as `vmconvert` and `zgetdump` consolidated [(bug 2008785)](https://bugs.launchpad.net/bugs/2008785).
 
 * Two larger and cross component features related to DASD disks that were added are:
   * support for transparent DASD PPRC (Peer-to-Peer Remote Copy) handling [(bug 1982341)](https://bugs.launchpad.net/bugs/1982341) & [(bug 2003281)](https://bugs.launchpad.net/bugs/2003281)
@@ -391,7 +392,7 @@ Ubuntu Server 23.04 can be installed in an LPAR (classic or DPM systems), as IBM
   * virtual CPU topology provided to KVM guests via libvirt [(bug 1983222)](https://bugs.launchpad.net/bugs/1234567)
 
 * Cryptography is the next big area of improvement - with the upgrade to openCryptoki v3.20.0:
-  * master key consistency for ep11 tokens was established [(bug 2003629)](https://bugs.launchpad.net/bugs/1234567)
+  * `master key` consistency for ep11 tokens was established [(bug 2003629)](https://bugs.launchpad.net/bugs/1234567)
   * ica and soft tokens in PKCS #11 3.0 now support AES_XTS [(bug 2003630)](https://bugs.launchpad.net/bugs/1234567) as well as ep11 tokens [(bug 2003632)](https://bugs.launchpad.net/bugs/1234567)
   * support for ep11 tokens on z16 was added [(bug 2003635)](https://bugs.launchpad.net/bugs/1234567)
   * support of new vendor specific key derivation function with ep11 7.2 tokens [(bug 2003638)](https://bugs.launchpad.net/bugs/1234567)
@@ -403,7 +404,7 @@ Ubuntu Server 23.04 can be installed in an LPAR (classic or DPM systems), as IBM
 
 * Further miscellaneous s390x specific updates and improvements are:
   * the added ECC support in libzpc [(bug 2003636)](https://bugs.launchpad.net/bugs/1234567)
-  * driverctl now allows to list persisted definitions [(bug 2003678)](https://bugs.launchpad.net/bugs/1234567)
+  * `driverctl` now allows to list persisted definitions [(bug 2003678)](https://bugs.launchpad.net/bugs/1234567)
   * qclib was upgraded to latest v2.3.2 [(bug 2004526)](https://bugs.launchpad.net/bugs/1234567)
   * smc-tools upgraded to latest v1.8.2 [(bug 2004528)](https://bugs.launchpad.net/bugs/1234567)
   * PCI logging improved [(bug 2003390)](https://bugs.launchpad.net/bugs/1234567)
@@ -418,7 +419,7 @@ As is to be expected, with any release, there are some significant known bugs th
 
 * The option to install using zfs as a file system and encryption has been disabled due to a bug ([LP: #1993318](https://bugs.launchpad.net/ubuntu-manual-tests/+bug/1993318)) with all of the file system not being mounted on first boot. If you’d like to have a system using zfs and encryption please install using Ubuntu 22.04.1 and then upgrade to Ubuntu 23.04.
 
-* The Live Session of the new Ubuntu Desktop installer is not localized. It is still possible to perform a non-English installation using the new installer, but Internet access at install time is required to download the language packs. Should this be an issue use the legagy installer images. ([LP: #2013329](https://bugs.launchpad.net/ubuntu-release-notes/+bug/2013329))
+* The Live Session of the new Ubuntu Desktop installer is not localized. It is still possible to perform a non-English installation using the new installer, but Internet access at install time is required to download the language packs. Should this be an issue use the legacy installer images. ([LP: #2013329](https://bugs.launchpad.net/ubuntu-release-notes/+bug/2013329))
 
 ### Linux kernel
 
@@ -439,6 +440,7 @@ As is to be expected, with any release, there are some significant known bugs th
 ### Ubuntu Server
 
 - In some situations, it is acceptable to proceed with an offline install when the mirror is inaccessible. In this scenario, it is advised to use:
+
 ```
 apt:
   fallback: offline-install
