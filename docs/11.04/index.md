@@ -324,35 +324,35 @@ For further information on upgrading to 10.10,  please see the instructions in:
 (11-04-boot-installation-and-post-install)=
 ### Boot, installation and post-install
 
-* There is a problem creating a bootable 10.04.2 or earlier USB image from Ubuntu 10.10 or 11.04 system.  Booting from the USB can be made to work, but using the workaround of typing "help" and pressing Return. (Bug:645818)
+* There is a problem creating a bootable 10.04.2 or earlier USB image from Ubuntu 10.10 or 11.04 system.  Booting from the USB can be made to work, but using the workaround of typing "help" and pressing Return. (Bug: [645818](https://bugs.launchpad.net/bugs/645818))
 
-* The swap partition appears become unusable during some installations (UUID not set).   This issue is under investigation. (Bug:709363)
+* The swap partition appears become unusable during some installations (UUID not set).   This issue is under investigation. (Bug: [709363](https://bugs.launchpad.net/bugs/709363))
 
-* The return_to_partitioning function executes and returns as normal, but seemingly fails to properly clean up after partman-commit and initialize `partman`. (Bug:740903)
+* The return_to_partitioning function executes and returns as normal, but seemingly fails to properly clean up after partman-commit and initialize `partman`. (Bug: [740903](https://bugs.launchpad.net/bugs/740903))
 
-* During boot, on the cryptsetup passphrase prompt, every character typed causes a repeat of the prompt. (Bug:566818)
+* During boot, on the cryptsetup passphrase prompt, every character typed causes a repeat of the prompt. (Bug: [566818](https://bugs.launchpad.net/bugs/566818))
 
-* When making the keyboard layout selection from Ubiquity, cannot get the right selection. (Bug:656777)
+* When making the keyboard layout selection from Ubiquity, cannot get the right selection. (Bug: [656777](https://bugs.launchpad.net/bugs/656777))
 
-* After selecting "Continue testing" rather than "restart now" there is no GUI option to do the restart. (Bug:657086)
+* After selecting "Continue testing" rather than "restart now" there is no GUI option to do the restart. (Bug: [657086](https://bugs.launchpad.net/bugs/657086))
 
 * There are some cosmetic effects that need cleaning up on the installation slideshow (Bug:529201, Bug:628159) and some translations are missing (Bug:644736, Bug:758739).
 
-* Some systems installed with the root filesystem on an iSCSI disk fail to boot, although this is not reproducible in all cases. (Bug:728088)
+* Some systems installed with the root filesystem on an iSCSI disk fail to boot, although this is not reproducible in all cases. (Bug: [728088](https://bugs.launchpad.net/bugs/728088))
 
-* The system occasionally fails to reboot after completing the installation and clicking 'Reboot Now'. (Bug:712654)
+* The system occasionally fails to reboot after completing the installation and clicking 'Reboot Now'. (Bug: [712654](https://bugs.launchpad.net/bugs/712654))
 
-* When installing the amd64+mac version, please do not use LVM.  Also avoid using multiple linux instances at this time. (Bug:745960)
+* When installing the amd64+mac version, please do not use LVM.  Also avoid using multiple linux instances at this time. (Bug: [745960](https://bugs.launchpad.net/bugs/745960))
 
-* Keyboard preseeding that worked in previous versions of Ubuntu no longer works.  Instead of `console-setup/layoutcode`, `console-setup/variantcode`, `console-setup/modelcode`, and `console-setup/optionscode`, you need to preseed `keyboard-configuration/layoutcode`, `keyboard-configuration/variantcode`, `keyboard-configuration/modelcode`, and `keyboard-configuration/optionscode` respectively. (Bug:747854)
+* Keyboard preseeding that worked in previous versions of Ubuntu no longer works.  Instead of `console-setup/layoutcode`, `console-setup/variantcode`, `console-setup/modelcode`, and `console-setup/optionscode`, you need to preseed `keyboard-configuration/layoutcode`, `keyboard-configuration/variantcode`, `keyboard-configuration/modelcode`, and `keyboard-configuration/optionscode` respectively. (Bug: [747854](https://bugs.launchpad.net/bugs/747854))
 
-* Selecting "Configure encrypted volumes" in the alternate/server installer initialises encrypted volumes from scratch, and will destroy any encrypted data that was previously present.  There is no way to reuse an existing encrypted volume at installation time at the moment, although we do consider this a bug that will be fixed in a future release. (Bug:420080)
+* Selecting "Configure encrypted volumes" in the alternate/server installer initialises encrypted volumes from scratch, and will destroy any encrypted data that was previously present.  There is no way to reuse an existing encrypted volume at installation time at the moment, although we do consider this a bug that will be fixed in a future release. (Bug: [420080](https://bugs.launchpad.net/bugs/420080))
 
-* Some users booting machines from the network using PXE, and using the `LOCALBOOT` facility in `Syslinux` to hand off to a local hard disk, found that there was no argument that would successfully cause a local boot.  `Syslinux` provides a `chain.c32` COM32 image which is less reliant on PXE BIOS implementation details. (Bug:625383)
+* Some users booting machines from the network using PXE, and using the `LOCALBOOT` facility in `Syslinux` to hand off to a local hard disk, found that there was no argument that would successfully cause a local boot.  `Syslinux` provides a `chain.c32` COM32 image which is less reliant on PXE BIOS implementation details. (Bug: [625383](https://bugs.launchpad.net/bugs/625383))
 
-* Even if no Internet access is available during installation, the desktop CD installer offers checkboxes to install third-party software and software updates.  These options may not work properly without Internet access. (Bug:651932)
+* Even if no Internet access is available during installation, the desktop CD installer offers checkboxes to install third-party software and software updates.  These options may not work properly without Internet access. (Bug: [651932](https://bugs.launchpad.net/bugs/651932))
 
-* The manual mount point entry box in the desktop installer's partitioner does not accept keyboard input.  The drop-down still works, so various standard mount points may be selected, and copying and pasting within the entry box also works.  This was noticed too late to be corrected for 11.04.  In the meantime, you can mount partitions manually later, use copy-and-paste, or use the alternate install CD. (Bug:769043)
+* The manual mount point entry box in the desktop installer's partitioner does not accept keyboard input.  The drop-down still works, so various standard mount points may be selected, and copying and pasting within the entry box also works.  This was noticed too late to be corrected for 11.04.  In the meantime, you can mount partitions manually later, use copy-and-paste, or use the alternate install CD. (Bug: [769043](https://bugs.launchpad.net/bugs/769043))
 
 
 (11-04-btrfs)=
@@ -362,19 +362,19 @@ The btrfs filesystem is considered experimental in this release.  It can general
 
 * As the [btrfs wiki](http://btrfs.wiki.kernel.org/) notes: "Note that Btrfs does not yet have a `fsck` tool that can fix errors. While Btrfs is stable on a stable machine, it is currently possible to corrupt a filesystem irrecoverably if your machine crashes or loses power on disks that don't handle flush requests correctly. This will be fixed when the `fsck` tool is ready."
 
-* Crash trying to install over btrfs partition in live installer. (Bug:759503)
+* Crash trying to install over btrfs partition in live installer. (Bug: [759503](https://bugs.launchpad.net/bugs/759503))
 
-* GRUB cannot detect a btrfs installation within an encrypted disk, and fails to set up the correct kernel parameters. (Bug:757631)
+* GRUB cannot detect a btrfs installation within an encrypted disk, and fails to set up the correct kernel parameters. (Bug: [757631](https://bugs.launchpad.net/bugs/757631))
 
-* Other installations of Ubuntu on btrfs will not be detected or added to the boot menu. (Bug:764893)
+* Other installations of Ubuntu on btrfs will not be detected or added to the boot menu. (Bug: [764893](https://bugs.launchpad.net/bugs/764893))
 
-* If btrfs is used for `/boot`, then the gap between the start of the disk and the first partition must be more than the traditional 63 sectors.  A good modern default is 1 MiB. (Bug:774217)
+* If btrfs is used for `/boot`, then the gap between the start of the disk and the first partition must be more than the traditional 63 sectors.  A good modern default is 1 MiB. (Bug: [774217](https://bugs.launchpad.net/bugs/774217))
 
 
 (11-04-upgrades-from-ubuntu-10-10)=
 ### Upgrades from Ubuntu 10.10
 
-* In some cases (particularly if different kernel parameters from the default are in use), upgrades from Ubuntu 10.10 may prompt to resolve conflicts in the `/etc/default/grub` configuration file even when it has not been manually changed.  Performing a three-way merge should normally be sufficient if presented with this prompt, although you should check afterwards to ensure that `/etc/default/grub` still looks correct. (Bug:759545)
+* In some cases (particularly if different kernel parameters from the default are in use), upgrades from Ubuntu 10.10 may prompt to resolve conflicts in the `/etc/default/grub` configuration file even when it has not been manually changed.  Performing a three-way merge should normally be sufficient if presented with this prompt, although you should check afterwards to ensure that `/etc/default/grub` still looks correct. (Bug: [759545](https://bugs.launchpad.net/bugs/759545))
 
 If you have manually installed a PAE kernel (for example to make use of >4GB of RAM) *and* you have also installed the proprietary NVidia drivers, you will have to manually install the package `linux-headers-generic-pae` after the upgrade has completed but before rebooting. Failure to do so will result in a system that freezes at boot. If you do forget to install this package before rebooting, select the "recovery" option from the boot menu to allow you to install this package using `apt-get install linux-headers-generic-pae`. See bug Bug:772226.
 
@@ -382,7 +382,7 @@ If you have manually installed a PAE kernel (for example to make use of >4GB of 
 (downgrades-to-ubuntu-11-04)=
 ### Downgrades to Ubuntu 11.04
 
-* If you insert a bootable disk with Ubuntu 11.04 in a system running 11.10 and proceed through the installation process you will be presented with an option to "Upgrade from 11.10 to 11.04".  This option should not have appeared in the installer and it is not a recommended nor supported way to switch from a newer release of Ubuntu to an older one.  Additionally, doing this for a system that was running 11.10 will result a non-working system. (Bug:891711)
+* If you insert a bootable disk with Ubuntu 11.04 in a system running 11.10 and proceed through the installation process you will be presented with an option to "Upgrade from 11.10 to 11.04".  This option should not have appeared in the installer and it is not a recommended nor supported way to switch from a newer release of Ubuntu to an older one.  Additionally, doing this for a system that was running 11.10 will result a non-working system. (Bug: [891711](https://bugs.launchpad.net/bugs/891711))
 
 
 (11-04-graphics-and-display)=
@@ -390,49 +390,49 @@ If you have manually installed a PAE kernel (for example to make use of >4GB of 
 
 * The -nouveau video driver has had an ABI change but lacked a version number increment.  Following Debian we're versioning it as 'libdrm-nouveau1a'.  Be aware this can cause difficulties in upgrading/downgrading from PPAs that include libdrm packages.
 
-* The NVidia-graphics-driver on 8600 GTS cards needs "NoPowerConnectorCheck" option to work. (Bug:522588)
+* The NVidia-graphics-driver on 8600 GTS cards needs "NoPowerConnectorCheck" option to work. (Bug: [522588](https://bugs.launchpad.net/bugs/522588))
 
 Video error `[drm:radeon_ttm_backend_bind] *ERROR* failed to bind 1772 pages` during installation (Bug:557261 and Bug:656486)
 
-* On certain systems, a bad interaction between Unity, the GL driver and the kernel may cause the system to freeze. (Bug:740126)
+* On certain systems, a bad interaction between Unity, the GL driver and the kernel may cause the system to freeze. (Bug: [740126](https://bugs.launchpad.net/bugs/740126))
 
-* On certain systems, the display may be corrupted after switching resolutions or connecting to an external display under Unity (Bug:753971)
+* On certain systems, the display may be corrupted after switching resolutions or connecting to an external display under Unity (Bug: [753971](https://bugs.launchpad.net/bugs/753971))
 
-* Under certain conditions, on systems equipped with nvidia GPUs, focused or maximized windows may be blank. (Bug:763680)
+* Under certain conditions, on systems equipped with nvidia GPUs, focused or maximized windows may be blank. (Bug: [763680](https://bugs.launchpad.net/bugs/763680))
 
-* Certain applications like Chromium, `XChat` or Opera may expose rendering artifacts. (Bug:753369)
+* Certain applications like Chromium, `XChat` or Opera may expose rendering artifacts. (Bug: [753369](https://bugs.launchpad.net/bugs/753369))
 
 
 (11-04-desktop)=
 ### Desktop
 
-* Nautilus keeps opening when ubuntu one plugin is installed. (Bug:674876)
+* Nautilus keeps opening when ubuntu one plugin is installed. (Bug: [674876](https://bugs.launchpad.net/bugs/674876))
 
-* When starting the live session on a system without 3D support, the GNOME panel is not displayed. As a workaround, you can press Alt+F2 and run `gnome-panel --replace`. On installed systems you should pick the "Ubuntu Classic (No effects)" session in the login manager. (Bug:711378)
+* When starting the live session on a system without 3D support, the GNOME panel is not displayed. As a workaround, you can press Alt+F2 and run `gnome-panel --replace`. On installed systems you should pick the "Ubuntu Classic (No effects)" session in the login manager. (Bug: [711378](https://bugs.launchpad.net/bugs/711378))
 
-* When switching between windows, Orca does not speak the title of the focused window. (Bug:724093)
+* When switching between windows, Orca does not speak the title of the focused window. (Bug: [724093](https://bugs.launchpad.net/bugs/724093))
 
-* In the classic session gnome-panel sometimes fails to load applets. (Bug:716714)
+* In the classic session gnome-panel sometimes fails to load applets. (Bug: [716714](https://bugs.launchpad.net/bugs/716714))
 
-* On ARM images, the Unity 2D version crashes on various occasions. (Bug:739386)
+* On ARM images, the Unity 2D version crashes on various occasions. (Bug: [739386](https://bugs.launchpad.net/bugs/739386))
 
-* Unity may not behave correctly if DRI settings are present in ~/.drirc (Bug:745996)
+* Unity may not behave correctly if DRI settings are present in ~/.drirc (Bug: [745996](https://bugs.launchpad.net/bugs/745996))
 
-* Unity does not yet fully support focus-follows-mouse/sloppy-focus/point-to-click. Enabling this feature may cause unexpected behavior (Bug:674138)
+* Unity does not yet fully support focus-follows-mouse/sloppy-focus/point-to-click. Enabling this feature may cause unexpected behavior (Bug: [674138](https://bugs.launchpad.net/bugs/674138))
 
-* The search feature in Unity does not support ibus input (Bug:66377) or dead keys (Bug:746761); search results in CJK locales are not supported either (Bug:745243) - Those limitations will be addressed in an upcoming update ([3.8.14](https://launchpad.net/unity/+milestone/3.8.14)) and will be proposed as SRUs
+* The search feature in Unity does not support ibus input (Bug: [66377](https://bugs.launchpad.net/bugs/66377)) or dead keys (Bug: [746761](https://bugs.launchpad.net/bugs/746761)); search results in CJK locales are not supported either (Bug: [745243](https://bugs.launchpad.net/bugs/745243)) - Those limitations will be addressed in an upcoming update ([3.8.14](https://launchpad.net/unity/+milestone/3.8.14)) and will be proposed as SRUs
 
-* Libreoffice has no minimize/maximize/close buttons. (Bug:728927) - An SRU should fix this issue shortly
+* Libreoffice has no minimize/maximize/close buttons. (Bug: [728927](https://bugs.launchpad.net/bugs/728927)) - An SRU should fix this issue shortly
 
-* 3rd party lenses may not start correctly at startup. (Bug:758839) - A workaround is to restart Unity with unity --replace, while a fix is proposed in an SRU
+* 3rd party lenses may not start correctly at startup. (Bug: [758839](https://bugs.launchpad.net/bugs/758839)) - A workaround is to restart Unity with unity --replace, while a fix is proposed in an SRU
 
-* In some cases, the SUPER+1..9 shortcuts don't work. (Bug:768076) - As a workaround, start a terminal with CTRL+ALT+T to fix the problem
+* In some cases, the SUPER+1..9 shortcuts don't work. (Bug: [768076](https://bugs.launchpad.net/bugs/768076)) - As a workaround, start a terminal with CTRL+ALT+T to fix the problem
 
-* The Dash window may incorrectly appear under a fullscreen window. (Bug:763680)
+* The Dash window may incorrectly appear under a fullscreen window. (Bug: [763680](https://bugs.launchpad.net/bugs/763680))
 
-* Sometimes, the icons of applications authorized to use the legacy systray protocol may appear under the panel. (Bug:753369)
+* Sometimes, the icons of applications authorized to use the legacy systray protocol may appear under the panel. (Bug: [753369](https://bugs.launchpad.net/bugs/753369))
 
-* The "stracciatella GNOME session" uses the new small scrollbars instead of the standard GNOME ones. (Bug:766660)
+* The "stracciatella GNOME session" uses the new small scrollbars instead of the standard GNOME ones. (Bug: [766660](https://bugs.launchpad.net/bugs/766660))
 
 * The new [`Ayatana Scrollbars`](https://wiki.ubuntu.com/Ayatana/ScrollBars) are now enabled by default. Certain applications however are blocklisted, see [wiki.ubuntu.com/Ayatana/ScrollBars`#Blacklist`](https://wiki.ubuntu.com/Ayatana/ScrollBars#Blacklist)
 
@@ -444,9 +444,9 @@ In general, the recommended HW configuration for running Unity is available at: 
 
 * The -synaptics driver has received a new acceleration mechanism.  Trackpad users may notice a significant decrease (or increase) in acceleration as a result.  We are investigating configuration options for this new behavior.
 
-* The -evdev driver no longer provides middle mouse button emulation.  2-button mice that need this functionality are quite rare these days.  The emulation mode causes a laggy pointer in cases where emulation is not needed, so this change improves responsiveness for all users.  If you have a 2-button mouse that needs this, please see the directions for [creating a 2-button mouse quirk](https://wiki.ubuntu.com/X/Quirks#2-button%20Mice). (Bug:710762)
+* The -evdev driver no longer provides middle mouse button emulation.  2-button mice that need this functionality are quite rare these days.  The emulation mode causes a laggy pointer in cases where emulation is not needed, so this change improves responsiveness for all users.  If you have a 2-button mouse that needs this, please see the directions for [creating a 2-button mouse quirk](https://wiki.ubuntu.com/X/Quirks#2-button%20Mice). (Bug: [710762](https://bugs.launchpad.net/bugs/710762))
 
-* Trackpads now have kinetic scrolling. If you flick to perform a scroll, then press a keyboard key while kinetic scroll events are generated, unexpected application behavior may result. (Bug:728643)
+* Trackpads now have kinetic scrolling. If you flick to perform a scroll, then press a keyboard key while kinetic scroll events are generated, unexpected application behavior may result. (Bug: [728643](https://bugs.launchpad.net/bugs/728643))
 
 * The -evtouch driver is not available anymore due to a lack of upstream support. Users are encouraged to switch to the default -evdev driver. Please [file a bug report against the -evdev driver](https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-input-evdev/+filebug) for any broken or missing functionality.
 
@@ -454,93 +454,93 @@ In general, the recommended HW configuration for running Unity is available at: 
 (11-04-linux-kernel)=
 ### Linux kernel
 
-* Toshiba NB305 freezes for 5 minutes after suspend. Workaround: specify "nohz=off highres=off" as kernel parameters at boot. (Bug:508516)
+* Toshiba NB305 freezes for 5 minutes after suspend. Workaround: specify "nohz=off highres=off" as kernel parameters at boot. (Bug: [508516](https://bugs.launchpad.net/bugs/508516))
 
-* ThinkPad BIOS/EC models may have outdated firmware. (Bug:745363)
+* ThinkPad BIOS/EC models may have outdated firmware. (Bug: [745363](https://bugs.launchpad.net/bugs/745363))
 
-* On certain hardware, enabling power saving for the SATA link can cause disk errors and data corruption. (Bug:539467)
+* On certain hardware, enabling power saving for the SATA link can cause disk errors and data corruption. (Bug: [539467](https://bugs.launchpad.net/bugs/539467))
 
-* On amd64/Mac the main physical screen (iMac display) is detected by the OS radeon driver as output eDP-0, name 'Color LCD', and it is connected but not lit. (Bug:542660)
+* On amd64/Mac the main physical screen (iMac display) is detected by the OS radeon driver as output eDP-0, name 'Color LCD', and it is connected but not lit. (Bug: [542660](https://bugs.launchpad.net/bugs/542660))
 
-X will flicker, and will dmesg: `[drm:drm_edid_block_valid] *ERROR* EDID checksum is invalid`.  Intermittently the screen may go dark after one of these flickers.  This can be worked around by `sudo get-edid`. (Bug:712075)
+X will flicker, and will dmesg: `[drm:drm_edid_block_valid] *ERROR* EDID checksum is invalid`.  Intermittently the screen may go dark after one of these flickers.  This can be worked around by `sudo get-edid`. (Bug: [712075](https://bugs.launchpad.net/bugs/712075))
 
-* On 32 bit t1.micro server, instance freezes when installing Sun java. (Bug:634487)
+* On 32 bit t1.micro server, instance freezes when installing Sun java. (Bug: [634487](https://bugs.launchpad.net/bugs/634487))
 
-Screenful of errors like `[drm:radeon_ttm_backend_bind] *ERROR* failed to bind 1772 pages` may be seen during a liveCD restart. (Bug:656486)
+Screenful of errors like `[drm:radeon_ttm_backend_bind] *ERROR* failed to bind 1772 pages` may be seen during a liveCD restart. (Bug: [656486](https://bugs.launchpad.net/bugs/656486))
 
-* Samsung N150 freezes indefinitely after suspend. Workaround: specify "intel_idle.max_cstate=3" as kernel parameter at boot. (Bug:640100)
+* Samsung N150 freezes indefinitely after suspend. Workaround: specify "intel_idle.max_cstate=3" as kernel parameter at boot. (Bug: [640100](https://bugs.launchpad.net/bugs/640100))
 
-* 10-30% increase in power consumption. (Bug:760131)
+* 10-30% increase in power consumption. (Bug: [760131](https://bugs.launchpad.net/bugs/760131))
 
 
 (11-04-ubuntu-software-center)=
 ### Ubuntu Software Center
 
-* When deauthorize my computer is used, the packages are removed but the sources.list entries are not disabled. (Bug:723911)
+* When deauthorize my computer is used, the packages are removed but the sources.list entries are not disabled. (Bug: [723911](https://bugs.launchpad.net/bugs/723911))
 
 
 (11-04-ubuntu-server-2)=
 ### Ubuntu Server
 
-* user prompted to update unmodified grub configuration during Ubuntu server upgrade.  (Bug:759545)
+* user prompted to update unmodified grub configuration during Ubuntu server upgrade.  (Bug: [759545](https://bugs.launchpad.net/bugs/759545))
 
-* Cryptsetup passphrase prompt during boot: every character typed repeats the prompt. (Bug:566818)
+* Cryptsetup passphrase prompt during boot: every character typed repeats the prompt. (Bug: [566818](https://bugs.launchpad.net/bugs/566818))
 
-* If you have set up Apache with an encrypted SSL key, the system will now prompt for the passphrase on the console during boot.  This is different from the behaviour of previous versions which would simply fail to start apache. (Bug:582963)
+* If you have set up Apache with an encrypted SSL key, the system will now prompt for the passphrase on the console during boot.  This is different from the behaviour of previous versions which would simply fail to start apache. (Bug: [582963](https://bugs.launchpad.net/bugs/582963))
 
-* PowerNap does not take recover action in PowerSave mode after powernap-now. (Bug:768598)
+* PowerNap does not take recover action in PowerSave mode after powernap-now. (Bug: [768598](https://bugs.launchpad.net/bugs/768598))
 
 
 (11-04-ubuntu-server-for-uec-and-ec2)=
 ### Ubuntu Server for UEC and EC2
 
-* Installing Java in a 32 bit t1.micro instance will freeze, as a work around you may install Java in a t1.small instance and then resize the instance (see [comment #13](https://bugs.launchpad.net/ubuntu-release-notes/+bug/634487/comments/13) for details).  (Bug:634487)
+* Installing Java in a 32 bit t1.micro instance will freeze, as a work around you may install Java in a t1.small instance and then resize the instance (see [comment #13](https://bugs.launchpad.net/ubuntu-release-notes/+bug/634487/comments/13) for details).  (Bug: [634487](https://bugs.launchpad.net/bugs/634487))
 
-* User prompted for sudo changes on upgrade in ec2/uec image. (Bug:768625)
+* User prompted for sudo changes on upgrade in ec2/uec image. (Bug: [768625](https://bugs.launchpad.net/bugs/768625))
 
 
 (11-04-ubuntu-arm)=
 ### Ubuntu ARM
 
-* Due to a bug in the OMAP4 video driver it can happen that the display loses its sync which results in a black screen. To overcome this state switching tty's (ctrl+alt+F1 and switching back to X with ctrl+alt+F7) helps to get your screen back (Bug:746133)
+* Due to a bug in the OMAP4 video driver it can happen that the display loses its sync which results in a black screen. To overcome this state switching tty's (ctrl+alt+F1 and switching back to X with ctrl+alt+F7) helps to get your screen back (Bug: [746133](https://bugs.launchpad.net/bugs/746133))
 
-* On the OMAP4 `pandaboard` the sound initialization does not work properly due to a race condition between udev  rules and upstart jobs. Calling "`alsaucm` set _verb HiFi" and "sudo `alsactl` store" in a terminal will work around this. An updated alsa-utils package that fixes this issue automatically is being prepared (Bug:746023)
+* On the OMAP4 `pandaboard` the sound initialization does not work properly due to a race condition between udev  rules and upstart jobs. Calling "`alsaucm` set _verb HiFi" and "sudo `alsactl` store" in a terminal will work around this. An updated alsa-utils package that fixes this issue automatically is being prepared (Bug: [746023](https://bugs.launchpad.net/bugs/746023))
 
-* OMAP3 CPUs don't run at full speed by default. While we set the required `mpurate` command line parameter on our images, the values for the different OMAP3 CPUs are not always correct, to work around this you can edit the cmdline in /boot/boot.script and call "sudo flash-kernel", the change will take effect on next reboot (Bug:771537)
+* OMAP3 CPUs don't run at full speed by default. While we set the required `mpurate` command line parameter on our images, the values for the different OMAP3 CPUs are not always correct, to work around this you can edit the cmdline in /boot/boot.script and call "sudo flash-kernel", the change will take effect on next reboot (Bug: [771537](https://bugs.launchpad.net/bugs/771537))
 
-* Libreoffice database packages are currently not installable on ARM systems due to missing architecture support in the package metadata, fixed packages are being prepared in the natty-updates repository (Bug:770627)
+* Libreoffice database packages are currently not installable on ARM systems due to missing architecture support in the package metadata, fixed packages are being prepared in the natty-updates repository (Bug: [770627](https://bugs.launchpad.net/bugs/770627))
 
-* The GCC compiler defaults changed shortly before release for the ARM architecture dropping an option that might cause troubles with some binaries. Packages that are locally rebuilt will build without the shrink-wrap option set. Binaries in the archive that have not been tested prior to release might expose issues due to this option (Bug:736081)
+* The GCC compiler defaults changed shortly before release for the ARM architecture dropping an option that might cause troubles with some binaries. Packages that are locally rebuilt will build without the shrink-wrap option set. Binaries in the archive that have not been tested prior to release might expose issues due to this option (Bug: [736081](https://bugs.launchpad.net/bugs/736081))
 
-* On ARM platforms update-initramfs -c does not update the bootloader. (Bug:701698)
+* On ARM platforms update-initramfs -c does not update the bootloader. (Bug: [701698](https://bugs.launchpad.net/bugs/701698))
 
 
 (11-04-kubuntu-2)=
 ### Kubuntu
 
-* During a Wubi install of Kubuntu the second stage of install after the reboot does not show the progress of the install. The install completes regardless and will reboot into Kubuntu. (Bug:758614)
+* During a Wubi install of Kubuntu the second stage of install after the reboot does not show the progress of the install. The install completes regardless and will reboot into Kubuntu. (Bug: [758614](https://bugs.launchpad.net/bugs/758614))
 
-* When restarting Kubuntu Live CD, in a language other than English, errors may be seen on screen before desktop starts. (Bug:656486)
+* When restarting Kubuntu Live CD, in a language other than English, errors may be seen on screen before desktop starts. (Bug: [656486](https://bugs.launchpad.net/bugs/656486))
 
-* Existing Kubuntu is listed twice in grub boot page after auto-resize install. (Bug:759459)
+* Existing Kubuntu is listed twice in grub boot page after auto-resize install. (Bug: [759459](https://bugs.launchpad.net/bugs/759459))
 
-* After a new user is created in Kubuntu `systemsettings`, they will be prompted to change their password when they log in for the first time.  There is an issue that prevents the new password from being entered.  In order to avoid this problem, the X server needs to be restarted before the new user logs in.  After logout, click on the red logout button on the KDM screen and then click on "Restart X Server". Once the KDM login screen returns, the new user should be able to log in normally. (Bug:641712)
+* After a new user is created in Kubuntu `systemsettings`, they will be prompted to change their password when they log in for the first time.  There is an issue that prevents the new password from being entered.  In order to avoid this problem, the X server needs to be restarted before the new user logs in.  After logout, click on the red logout button on the KDM screen and then click on "Restart X Server". Once the KDM login screen returns, the new user should be able to log in normally. (Bug: [641712](https://bugs.launchpad.net/bugs/641712))
 
-* The kernel may panic when trying to  install over btrfs partition in live installer. (Bug:759503)
+* The kernel may panic when trying to  install over btrfs partition in live installer. (Bug: [759503](https://bugs.launchpad.net/bugs/759503))
 
-* kded4 defunct after suspend (Bug:515138)
+* kded4 defunct after suspend (Bug: [515138](https://bugs.launchpad.net/bugs/515138))
 
 
 (11-04-xubuntu-2)=
 ### Xubuntu
 
-* There is a bug in the "session-menu" plugin in Xfce4. To reboot or shutdown from VirtualBox, you must logout, then reboot or shutdown from GDM. (Bug:711571)
+* There is a bug in the "session-menu" plugin in Xfce4. To reboot or shutdown from VirtualBox, you must logout, then reboot or shutdown from GDM. (Bug: [711571](https://bugs.launchpad.net/bugs/711571))
 
 * When updating Xubuntu 10.10 to 11.04
 
-  * In Xubuntu, update-manager fails to allow upgrade from 10.10, the command `sudo do-release-upgrade` is a workaround (Bug:756763)
+  * In Xubuntu, update-manager fails to allow upgrade from 10.10, the command `sudo do-release-upgrade` is a workaround (Bug: [756763](https://bugs.launchpad.net/bugs/756763))
 
-  * The network-manager icon is missing from indicator area after upgrading to Xubuntu 11.04 (Bug:759608)
+  * The network-manager icon is missing from indicator area after upgrading to Xubuntu 11.04 (Bug: [759608](https://bugs.launchpad.net/bugs/759608))
 
 
 (11-04-edubuntu-2)=
@@ -548,13 +548,13 @@ Screenful of errors like `[drm:radeon_ttm_backend_bind] *ERROR* failed to bind 1
 
 * There is no Edubuntu AMD64+mac image for Edubuntu. Users of Apple hardware should use the 32bit version of Edubuntu.
 
-* A bug in the installer makes the space requirement for Edubuntu to be 14.1GB instead of 6-7GB. (Bug:771401)
+* A bug in the installer makes the space requirement for Edubuntu to be 14.1GB instead of 6-7GB. (Bug: [771401](https://bugs.launchpad.net/bugs/771401))
 
-* When using Edubuntu 11.04 with LTSP, Unity is always the default session even if it wasn't selected at install time. (Bug:770323)
+* When using Edubuntu 11.04 with LTSP, Unity is always the default session even if it wasn't selected at install time. (Bug: [770323](https://bugs.launchpad.net/bugs/770323))
 
-* The custom Edubuntu installer steps (Unity/LTSP selection and package selection) aren't translated. (Bug:771268)
+* The custom Edubuntu installer steps (Unity/LTSP selection and package selection) aren't translated. (Bug: [771268](https://bugs.launchpad.net/bugs/771268))
 
-* The default Edubuntu LTSP environment (including LTSP live) isn't using the system's locale by default. This can be worked around post-installation by setting the "LANGUAGE" parameter to the wanted locale in /var/lib/tftpboot/ltsp/i386/lts.conf (Bug:771270)
+* The default Edubuntu LTSP environment (including LTSP live) isn't using the system's locale by default. This can be worked around post-installation by setting the "LANGUAGE" parameter to the wanted locale in /var/lib/tftpboot/ltsp/i386/lts.conf (Bug: [771270](https://bugs.launchpad.net/bugs/771270))
 
 
 (11-04-ubuntu-studio-2)=
