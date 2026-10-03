@@ -285,6 +285,14 @@ linkcheck_ignore = [
     r"http://psubuntu\.com/.*",
     # 8.04 release notes: archive.canonical.com times out from CI
     r"https?://archive\.canonical\.com/.*",
+    # 11.10 release notes: bot-challenged (timeout / 418) external links
+    r"https?://www\.compiz\.org.*",
+    r"http://www\.freedesktop\.org/.*",
+    r"https?://paste\.ubuntu\.com/.*",
+    # Debian wiki serves a bot challenge page without the expected anchors
+    r"https?://wiki\.debian\.org/.*",
+    # KDE Bugzilla rejects CI runners (403 / unreachable); live for humans
+    r"https://bugs\.kde\.org/.*",
 ]
 
 # A regex list of URLs where anchors are ignored by 'make linkcheck'
