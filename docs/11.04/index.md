@@ -392,7 +392,7 @@ _ If you have manually installed a PAE kernel (for example to make use of >4GB o
 
 * The NVidia-graphics-driver on 8600 GTS cards needs "NoPowerConnectorCheck" option to work. (Bug:522588)
 
-_ Video error "[drm:radeon_ttm_backend_bind] _ERROR* failed to bind 1772 pages" during installation (Bug:557261 and Bug:656486)
+Video error `[drm:radeon_ttm_backend_bind] *ERROR* failed to bind 1772 pages` during installation (Bug:557261 and Bug:656486)
 
 * On certain systems, a bad interaction between Unity, the GL driver and the kernel may cause the system to freeze. (Bug:740126)
 
