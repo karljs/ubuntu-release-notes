@@ -306,7 +306,7 @@ Make sure you read the [OpenStack Charm Release Notes](https://docs.openstack.or
 * separate /boot partition
   * Separate 1GB boot partition in all Ubuntu 23.10 cloud images
   * 6.5 kernel is now the default kernel in all Ubuntu 23.10 images
-* All Minimal images use the new [Minimal Ubuntu cloud seed](https://ubuntu-archive-team.ubuntu.com/seeds/ubuntu.mantic/cloud-minimal). Read more about the qcow2 case below. 
+* All Minimal images use the new Minimal Ubuntu cloud seed `https://ubuntu-archive-team.ubuntu.com/seeds/ubuntu.mantic/cloud-minimal`. Read more about the qcow2 case below. 
 
 #### AWS EC2
 aws: the default volume type is now GP3 instead of GP2. See https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html for more details on the different volume types.
@@ -319,7 +319,7 @@ The main changes after 20230618 are:
 
 * Move to the linux-generic kernel from the linux-kvm kernel.
   * Note this kernel change is *only* for the images on `cloud-images.ubuntu.com`. Partner clouds still use the cloud optimized kernels.
-* Move to using minimal-cloud seed - see [Minimal Ubuntu cloud](https://ubuntu-archive-team.ubuntu.com/seeds/ubuntu.mantic/cloud-minimal).
+* Move to using minimal-cloud seed - see Minimal Ubuntu cloud `https://ubuntu-archive-team.ubuntu.com/seeds/ubuntu.mantic/cloud-minimal`.
 * No longer installing the 'Recommends' packages.
   * This is during image build only and does not affect any subsequent package installations.
 * No initramfs fallback for boot - only initramfsless boot.
@@ -359,9 +359,9 @@ If you notice any unexpected changes or bugs in the minimal images, create a new
 
 ### IBM Z and LinuxONE ![image|32x32](upload://dZM0RRlelqCcZc6RhqJGMW8DMZr.png) 
 
-* Significant update and changes in s390-tools, with the availability of a subset of tools for non-s390x platforms ([LP: #2025578](https://launchpad.net/bugs/2025578), [LP: #2025781](https://launchpad.net/bugs/2025781)), the Rust enablement (and needed vendored crates) ([LP: #2030316](https://launchpad.net/bugs/2030316)) and the inclusion of the 'pem' file in s390-tools-signed package ([LP: #2020469](https://launchpad.net/bugs/2020469)).
+* Significant update and changes in s390-tools, with the availability of a subset of tools for non-s390x platforms ([LP: #2025578](https://launchpad.net/bugs/2025578), [LP: #2025781](https://launchpad.net/bugs/2025781)), the Rust enablement (and needed vendored crates) ([LP: #2030316](https://launchpad.net/bugs/2030316)) and the inclusion of the '`pem`' file in s390-tools-signed package ([LP: #2020469](https://launchpad.net/bugs/2020469)).
 
-* Also updates in the cryptography stack, with openssl-ibmca v2.4.0 and patches on top ([LP: #2027809](https://launchpad.net/bugs/2027809)), libica upgrade to v4.2.2 ([LP: #2027803](https://launchpad.net/bugs/2027803)), openssl-ibmca v2.4.0+ with 'implicit rejection' ([LP: #2003671](https://launchpad.net/bugs/2003671)) and opencryptoki v3.21.0 ([LP: #2026732](https://launchpad.net/bugs/2026732)) with cca token: protected key support ([LP: #2025923](https://launchpad.net/bugs/2025923)), concurrent master key rotation for cca ([LP: #2025926](https://launchpad.net/bugs/2025926)) and ep11 ([LP: #2025917](https://launchpad.net/bugs/2025917)) token and pkcsslotd hardening ([LP: #2025922](https://launchpad.net/bugs/2025922)).
+* Also updates in the cryptography stack, with openssl-ibmca v2.4.0 and patches on top ([LP: #2027809](https://launchpad.net/bugs/2027809)), libica upgrade to v4.2.2 ([LP: #2027803](https://launchpad.net/bugs/2027803)), openssl-ibmca v2.4.0+ with 'implicit rejection' ([LP: #2003671](https://launchpad.net/bugs/2003671)) and opencryptoki v3.21.0 ([LP: #2026732](https://launchpad.net/bugs/2026732)) with cca token: protected key support ([LP: #2025923](https://launchpad.net/bugs/2025923)), concurrent `master key` rotation for cca ([LP: #2025926](https://launchpad.net/bugs/2025926)) and ep11 ([LP: #2025917](https://launchpad.net/bugs/2025917)) token and `pkcsslotd` hardening ([LP: #2025922](https://launchpad.net/bugs/2025922)).
 In addition changed in the area of pkey with support for EP11 API ordinal 6 for secure guests ([LP: #2029390](https://launchpad.net/bugs/2029390)) and the supporting the generation of keys of type PKEY_TYPE_EP11_AES ([LP: #2028937](https://launchpad.net/bugs/2028937)). 
 
 * With KVM/SE environments IBK (item binding keys) secret injection is now supported - on a kernel level ([LP: #2003675](https://launchpad.net/bugs/2003675) and [LP: #2003634](https://launchpad.net/bugs/2003634)) and the s390-tools level ([LP: #2003676](https://launchpad.net/bugs/2003676) and [LP: #2003633](https://launchpad.net/bugs/2003633)), as well as support for AP Bindings in SE Header ([LP: #1983221](https://launchpad.net/bugs/1983221)).
@@ -370,7 +370,7 @@ In addition changed in the area of pkey with support for EP11 API ordinal 6 for 
 
 * Further DASD auto-quiesce support landed in kernel ([LP: #1982370](https://launchpad.net/bugs/1982370)) and s390-tools ([LP: #2025576](https://launchpad.net/bugs/2025576)).
 
-* Finally version bumps of the smc-tools ([LP: #2027825](https://launchpad.net/bugs/2027825)) and qclib ([LP: #2027670](https://launchpad.net/bugs/2027670)) to it's latest versions; libgmp now with s390x SIMD optimizations ([LP: #1926752](https://launchpad.net/bugs/1926752)) and support in gcc to preserve register arguments ([LP: #2025575](https://launchpad.net/bugs/2025575)).
+* Finally version bumps of the smc-tools ([LP: #2027825](https://launchpad.net/bugs/2027825)) and qclib ([LP: #2027670](https://launchpad.net/bugs/2027670)) to it's latest versions; `libgmp` now with s390x SIMD optimizations ([LP: #1926752](https://launchpad.net/bugs/1926752)) and support in gcc to preserve register arguments ([LP: #2025575](https://launchpad.net/bugs/2025575)).
 
 ## Known Issues
 
@@ -386,22 +386,28 @@ As is to be expected with any release, there are some significant known bugs tha
 
 ### Linux kernel
 
-* Some newer servers with BMCs using an Aspeed GPU may appear to hang while booting the installer image when using an attached display or the virtual KVM ([LP: #2042850](https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2042850)). The workaround is to add the `nomodeset` parameter to the kernel command-line. Follow these steps:
+* Some newer servers with BMCs using an Aspeed GPU may appear to freeze while booting the installer image when using an attached display or the virtual KVM ([LP: #2042850](https://bugs.launchpad.net/ubuntu/+source/linux/+bug/2042850)). The workaround is to add the `nomodeset` parameter to the kernel command-line. Follow these steps:
 
 1. At the GRUB boot menu, press `e`
 2. Add `nomodeset` to linux line, like the example below:
+
 ```
 linux /casper/vmlinuz nomodeset ---
 ```
+
 3. Press `Ctrl-x` to continue the boot process
 4. After installation is complete, reboot, use `nomodeset` again, like the example below:
+
 ```
 linux /boot/vmlinuz-6.5.0-10-generic nomodeset root=UUID=c5605a23-05ae-4d9d-b65f-e47ba48b7560 ro
 ```
+
 5. Add `nomodeset` to the GRUB config file, `/etc/default/grub`, like the example below:
+
 ```
 GRUB_CMDLINE_LINUX="nomodeset"
 ```
+
 6. Finally, run `sudo update-grub` to make the change take effect.
 
 ### Ubuntu Desktop
@@ -462,7 +468,7 @@ The work to no longer listen on this port is being tracked @ https://bugs.launch
 
 * With the removal of the `crda` package in 22.04, the method of setting the wifi regulatory domain (editing `/etc/default/crda`) no longer operates. On server images, use the `regulatory-domain` option in the Netplan configuration. On desktop images, append `cfg80211.ieee80211_regdom=GB` (substituting `GB` for the relevant country code) to the kernel command line in the `cmdline.txt` file on the boot partition  ([LP: #1951586](https://launchpad.net/bugs/1951586)).
 
-* With the mantic release kernel, GPIO and PWM controlled fans spin full speed all the time due to a broken patch in the step-wise governor (which is the default fan-speed governor). A patched kernel is available in [ppa:waveform/fan-fix](https://launchpad.net/~waveform/+archive/ubuntu/fan-fix) and the fix should land in the next release of the mantic kernel ([LP: #2041741](https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2041741)).
+* With the mantic release kernel, GPIO and PWM controlled fans spin full speed all the time due to a broken patch in the step-wise governor (which is the default fan-speed governor). A patched kernel is available in ppa:waveform/fan-fix `https://launchpad.net/~waveform/+archive/ubuntu/fan-fix` and the fix should land in the next release of the mantic kernel ([LP: #2041741](https://bugs.launchpad.net/ubuntu/+source/linux-raspi/+bug/2041741)).
 
 ### RISC-V
 
