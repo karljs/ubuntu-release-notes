@@ -48,7 +48,7 @@ You can download ISOs and flashable images from:
 
 [cloud-images.ubuntu.com/daily/server/bionic/current/](http://cloud-images.ubuntu.com/daily/server/bionic/current/) (Ubuntu Cloud Images)
 
-[cdimage.ubuntu.com/netboot/18.04.5/](http://cdimage.ubuntu.com/netboot/18.04.5/) (Ubuntu Netboot)
+[cdimage.ubuntu.com/netboot/18.04/](https://cdimage.ubuntu.com/netboot/18.04/) (Ubuntu Netboot)
 
 [cdimage.ubuntu.com/kubuntu/releases/18.04.5/release/](http://cdimage.ubuntu.com/kubuntu/releases/18.04.5/release/) (Kubuntu)
 
@@ -193,7 +193,7 @@ Ubuntu now allows you to generate a signing key when needed, as you install thir
 (18-04-lts-new-since-17-10)=
 #### New since 17.10
 
-Teaming support with libteam is available in NetworkManager.
+Teaming support with `libteam` is available in NetworkManager.
 
 
 (18-04-lts-new-since-16-04-lts)=
@@ -263,7 +263,7 @@ _ X is the default display server. **Wayland** is provided as a Technical Previe
 
 * The installer offers a **minimal install** option for a basic desktop environment with a web browser and core system utilities. Many official 18.04 desktop flavors are using this new feature too!
 
-* Apps provided by GNOME have been updated to **3.28**. For more details about GNOME 3.28, see their [Release Notes](https://help.gnome.org/misc/release-notes/3.28/).
+* Apps provided by GNOME have been updated to **3.28**. For more details about GNOME 3.28, see their Release Notes `https://help.gnome.org/misc/release-notes/3.28/`.
 
 * **LibreOffice** has been updated to [6.0](https://wiki.documentfoundation.org/ReleaseNotes/6.0).
 
@@ -313,7 +313,7 @@ _ X is the default display server. **Wayland** is provided as a Technical Previe
 
 * Many GNOME apps now have a **Keyboard Shortcuts** popup available in the app menu.
 
-* **gconf** is no longer installed by default since it has long been superseded by gsettings. Note that statistics and preferences for the Aisleriot card games will be reset when upgrading from 16.04 LTS or 16.10. gconf will be removed from the Ubuntu package archives in a future Ubuntu release.
+* **`gconf`** is no longer installed by default since it has long been superseded by gsettings. Note that statistics and preferences for the AisleRiot card games will be reset when upgrading from 16.04 LTS or 16.10. `gconf` will be removed from the Ubuntu package archives in a future Ubuntu release.
 
 _ The **Ubuntu GNOME** flavor has been discontinued. If you are using Ubuntu GNOME, you will be upgraded to Ubuntu. Choose the _Ubuntu* session from the cog on the login screen if you would like the default Ubuntu experience.
 
@@ -394,7 +394,7 @@ See the [Changelog](http://wiki.qemu.org/ChangeLog/2.11) for major changes since
 
 Among many other changes, fixes around [Meltdown/Spectre](https://meltdownattack.com/) are included. Since fully utilizing these mitigations needs more than just an upgrade, it is recommended to read details at the [qemu.org blog post](https://www.qemu.org/2018/02/14/qemu-2-11-1-and-spectre-update/).
 
-QEMU in Ubuntu 18.04 now has rdma support enabled as over the past year much unification in the [rdma-core](https://github.com/linux-rdma/rdma-core) project has occured.
+QEMU in Ubuntu 18.04 now has rdma support enabled as over the past year much unification in the [rdma-core](https://github.com/linux-rdma/rdma-core) project has occurred.
 
 Migrations from former versions are supported just as usual.  When upgrading it is always recommended to [upgrade the machine types](https://wiki.ubuntu.com/QemuKVMMigration#Upgrade_machine_type) allowing guests to fully benefit from all the improvements and fixes of the most recent version.
 
@@ -404,7 +404,7 @@ Migrations from former versions are supported just as usual.  When upgrading it 
 
 **`libvirt`** has been updated to version 4.0. See the upstream [Changelogs](https://libvirt.org/news.html) for details since version 3.6 that was in [Artful](https://wiki.ubuntu.com/ArtfulAardvark/ReleaseNotes).
 
-The packaging now builds libvirt storage drivers as pluggable libraries.  This slims down the installation requirements but some drivers of less general interest will now be found in [universe](https://help.ubuntu.com/community/Repositories/Ubuntu). (ex: gluster, sheepdog, zfs). On the other hand that means that a few formerly integrated features like rbd or zfs now might require you to install the package after upgrade e.g. in this case libvirt-daemon-driver-storage-zfs.
+The packaging now builds libvirt storage drivers as pluggable libraries.  This slims down the installation requirements but some drivers of less general interest will now be found in [universe](https://help.ubuntu.com/community/Repositories/Ubuntu). (ex: gluster, sheepdog, zfs). On the other hand that means that a few formerly integrated features like `rbd` or zfs now might require you to install the package after upgrade e.g. in this case libvirt-daemon-driver-storage-zfs.
 
 
 (18-04-lts-dpdk-17-11-x)=
@@ -430,7 +430,7 @@ Please read the [release notes](http://openvswitch.org/releases/NEWS-2.9.0) for 
 
 In Ubuntu 18.04 **[chrony](https://chrony.tuxfamily.org/)** will replace **`ntpd`** as the recommended server for the NTP protocol.  See the [upstream changelog](https://chrony.tuxfamily.org/news.html) for an overview of recent changes as well as the [FAQ](https://chrony.tuxfamily.org/faq.html) which will help for smooth conversions from NTP.
 
-The [comparison](https://chrony.tuxfamily.org/comparison.html) among ntp servers by the chrony maintainers may interest some users looking to see a high level reason why this change was made.  It does lack the rather new and not yet completely ready [ntpsec](https://www.ntpsec.org/), but otherwise is a fair analysis.
+The [comparison](https://chrony.tuxfamily.org/comparison.html) among `ntp` servers by the chrony maintainers may interest some users looking to see a high level reason why this change was made.  It does lack the rather new and not yet completely ready [ntpsec](https://www.ntpsec.org/), but otherwise is a fair analysis.
 
 For simple time sync needs the base system already comes with [systemd-timesyncd](https://www.freedesktop.org/software/systemd/man/timedatectl.html). Chrony is only needed to act as a time server or if you want the advertised more accurate and efficient syncing.
 
@@ -502,9 +502,9 @@ The version was updated to [2.4b2](https://launchpad.net/maas/2.4). Notable feat
 
 * Add experimental support to configure zfs as the root filesystem.
 
-* Switch to use Chrony instead of ntp.
+* Switch to use Chrony instead of `ntp`.
 
-For more information, please visit the [MAAS website](https://maas.io) or review the [2.4 Release Notes](https://docs.maas.io/devel/en/release-notes).
+For more information, please visit the [MAAS website](https://maas.io) or review the 2.4 Release Notes `https://docs.maas.io/devel/en/release-notes`.
 
 
 (18-04-lts-sssd)=
@@ -516,11 +516,11 @@ The defaults for autofs related configuration settings changed in SSSD 1.14.0 (s
 
 These are the defaults, based on the setting of `ldap_schema`:
 **sssd.conf setting** **xenial default** **bionic default**
-ldap_autofs_map_object_class automountMap nisMap (rfc2307, autofs_provider=ad), otherwise automountMap
-ldap_autofs_map_name ou (rfc2307), automountMapName (rfc2307bis, ipa, ad) nisMapName (rfc2307, autofs_provider=ad), otherwise automountMapName
-ldap_autofs_entry_object_class automount nisObject (rfc2307, autofs_provider=ad), otherwise automount
-ldap_autofs_entry_key cn (rfc2307), automountKey (rfc2307bis, ipa, ad) cn (rfc2307, autofs_provider=ad), otherwise automountKey
-ldap_autofs_entry_value automountInformation nisMapEntry (rfc2307, autofs_provider=ad), otherwise automountInformation
+ldap_autofs_map_object_class `automountMap` `nisMap` (rfc2307, autofs_provider=ad), otherwise `automountMap`
+ldap_autofs_map_name `ou` (rfc2307), automountMapName (rfc2307bis, `ipa`, ad) nisMapName (rfc2307, autofs_provider=ad), otherwise automountMapName
+ldap_autofs_entry_object_class `automount` `nisObject` (rfc2307, autofs_provider=ad), otherwise `automount`
+ldap_autofs_entry_key `cn` (rfc2307), `automountKey` (rfc2307bis, `ipa`, ad) `cn` (rfc2307, autofs_provider=ad), otherwise `automountKey`
+ldap_autofs_entry_value `automountInformation` nisMapEntry (rfc2307, autofs_provider=ad), otherwise `automountInformation`
 
 See [bug #1767886](https://bugs.launchpad.net/ubuntu/+source/sssd/+bug/1767886/comments/3) for details.
 
@@ -578,7 +578,7 @@ landscape-client has been ported to Python 3 and is now available to install on 
 (18-04-lts-s390x-specific-enhancements-since-17-10)=
 #### s390x-specific enhancements (since 17.10)
 
-* improvements for IBM z14,z14 ZR1,LinuxONE Rockhopper II and LinuxONE Emporer II (Bug:1725260) (Bug:1736100)
+* improvements for IBM z14,z14 ZR1,LinuxONE Rockhopper II and LinuxONE Emperor II (Bug:1725260) (Bug:1736100)
 
 * s390-tools major version upgrade to v2.3.0 (Bug:1735447)
 
@@ -600,7 +600,7 @@ landscape-client has been ported to Python 3 and is now available to install on 
 
 * CPACF enhancements and acceleration for AES GCM (Bug:1735438) (Bug:1743750)
 
-* HiperSocket connections enhacements (Bug:1735695)
+* HiperSocket connections enhancements (Bug:1735695)
 
 * parted update for fdasd/vtoc (Bug:1737144)
 
@@ -671,7 +671,7 @@ As is to be expected, with any release, there are some significant known bugs th
 
 * The computer suspends after 20 minutes of inactivity on battery power even if a user is logged in remotely. ([GNOME:gnome-control-center#22](https://gitlab.gnome.org/GNOME/gnome-control-center/issues/22))
 
-* Bluetooth audio devices cannot be used in the Greeter.  This will cause issues for people using the accessibility features such as screenreaders at the login screen.  Once logged in everything should work as expected.
+* Bluetooth audio devices cannot be used in the Greeter.  This will cause issues for people using the accessibility features such as screen readers at the login screen.  Once logged in everything should work as expected.
 
 * Some admin utilities will not work with GNOME on Wayland since the apps have not been adapted to use PolicyKit to only use admin privileges for the specific functions needed. Also, some screenshot and screencast apps and all remote desktop server apps do not currently work on GNOME on Wayland. As a workaround, you can use the default Ubuntu session.
 
@@ -693,7 +693,7 @@ As is to be expected, with any release, there are some significant known bugs th
 
 * Upgrading via the installer (Ubiquity) is deemed not safe due to bugs in apt-clone and so is no longer supported. (Bug:1756862) UIFE - remove ubiquity upgrade option.
 
-* Setting a ulimit may cause segfaults in certain applications, especially those using webkit2gtk. Disabling the ulimit should restore normal functionality.  More information in this Debian news entry: [salsa.debian.org/webkit-team/webkit/blob/wk2/unstable/debian/NEWS](https://salsa.debian.org/webkit-team/webkit/blob/wk2/unstable/debian/NEWS)
+* Setting a `ulimit` may cause segfaults in certain applications, especially those using webkit2gtk. Disabling the `ulimit` should restore normal functionality.  More information in this Debian news entry: [salsa.debian.org/webkit-team/webkit/blob/wk2/unstable/debian/NEWS](https://salsa.debian.org/webkit-team/webkit/blob/wk2/unstable/debian/NEWS)
 
 * The installer can crash, especially noticeable on HiDPI screens where scaling has been applied (Bug:1751252).  The workaround is to boot into the live session, change Settings > Devices > Displays > Scale = 100%, click Apply and proceed with installation by clicking "Install Ubuntu 18.04 LTS".
 
@@ -707,9 +707,9 @@ As is to be expected, with any release, there are some significant known bugs th
 
 * Partitioning step allows to configure LVM across multiple devices without requiring to setup a separate /boot partition. This may lead to failure to install the bootloader at the end of the installation, and failures to boot the resultant installations. (Bug:1680101)
 
-* LVM configuration cannot be removed when volume groups with the same name are found during installation. Partitioner does not support installation when multiple conflicting/identical volume groups have been detected. For example reinstalling Ubuntu with LVM across multiple disk drives that had individual LVM installations of Ubuntu. As a workaround, please format disk drives prior to installation, or from the built in shell provided in the installer. (Bug:1679184)
+* LVM configuration cannot be removed when volume groups with the same name are found during installation. `Partitioner` does not support installation when multiple conflicting/identical volume groups have been detected. For example reinstalling Ubuntu with LVM across multiple disk drives that had individual LVM installations of Ubuntu. As a workaround, please format disk drives prior to installation, or from the built in shell provided in the installer. (Bug:1679184)
 
-* cio_ignore blacklist is no longer active after installation, because not all install-time parameters, like cio_ignore (s390x), are propagated to the installed system. Workaround is to edit /etc/zipl.conf to apply these and re-run sudo zipl to update the IPL. (Bug:1571561)
+* cio_ignore blocklist is no longer active after installation, because not all install-time parameters, like cio_ignore (s390x), are propagated to the installed system. Workaround is to edit /etc/zipl.conf to apply these and re-run sudo zipl to update the IPL. (Bug:1571561)
 
 * Importing ssh keys from GitHub or Launchpad during the installation with the new `subiquity` server installer currently won't work. ([#1766980](https://pad.lv/1766980))
 
@@ -770,7 +770,7 @@ The release notes for the official flavors can be found at the following links:
 
 Your comments, bug reports, patches and suggestions will help fix bugs and improve the quality of future releases. Please [report bugs using the tools provided](http://help.ubuntu.com/community/ReportingBugs).
 
-If you want to help out with bugs, the [Bug Squad](http://wiki.ubuntu.com/BugSquad) is always looking for help.
+If you want to help out with bugs, the Bug Squad `http://wiki.ubuntu.com/BugSquad` is always looking for help.
 
 
 (18-04-lts-participate-in-ubuntu)=

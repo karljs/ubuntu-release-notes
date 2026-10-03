@@ -279,6 +279,10 @@ linkcheck_ignore = [
     r"http://psubuntu\.com/.*",
     # 8.04 release notes: archive.canonical.com times out from CI
     r"https?://archive\.canonical\.com/.*",
+    # 18.04 release notes: bot-challenged (429 / timeout) external links
+    r"https://didrocks\.fr/.*",
+    r"https://git\.samba\.org/.*",
+    r"https://bugzilla\.samba\.org/.*",
 ]
 
 # A regex list of URLs where anchors are ignored by 'make linkcheck'

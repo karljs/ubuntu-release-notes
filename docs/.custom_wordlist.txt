@@ -1286,3 +1286,9 @@ zpwr
 Zstack
 zstd
 Zstd
+Artful's
+Driverless
+GNOME's
+IBMCloud
+livepatches
+ntpsec
