@@ -155,7 +155,7 @@ Printer configuration is now done in the Settings app: Choose _Devices_ and then
 
 _ The **Ubuntu GNOME** flavor has been discontinued. If you are using Ubuntu GNOME, you will be upgraded to Ubuntu. Choose the _Ubuntu* session from the cog on the login screen if you would like the default Ubuntu experience.
 
-_ Install **gnome-session** and choose _GNOME* from the cog on the login screen if you would like to try a more upstream version of GNOME. If you'd like to also install more core apps, install the **vanilla-gnome-desktop** metapackage.
+Install **gnome-session** and choose **GNOME** from the cog on the login screen if you would like to try a more upstream version of GNOME. If you'd like to also install more core apps, install the **vanilla-gnome-desktop** metapackage.
 
 
 (17-10-ubuntu-server)=
