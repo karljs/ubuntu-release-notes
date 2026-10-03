@@ -25,16 +25,16 @@ Images can be downloaded from a location near you.
 You can download ISOs and flashable images from:
 
   * [Ubuntu Desktop and Server for 64-bit x86 (AMD64) ](http://releases.ubuntu.com/20.10/)
-  * [Less Frequently Downloaded Ubuntu Images](http://cdimage.ubuntu.com/ubuntu/releases/20.10/release/)
-  * [Ubuntu Cloud Images](http://cloud-images.ubuntu.com/daily/server/groovy/current/)
-  * [Ubuntu Netboot](http://cdimage.ubuntu.com/netboot/20.10/)
-  * [Lubuntu](http://cdimage.ubuntu.com/lubuntu/releases/20.10/release/)
-  * [Kubuntu](http://cdimage.ubuntu.com/kubuntu/releases/20.10/release/)
-  * [Ubuntu Budgie](http://cdimage.ubuntu.com/ubuntu-budgie/releases/20.10/release/)
-  * [Ubuntu Kylin](http://cdimage.ubuntu.com/ubuntukylin/releases/20.10/release/)
-  * [Ubuntu MATE](http://cdimage.ubuntu.com/ubuntu-mate/releases/20.10/release/)
-  * [Ubuntu Studio](http://cdimage.ubuntu.com/ubuntustudio/releases/20.10/release/)
-  * [Xubuntu](http://cdimage.ubuntu.com/xubuntu/releases/20.10/release/
+  * Less Frequently Downloaded Ubuntu Images `http://cdimage.ubuntu.com/ubuntu/releases/20.10/release/`
+  * Ubuntu Cloud Images `http://cloud-images.ubuntu.com/daily/server/groovy/current/`
+  * Ubuntu Netboot `http://cdimage.ubuntu.com/netboot/20.10/`
+  * Lubuntu `http://cdimage.ubuntu.com/lubuntu/releases/20.10/release/`
+  * Kubuntu `http://cdimage.ubuntu.com/kubuntu/releases/20.10/release/`
+  * Ubuntu Budgie `http://cdimage.ubuntu.com/ubuntu-budgie/releases/20.10/release/`
+  * Ubuntu Kylin `http://cdimage.ubuntu.com/ubuntukylin/releases/20.10/release/`
+  * Ubuntu MATE `http://cdimage.ubuntu.com/ubuntu-mate/releases/20.10/release/`
+  * Ubuntu Studio `http://cdimage.ubuntu.com/ubuntustudio/releases/20.10/release/`
+  * Xubuntu `http://cdimage.ubuntu.com/xubuntu/releases/20.10/release/`
 
 == Upgrading from Ubuntu 20.04 ==
 
@@ -84,7 +84,7 @@ Ubuntu 20.10 includes the __5.8__ Linux kernel. This includes numerous updates a
 
 ## Toolchain Upgrades 🛠️
 
-Ubuntu 20.10 comes with refreshed state-of-the-art toolchain including new upstream releases of glibc 2.32, ☕ OpenJDK 11, rustc 1.41, GCC 10, LLVM 11, 🐍 Python 3.8.6, 💎 ruby 2.7.0, php 7.4.9, 🐪 perl 5.30, golang 1.13.
+Ubuntu 20.10 comes with refreshed state-of-the-art toolchain including new upstream releases of glibc 2.32, ☕ OpenJDK 11, rustc 1.41, GCC 10, LLVM 11, 🐍 Python 3.8.6, 💎 ruby 2.7.0, `php` 7.4.9, 🐪 `perl` 5.30, golang 1.13.
 
 ## Security Improvements 🔒
 
@@ -113,17 +113,17 @@ Ubuntu 20.10 includes the latest version of GNOME, version 3.38, with an enhance
 
 ### Noteworthy changes
  * squid: the NIS basic authentication helper was removed ([LP: #1895694](https://bugs.launchpad.net/ubuntu/+source/squid/+bug/1895694))
- * adcli and realmd: many upstream fixes were applied to these packages, improving on the compatibility with current Active Directory changes
+ * `adcli` and realmd: many upstream fixes were applied to these packages, improving on the compatibility with current Active Directory changes
  * [samba 4.12](https://www.samba.org/samba/history/samba-4.12.0.html) has switched to GnuTLS for most of its cryptographic operations and that has a huge performance improvement in SMB3 encryption
 * QEMU was updated to the 5.0 release. See the upstream [changes](https://wiki.qemu.org/ChangeLog/5.0) for an overview of the many improvements.
-  * One noteworthy new feature is [virtiofs](https://www.qemu.org/docs/master/interop/virtiofsd.html) which allows better sharing of host file systems to the guest compared to the older [9p fs](https://www.kernel.org/doc/Documentation/filesystems/9p.txt) based approach.
+  * One noteworthy new feature is virtiofs `https://www.qemu.org/docs/master/interop/virtiofsd.html` which allows better sharing of host file systems to the guest compared to the older [9p `fs`](https://www.kernel.org/doc/Documentation/filesystems/9p.txt) based approach.
 * Libvirt has been updated to version 6.6. See the upstream [Changelogs](https://libvirt.org/news.html) for the many improvements and fixes since version 6.0 that was in [Focal](https://wiki.ubuntu.com/FocalFossa/ReleaseNotes#Ubuntu_Server).
   * Libvirt 6.6 also supports the new [virtiofs](https://libvirt.org/kbase/virtiofs.html) that was mentioned in the QEMU section above.
 * Dovecot’s mail-stack-delivery transitional package was deprecated in focal, and dropped entirely in groovy. (LP: #1771524, #1876564)
-  * Dovecot itself is updated from focal’s 2.3.7 to 2.3.11.  This adds SSL/STARTTLS support for proxied doveadm connections, IMAP transaction batching, enhanced event reporting, and numerous other fixes.  Postfix socketmap support is dropped.  See https://dovecot.org/doc/NEWS for the full list of changes.
-* [liburing](https://github.com/axboe/liburing) support has been added. This is a new mechanism for asynchronous I/O in the linux kernel. For the time being, we have qemu and samba using this support.
-  * Samba added uring support in the [4.12.0 release](https://wiki.samba.org/index.php/Samba_4.12_Features_added/changed#.27io_uring.27_vfs_module) in the form of a VFS module. It’s part of the samba-vfs-modules package.
-  * Qemu added uring support in the [5.0 release](https://wiki.qemu.org/ChangeLog/5.0#Block_device_backends_and_tools), it can be used with the file-posix driver like aio=io_uring.
+  * Dovecot itself is updated from focal’s 2.3.7 to 2.3.11.  This adds SSL/STARTTLS support for proxied doveadm connections, IMAP transaction batching, enhanced event reporting, and numerous other fixes.  Postfix `socketmap` support is dropped.  See `https://dovecot.org/doc/NEWS` for the full list of changes.
+* [`liburing`](https://github.com/axboe/liburing) support has been added. This is a new mechanism for asynchronous I/O in the linux kernel. For the time being, we have qemu and samba using this support.
+  * Samba added `uring` support in the [4.12.0 release](https://wiki.samba.org/index.php/Samba_4.12_Features_added/changed#.27io_uring.27_vfs_module) in the form of a VFS module. It’s part of the samba-vfs-modules package.
+  * Qemu added `uring` support in the [5.0 release](https://wiki.qemu.org/ChangeLog/5.0#Block_device_backends_and_tools), it can be used with the file-posix driver like aio=io_uring.
 * Groovy introduces the [telegraf](https://www.influxdata.com/time-series-platform/telegraf/) [package](https://launchpad.net/ubuntu/groovy/+source/telegraf), part of a well known logging, monitoring, and alerting stack (LMA). Together with [prometheus](https://prometheus.io/), [prometheus alert-manager](https://prometheus.io/docs/alerting/latest/alertmanager/), and [grafana](https://grafana.com/), this trio forms the basis of a strong and reliable monitoring and alerting solution that can be deployed on Ubuntu systems.
   * Grafana: feature rich metrics dashboard and graph editor, available as a snap at https://snapcraft.io/grafana
   * Prometheus and alert manager: monitoring system and time series database, available as both a snap at https://snapcraft.io/prometheus and as a deb package in Groovy
@@ -203,7 +203,7 @@ IBM Z and LinuxONE / s390x-specific enhancements since 20.04 (partially not limi
 
  * Enhancements of the hardware assisted compression support, especially DEFLATE ([LP: #1884514](https://bugs.launchpad.net/bugs/1884514)) and NXU exploitation.
 
- * Further s390x-related packages updates: s390-tools 2.14 ([LP: #1884721](https://bugs.launchpad.net/bugs/1884721)), smc-tools 1.3.0 ([LP: #1884508](https://bugs.launchpad.net/bugs/1884508)), libdfp 1.0.15 ([LP: #1887900](https://bugs.launchpad.net/bugs/1887900)), perftest 4.0-29 ([LP: #1888377](https://bugs.launchpad.net/bugs/1888377)), pacemaker fence agent for LPARs ([LP: #1889070](https://bugs.launchpad.net/bugs/1889070)) and OpenBlas 0.3.10 with optimizations ([LP: #1884519](https://bugs.launchpad.net/bugs/1884519) and [LP: #1893653](https://bugs.launchpad.net/bugs/1893653)).
+ * Further s390x-related packages updates: s390-tools 2.14 ([LP: #1884721](https://bugs.launchpad.net/bugs/1884721)), smc-tools 1.3.0 ([LP: #1884508](https://bugs.launchpad.net/bugs/1884508)), `libdfp` 1.0.15 ([LP: #1887900](https://bugs.launchpad.net/bugs/1887900)), `perftest` 4.0-29 ([LP: #1888377](https://bugs.launchpad.net/bugs/1888377)), pacemaker fence agent for LPARs ([LP: #1889070](https://bugs.launchpad.net/bugs/1889070)) and OpenBlas 0.3.10 with optimizations ([LP: #1884519](https://bugs.launchpad.net/bugs/1884519) and [LP: #1893653](https://bugs.launchpad.net/bugs/1893653)).
 
  * KVM virtualization stack updates and s390x specific modifications: kvm_stat sampling and logging ([LP: #1884784](https://bugs.launchpad.net/bugs/1884784)), transparent CCW IPL from DASD ([LP: #1887935](https://bugs.launchpad.net/bugs/1887935) and [LP: #1887936](https://bugs.launchpad.net/bugs/1887936)), transparent channel path handling for vfio-ccw ([LP: #1887930](https://bugs.launchpad.net/bugs/1887930) and [LP: #1887931](https://bugs.launchpad.net/bugs/1887931)).
 
@@ -226,7 +226,7 @@ As is to be expected, with any release, there are some significant known bugs th
 
  * [LP :#1900722](https://bugs.launchpad.net/ubuntu/+source/ubiquity/+bug/1900722) - Reinstall Ubuntu fails.
  * [LP: #1897224](https://bugs.launchpad.net/ubuntu/+source/snapd/+bug/1897224) - Graphical snaps broken on GNOME Wayland sessions
-* [LP: #1901043](https://bugs.launchpad.net/ubuntu-release-notes/+bug/1901043) - No sound in Try/Install Ubuntu (ubiquity-dm) when "Safe graphics mode" is selected (nomodeset)
+* [LP: #1901043](https://bugs.launchpad.net/ubuntu-release-notes/+bug/1901043) - No sound in Try/Install Ubuntu (ubiquity-dm) when "Safe graphics mode" is selected (`nomodeset`)
 
 ### Ubuntu Server
 
@@ -242,7 +242,7 @@ Nothing yet.
 
 * [LP: #1899962] - On the desktop image, the wrong audio output device is selected on each boot. A workaround is available in the bug report.
 * [LP: #1899953] - Audio output is "crackly". A workaround (tsched=0) is detailed in the bug report.
-* [LP: #1900904] - Auxilliary (e.g. USB attached) ethernet ports will not be automatically configured. A workaround is present in the bug report.
+* [LP: #1900904] - Auxiliary (e.g. USB attached) ethernet ports will not be automatically configured. A workaround is present in the bug report.
 * On the Pi4, we recommend you install the [rpi-eeprom] package with `sudo apt install rpi-eeprom` to keep your boot EEPROM up to date. This is also required if you wish to experiment USB or netboot on this platform. This should be included in the image in future releases.
 * On the Pi Foundation's IO Board for the Compute Module 4, the USB ports are routed to the DWC2 USB2 controller (which is attached to the USB-C port on the Pi 4). This is not in host-mode by default meaning that keyboards (and other devices) will not work. Add the following line to the `config.txt` in order to enable the USB ports on the IO board:
 
