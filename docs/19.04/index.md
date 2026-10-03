@@ -45,25 +45,25 @@ You can download ISOs and flashable images from:
 
 [releases.ubuntu.com/19.04/](http://releases.ubuntu.com/19.04/) (Ubuntu Desktop and Server)
 
-[cdimage.ubuntu.com/ubuntu/releases/19.04/release/](http://cdimage.ubuntu.com/ubuntu/releases/19.04/release/) (Less Popular Ubuntu Images)
+`http://cdimage.ubuntu.com/ubuntu/releases/19.04/release/` (Less Popular Ubuntu Images)
 
-[cloud-images.ubuntu.com/daily/server/disco/current/](http://cloud-images.ubuntu.com/daily/server/disco/current/) (Ubuntu Cloud Images)
+`http://cloud-images.ubuntu.com/daily/server/disco/current/` (Ubuntu Cloud Images)
 
-[cdimage.ubuntu.com/netboot/19.04/](http://cdimage.ubuntu.com/netboot/19.04/) (Ubuntu Netboot)
+`http://cdimage.ubuntu.com/netboot/19.04/` (Ubuntu Netboot)
 
-[cdimage.ubuntu.com/kubuntu/releases/19.04/release/](http://cdimage.ubuntu.com/kubuntu/releases/19.04/release/) (Kubuntu)
+`http://cdimage.ubuntu.com/kubuntu/releases/19.04/release/` (Kubuntu)
 
-[cdimage.ubuntu.com/lubuntu/releases/19.04/release/](http://cdimage.ubuntu.com/lubuntu/releases/19.04/release/) (Lubuntu)
+`http://cdimage.ubuntu.com/lubuntu/releases/19.04/release/` (Lubuntu)
 
-[cdimage.ubuntu.com/ubuntu-budgie/releases/19.04/release/](http://cdimage.ubuntu.com/ubuntu-budgie/releases/19.04/release/) (Ubuntu Budgie)
+`http://cdimage.ubuntu.com/ubuntu-budgie/releases/19.04/release/` (Ubuntu Budgie)
 
-[cdimage.ubuntu.com/ubuntukylin/releases/19.04/release/](http://cdimage.ubuntu.com/ubuntukylin/releases/19.04/release/) (Ubuntu Kylin)
+`http://cdimage.ubuntu.com/ubuntukylin/releases/19.04/release/` (Ubuntu Kylin)
 
-[cdimage.ubuntu.com/ubuntu-mate/releases/19.04/release/](http://cdimage.ubuntu.com/ubuntu-mate/releases/19.04/release/) (Ubuntu MATE)
+`http://cdimage.ubuntu.com/ubuntu-mate/releases/19.04/release/` (Ubuntu MATE)
 
-[cdimage.ubuntu.com/ubuntustudio/releases/19.04/release/](http://cdimage.ubuntu.com/ubuntustudio/releases/19.04/release/) (Ubuntu Studio)
+`http://cdimage.ubuntu.com/ubuntustudio/releases/19.04/release/` (Ubuntu Studio)
 
-[cdimage.ubuntu.com/xubuntu/releases/19.04/release/](http://cdimage.ubuntu.com/xubuntu/releases/19.04/release/) (Xubuntu)
+`http://cdimage.ubuntu.com/xubuntu/releases/19.04/release/` (Xubuntu)
 
 
 (19-04-upgrading-from-ubuntu-18-10)=
@@ -117,13 +117,13 @@ Users of the i386 architecture will not be allowed to upgrade to Ubuntu 19.04 as
 (19-04-linux-kernel)=
 #### Linux kernel 🐧
 
-Ubuntu 19.04 is based on the Linux release series **5.0**. It includes support for AMD Radeon RX Vega M graphics processor, complete support for the Raspberry Pi 3B and the 3B+, Qualcomm Snapdragon 845, many USB 3.2 and Type-C improvements, Intel Cannonlake graphics, significant power-savings improvements, P-State driver support for Skylake X servers, POWER memory protection keys support, KVM support for AMD Secure Encrypted Virtualization, enablement of Shared Memory Communications remote and direct (SMC-R/D), Open for Business (OFB), and zcrypt on IBM Z among with many other improvements since the v4.15 kernel shipped in 18.04 LTS.
+Ubuntu 19.04 is based on the Linux release series **5.0**. It includes support for AMD Radeon RX Vega M graphics processor, complete support for the Raspberry Pi 3B and the 3B+, Qualcomm Snapdragon 845, many USB 3.2 and Type-C improvements, Intel Cannon Lake graphics, significant power-savings improvements, P-State driver support for Skylake X servers, POWER memory protection keys support, KVM support for AMD Secure Encrypted Virtualization, enablement of Shared Memory Communications remote and direct (SMC-R/D), Open for Business (OFB), and zcrypt on IBM Z among with many other improvements since the v4.15 kernel shipped in 18.04 LTS.
 
 
 (19-04-toolchain-upgrades)=
 #### Toolchain Upgrades 🛠️
 
-Ubuntu 19.04 comes with refreshed state-of-the-art toolchain including new upstream releases of glibc 2.29, ☕ OpenJDK 11, boost 1.67, rustc 1.31, and updated GCC 8.3, optional GCC 9, 🐍 Python 3.7.3 as default, 💎 ruby 2.5.5, php 7.2.15, 🐪 perl 5.28.1, golang 1.10.4. There are new improvements on the cross-compilers front as well with POWER and AArch64 toolchain enabled to cross-compile for ARM, S390X and RISCV64 targets.
+Ubuntu 19.04 comes with refreshed state-of-the-art toolchain including new upstream releases of glibc 2.29, ☕ OpenJDK 11, boost 1.67, rustc 1.31, and updated GCC 8.3, optional GCC 9, 🐍 Python 3.7.3 as default, 💎 ruby 2.5.5, `php` 7.2.15, 🐪 `perl` 5.28.1, golang 1.10.4. There are new improvements on the cross-compilers front as well with POWER and AArch64 toolchain enabled to cross-compile for ARM, S390X and RISCV64 targets.
 
 
 
@@ -164,7 +164,7 @@ Ubuntu 19.04 ships with the latest GNOME desktop 3.32.  This brings performance 
 
 * The Yaru theme has seen further refinement and updates and includes a new icon theme.
 
-* Safe Graphics Mode.  A new option is added to the Grub menu which will boot with "NOMODESET" on.  This may help you resolve issues on certain graphics cards and allow you to boot and install any propriatary drivers needed by your system.
+* Safe Graphics Mode.  A new option is added to the Grub menu which will boot with "NOMODESET" on.  This may help you resolve issues on certain graphics cards and allow you to boot and install any proprietary drivers needed by your system.
 
 * The latest releases of Firefox (66.0) and LibreOffice (6.2.2) are available and installed by default.
 
@@ -182,7 +182,7 @@ See the [3.0](http://wiki.qemu.org/ChangeLog/3.0) and [3.1](http://wiki.qemu.org
 
 Migrations from former versions are supported just as usual. When upgrading it is always recommended to [upgrade the machine types](https://wiki.ubuntu.com/QemuKVMMigration#Upgrade_machine_type) allowing guests to fully benefit from all the improvements and fixes of the most recent version.
 
-Qemu now has [virglrenderer](https://virgil3d.github.io/) enabled which allows to create a virtual 3D GPU inside qemu virtual machines. That is inferior to GPU passthrough, but can be handy if the platform used lacks the capability for classic [PCI passthrough](https://www.linux-kvm.org/page/How_to_assign_devices_with_VT-d_in_KVM) as well as more modern [mediated devices](https://www.kernel.org/doc/Documentation/vfio-mediated-device.txt).
+Qemu now has [`virglrenderer`](https://virgil3d.github.io/) enabled which allows to create a virtual 3D GPU inside qemu virtual machines. That is inferior to GPU passthrough, but can be handy if the platform used lacks the capability for classic [PCI passthrough](https://www.linux-kvm.org/page/How_to_assign_devices_with_VT-d_in_KVM) as well as more modern [mediated devices](https://www.kernel.org/doc/Documentation/vfio-mediated-device.txt).
 
 
 (19-04-libvirt)=
@@ -206,7 +206,7 @@ See the [release notes](http://dpdk.org/doc/guides/rel_notes/release_18_11.html)
 (19-04-samba)=
 #### samba
 
-Samba was updated to version 4.10.x, and one of the big changes here is python3 support. In Disco, samba and its dependencies are all python3 only now, with the exception of tdb. tdb still builds a python2 package, namely python-tdb, but all the others, including samba itself, are python3 only.
+Samba was updated to version 4.10.x, and one of the big changes here is python3 support. In Disco, samba and its dependencies are all python3 only now, with the exception of `tdb`. `tdb` still builds a python2 package, namely python-tdb, but all the others, including samba itself, are python3 only.
 
 
 (19-04-open-vm-tools)=
@@ -249,7 +249,7 @@ OpenStack Stein is also provided via the [Ubuntu Cloud Archive](https://wiki.ubu
 
 **WARNING**: Upgrading an OpenStack deployment is a non-trivial process and care should be taken to plan and test upgrade procedures which will be specific to each OpenStack deployment.
 
-Make sure you read the [OpenStack Charm Release Notes](https://docs.openstack.org/charm-guide/latest/19.04.html) for more information about how to deploy Ubuntu OpenStack using Juju.
+Make sure you read the OpenStack Charm Release Notes `https://docs.openstack.org/charm-guide/latest/19.04.html` for more information about how to deploy Ubuntu OpenStack using Juju.
 
 
 (19-04-open-vswitch)=
@@ -284,7 +284,7 @@ Please read the [release notes](http://openvswitch.org/releases/NEWS-2.11.0) for
 
 IBM Z and LinuxONE / s390x-specific enhancements (since 18.10) include:
 
-* Since s390x supports 1M huge pages (as well as 2GB huge pages, if requested) the support for libhugetlbfs (v2.19) was added for native s390x (Bug:1823132) as well as for KVM (Bug:1803315), so that customers running workloads with large memory footprints can benefit from improved memory performance.
+* Since s390x supports 1M huge pages (as well as 2GB huge pages, if requested) the support for `libhugetlbfs` (v2.19) was added for native s390x (Bug:1823132) as well as for KVM (Bug:1803315), so that customers running workloads with large memory footprints can benefit from improved memory performance.
 
 * Now, having the kernel infrastructure (since 4.17) as well as the s390-tool in place, the I/O device auto-configuration feature is ready to use. (Bug:1776631)
 
@@ -310,7 +310,7 @@ IBM Z and LinuxONE / s390x-specific enhancements (since 18.10) include:
 
 * libica upgrade to 3.4.0 came with expanded SHA support (Bug:1803962).
 
-* The upgrade to binutils 2.32 (Bug:1803998), plus patches on top (Bug:1824097), helped to fix instruction changes in z13 abi and provides now partial relro support (Bug:1783294).
+* The upgrade to binutils 2.32 (Bug:1803998), plus patches on top (Bug:1824097), helped to fix instruction changes in z13 abi and provides now partial `relro` support (Bug:1783294).
 
 * Upgrading openssl-ibmca to 2.0.2 (Bug:1804233) fixes a failure in case a libica symbol cannot be resolved.
 
@@ -328,27 +328,27 @@ IBM Z and LinuxONE / s390x-specific enhancements (since 18.10) include:
 
 * The support for TSO (TCP Segmentation Offload) in ipv4 and ipv6 for Layer2 was extended (Bug:1805793).
 
-* efi-lockdown was fixed to restrict debugfs when the kernel is locked down (Bug:1807686).
+* efi-lockdown was fixed to restrict `debugfs` when the kernel is locked down (Bug:1807686).
 
-* Support to allow the protected key AES (paes) module to derive protected keys from clear keys (Bug:1811354).
+* Support to allow the protected key AES (`paes`) module to derive protected keys from clear keys (Bug:1811354).
 
 * DIF and DIF+DIX integrity protection mechanisms in FCP can now be separately configured (Bug:1814537).
 
-* Application can now access new data sets that were created after zdsfs was mounted - without the need to remount zdsfs (Bug:1814538).
+* Application can now access new data sets that were created after `zdsfs` was mounted - without the need to remount `zdsfs` (Bug:1814538).
 
-* Zone awareness changes for lsmem / chmem in util-linux were picked-up (Bug:1814765).
+* Zone awareness changes for `lsmem` / `chmem` in util-linux were picked-up (Bug:1814765).
 
-* qeth performance (OSA and Hipersockets) got improved by general code changes (Bug:1814899) and link speed enhancements were made in kernel (Bug:1814891) and on the tooling side (Bug:1814892) - in preparation for future network hardware.
+* qeth performance (OSA and HiperSockets) got improved by general code changes (Bug:1814899) and link speed enhancements were made in kernel (Bug:1814891) and on the tooling side (Bug:1814892) - in preparation for future network hardware.
 
 * New instruction support was added to binutils, leading to improved performance with that enhanced instruction support (Bug:1815040).
 
-* The new glibc version 2.29 (Bug:1817523) has several minor improvements for s390x, and with that vx and vxe are now marked as important hwcap, to be able to provide differently tuned shared libraries (Bug:1821200).
+* The new glibc version 2.29 (Bug:1817523) has several minor improvements for s390x, and with that `vx` and `vxe` are now marked as important `hwcap`, to be able to provide differently tuned shared libraries (Bug:1821200).
 
 * The upgrade of cryptsetup to 2.1.0 comes with several fixes, like for the on-disk header size calculation for the LUKS2 format (Bug:1814769), (Bug:1815484).
 
 * That said s390-tools were upgraded to 2.8.0.
 
-* And finally support was added for automatic usage of zkey and pervasive encryption by the installer (Bug:1766865). Now when doing an (LPAR or z/VM guest) installation and selecting "Guided - use entire disk and setup encrypted LVM" zkey will be automatically used - in case a CryptoExpress domain is available with a master key set.
+* And finally support was added for automatic usage of zkey and pervasive encryption by the installer (Bug:1766865). Now when doing an (LPAR or z/VM guest) installation and selecting "Guided - use entire disk and setup encrypted LVM" zkey will be automatically used - in case a CryptoExpress domain is available with a `master` key set.
 
 
 (19-04-known-issues)=
@@ -404,7 +404,7 @@ The release notes for the official flavours can be found at the following links:
 
 Your comments, bug reports, patches and suggestions will help fix bugs and improve the quality of future releases. Please [report bugs using the tools provided](http://help.ubuntu.com/community/ReportingBugs).
 
-If you want to help out with bugs, the [Bug Squad](http://wiki.ubuntu.com/BugSquad) is always looking for help.
+If you want to help out with bugs, the Bug Squad `http://wiki.ubuntu.com/BugSquad` is always looking for help.
 
 
 (19-04-participate-in-ubuntu)=
