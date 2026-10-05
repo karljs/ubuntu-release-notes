@@ -8,6 +8,7 @@ Adamina
 Addo
 addrconf
 adduser
+Adebaran
 Adelia
 adl
 adm
@@ -16,6 +17,7 @@ Aggron
 Aitland
 Akando
 Alberts
+Alderlake
 Alessandro
 algo
 algs
@@ -52,6 +54,7 @@ argparse
 artifacting
 Asobo
 asound
+Aspeed
 asure
 asus
 async
@@ -77,6 +80,7 @@ autostart
 autosuspend
 autosync
 autotrim
+aws
 aznfs
 AZs
 backend
@@ -115,6 +119,7 @@ Blueman
 bluetooth
 Bluetooth
 bluez
+BMCs
 Boccassi
 Bolan
 Boldore
@@ -125,6 +130,7 @@ bootable
 bootloader
 Bootspeed
 borks
+Bouchard
 bpftool
 bpftools
 bpftrace
@@ -140,6 +146,7 @@ bugfixes
 buildd
 builtins
 bursty
+busid
 busybox
 bwrap
 byobu
@@ -155,6 +162,7 @@ Caley
 Calix
 Callables
 camelCase
+Cannonlake
 Canonical('s)?
 cardreader
 CA's
@@ -207,6 +215,7 @@ Compiz
 Computrace
 conffile
 conffiles
+configurability
 confiles
 consts
 coredumps
@@ -266,6 +275,7 @@ debconf
 debhelper
 debootstrap
 debsums
+decompressor
 deduplicate
 Deerling
 Delcatty
@@ -279,7 +289,9 @@ dhclient
 dhcpcd
 Diablo
 dialogs
+diataxis
 Dilithium
+Dimgrey
 dirents
 distro
 distros
@@ -346,6 +358,7 @@ fb
 fbdev
 fd
 fdisk
+FDs
 fguid
 Fibocom
 filemanager
@@ -362,6 +375,7 @@ flatpak
 flatpanel's
 flo
 Fluendo
+focal's
 fonts
 forcemirror
 forkserver
@@ -384,8 +398,11 @@ fwpath
 fwupd
 fwupdmgr
 Galera
+gamepads
 gbp
+Gbps
 gcc
+GCE's
 gcrypt
 gdb
 gdctl
@@ -395,6 +412,7 @@ gedit
 Geneve
 Genio
 genprotimg
+Gerdts
 getent
 Ghadi
 Ghostscript
@@ -451,6 +469,7 @@ highbank
 Himmelblaud
 hio
 Hiroyuki
+hirsute's
 hoc
 Homescreen
 Hoppip
@@ -458,6 +477,7 @@ hostnames
 hotplug
 hotplugging
 hotunplug
+howtos
 hstore
 html
 htpasswd
@@ -483,12 +503,14 @@ imager
 imap
 imc
 imjournal
+Impish's
 implicity
 indendent
 Indri
 Infineon
 initializers
 initramfs
+initramfsless
 initrd
 initrdless
 Inkscape
@@ -555,6 +577,7 @@ Kubuntu
 Kuku
 kvm
 kwin
+Kyber
 Kylin
 lagginess
 laggy
@@ -632,6 +655,7 @@ logrotate
 logspam
 LOM's
 lookups
+Loongarch
 losetup
 lowlatency
 lp
@@ -678,6 +702,7 @@ Mellanox
 Membase
 memfd
 memlock
+Memop
 memorytexture
 Merrifield
 metacharacters
@@ -836,6 +861,7 @@ pipewiresrc
 Pitivi
 pkey
 pkgbinarymangler
+plaintext
 plantuml
 plocate
 plucky's
@@ -850,10 +876,12 @@ PNG
 polkit
 Polkit
 pollinate
+pollset
 Popen
 poppler
 Poppler
 portblock
+postcopy
 postinst
 postprocessing
 powerpc
@@ -870,6 +898,7 @@ preseeds
 printks
 procps
 proto
+proxied
 pstore
 pthread
 Ptyxis
@@ -896,6 +925,7 @@ qeth
 qpdf
 qualcomm
 Quantal
+querydata
 quicksettings
 Quokka
 RA
@@ -907,8 +937,11 @@ Rahme
 Ralink
 ramdisk
 RAs
+Raspbian
 raspi
 Ratti
+rclone
+Rclone
 rcu
 rdp
 readonly
@@ -922,6 +955,7 @@ reauth
 redeclare
 reenable
 reexec
+refclock
 regexes
 Reimplement
 reimplementing
@@ -941,11 +975,13 @@ resolvconf
 reStructuredText
 Resync
 retrigger(ing)?
+revalidator
 rfkill
 rhythmbox
 Rightscale
 rmadison
 Rockcraft
+Rocketlake
 Rockhopper
 ROCm
 Romi
@@ -1053,6 +1089,7 @@ sos
 sosreport
 Sottile
 soundwire
+southbridge
 spamassassin
 spamd
 sparsifying
@@ -1060,6 +1097,7 @@ speechsynthesis
 speex
 Sphinx
 Spiana
+Spinlock
 Spread
 spread_test_example
 SRUs
@@ -1083,6 +1121,7 @@ Strongswan
 su
 subarch
 subarchitectures
+subchannels
 subcommands
 subcomponents
 subdirs
@@ -1218,6 +1257,7 @@ unlockDialog
 unminimize
 unmount
 unshare
+upcalls
 upgrader
 upgraders
 upleveled
@@ -1228,6 +1268,7 @@ URIs
 URL
 usbrtl
 userdata
+userfaults
 userland
 userns
 userspace
@@ -1242,6 +1283,7 @@ uucore
 uv
 valgrind
 Valkey
+Vangogh
 vCPUs
 vdec
 vdso
@@ -1278,6 +1320,7 @@ VPNs
 vsftpd
 vSwitch
 vsync
+VTs
 Vulkan
 wacom
 Wacom
@@ -1315,11 +1358,13 @@ Wooper
 wordlist
 wpa
 wpasupplicant
+wrt
 WSLg
 wtpm
 Wubi
 xen
 Xen
+Xena
 xetex
 Xfce
 xfsprogs
@@ -1335,12 +1380,16 @@ Xtrabackup's
 Xubuntu
 xwayland
 xz
+Yakkety
 yaml
 Yaru
 Yoshio
 YouTube
 Zak
 Zaqar
+Zbkb
+Zbkc
+Zbkx
 ZBook
 zcrypt
 zdev
@@ -1350,7 +1399,10 @@ Zicbop
 zimg
 zipl
 zkey
+Zknh
+Zkr
 zlib
+Zmmul
 zpool
 zpwr
 Zstack

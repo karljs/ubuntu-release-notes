@@ -221,6 +221,15 @@ linkcheck_ignore = [
     r"https://discourse\.lubuntu\.me/.*",
     # Mythbuntu: page is live but blocks bots with 403
     r"http://www\.mythbuntu\.org/.*",
+    # Samba sites: page is live but blocks bots with 403
+    r"https://www\.samba\.org/samba/history/.*",
+    r"https://wiki\.samba\.org/index\.php/Samba_4\.12_Features_added/changed.*",
+    # Raspberry Pi docs moved to raspberrypi.com which bot-challenges with 403
+    r"https://www\.raspberrypi\.org/documentation/hardware/raspberrypi/bootmodes/README\.md",
+    # stgt project: redirects to SourceForge directory page which blocks bots with 403
+    r"https?://stgt\.sourceforge\.net/?",
+    # OpenVPN community wiki (Trac): blocks bots with 403
+    r"https://community\.openvpn\.net/openvpn/wiki/ChangesInOpenvpn25",
     r"https://downloads\.apache\.org/.*",
     r"https?://freedesktop\.org/wiki/Software/systemd/.*",
     r"https://www\.freedesktop\.org/.*",
@@ -245,6 +254,8 @@ linkcheck_ignore = [
     r"http://[^\s/]+\.(py|sh|mk|in)$",
     # Servers being migrated right now - ignore for now
     r"https://ubuntukylin\.com/.*",
+    # 18.10 release notes: bot-challenged (567 access-denied wall) external link
+    r"https?://www\.ubuntukylin\.com/news/shownews\.php.*",
     # Dead links in existing content (historical; not worth updating)
     r"https://github\.com/docker-snap/.*",
     r"https://github\.com/ipxe/.*",
@@ -326,6 +337,10 @@ linkcheck_anchors_ignore_for_url = [
     r"https://documentation\.ubuntu\.com/.*",
     # Launchpad bug list anchors use non-standard fragment format
     r"https://launchpad\.net/.*",
+    # Datadog docs restructure anchors between doc versions
+    r"https://docs\.datadoghq\.com/metrics/distributions/.*",
+    # QEMU wiki ChangeLog anchors fail to resolve
+    r"https://wiki\.qemu\.org/.*",
     # External project changelogs with non-stable anchor IDs
     r"https://chrony-project\.org/.*",
     # Dovecot docs restructure anchors between versions
