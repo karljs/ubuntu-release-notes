@@ -116,6 +116,7 @@ bluez
 Boccassi
 Bolan
 Boldore
+Bonjour
 bool
 boolean
 bootable
@@ -284,6 +285,7 @@ docstrings?
 dotnet
 doveadm
 Dovecot's
+downloader
 dpdk
 dpkg
 dput
@@ -745,6 +747,7 @@ numactl
 Numpy
 Nusakan
 Nutanix
+Nuxeo
 nvdimm
 NVDIMM
 NVDIMMs
@@ -864,6 +867,7 @@ QEMU
 qeth
 qpdf
 qualcomm
+Quantal
 quicksettings
 Quokka
 RA

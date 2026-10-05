@@ -285,6 +285,9 @@ linkcheck_ignore = [
     r"http://psubuntu\.com/.*",
     # 8.04 release notes: archive.canonical.com times out from CI
     r"https?://archive\.canonical\.com/.*",
+    # 13.04 release notes: bot-challenged (403 / timeout) external links
+    r"https://launchpad\.net/~gnome3-team/\+archive/gnome3-staging/.*",
+    r"https://code\.google\.com/p/chromium/issues/detail\?id=226002",
     # 11.10 release notes: bot-challenged (timeout / 418) external links
     r"https?://www\.compiz\.org.*",
     r"http://www\.freedesktop\.org/.*",
