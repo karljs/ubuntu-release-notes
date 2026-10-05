@@ -18,6 +18,7 @@
 18.10 (Cosmic Cuttlefish) <18.10/index>
 18.04 LTS (Bionic Beaver) <18.04/index>
 17.10 (Artful Aardvark) <17.10/index>
+17.04 (Zesty Zapus) <17.04/index>
 16.10 (Yakkety Yak) <16.10/index>
 16.04 LTS (Xenial Xerus) <16.04/index>
 15.10 (Wily Werewolf) <15.10/index>

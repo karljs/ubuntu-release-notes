@@ -807,6 +807,7 @@ NVDIMM
 NVDIMMs
 oauth
 objtool
+Ocata
 oem
 OEMs
 Ollama
@@ -1389,6 +1390,7 @@ Yaru
 Yoshio
 YouTube
 Zak
+Zapus
 Zaqar
 Zbkb
 Zbkc
