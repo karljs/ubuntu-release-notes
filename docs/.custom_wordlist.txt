@@ -111,6 +111,7 @@ blackwell
 blkmapd
 blockdev
 blocklisted
+Blueman
 bluetooth
 Bluetooth
 bluez
@@ -128,6 +129,7 @@ bpftool
 bpftools
 bpftrace
 brltty
+Broxton
 Broadcom
 Broadwell
 Brus
@@ -1161,6 +1163,7 @@ traceback
 Trackpad
 Trackpads
 Tragis
+transactionally
 transitionals
 Treecko
 triggerable
