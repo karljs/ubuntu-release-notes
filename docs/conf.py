@@ -333,6 +333,8 @@ linkcheck_anchors_ignore_for_url = [
     r"https://documentation\.ubuntu\.com/.*",
     # Launchpad bug list anchors use non-standard fragment format
     r"https://launchpad\.net/.*",
+    # Datadog docs restructure anchors between doc versions
+    r"https://docs\.datadoghq\.com/metrics/distributions/.*",
     # QEMU wiki ChangeLog anchors fail to resolve
     r"https://wiki\.qemu\.org/.*",
     # External project changelogs with non-stable anchor IDs

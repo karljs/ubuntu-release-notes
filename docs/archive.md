@@ -9,6 +9,7 @@
 23.10 (Mantic Minotaur) <23.10/index>
 23.04 (Lunar Lobster) <23.04/index>
 22.10 (Kinetic Kudu) <22.10/index>
+21.10 (Impish Indri) <21.10/index>
 21.04 (Hirsute Hippo) <21.04/index>
 20.10 (Groovy Gorilla) <20.10/index>
 20.04 LTS (Focal Fossa) <20.04/index>
