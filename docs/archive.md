@@ -9,6 +9,7 @@
 22.10 (Kinetic Kudu) <22.10/index>
 20.04 LTS (Focal Fossa) <20.04/index>
 16.04 LTS (Xenial Xerus) <16.04/index>
+15.04 (Vivid Vervet) <15.04/index>
 14.10 (Utopic Unicorn) <14.10/index>
 14.04 LTS (Trusty Tahr) <14.04/index>
 13.10 (Saucy Salamander) <13.10/index>

@@ -201,6 +201,7 @@ codecs
 codenames
 coex
 coinstallation
+Compiz
 Computrace
 conffile
 conffiles
@@ -243,6 +244,7 @@ Danya
 Darko
 Darra
 Darsha
+Dartlang
 datacenter
 datapath
 Datasafe
@@ -1062,6 +1064,7 @@ statx
 stderr
 stdin
 stdout
+Stencyl
 stracciatella
 strace
 Streetman
