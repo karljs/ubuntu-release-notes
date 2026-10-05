@@ -143,6 +143,7 @@ bugfixes
 buildd
 builtins
 bursty
+busid
 busybox
 bwrap
 byobu
@@ -282,6 +283,7 @@ dhclient
 dhcpcd
 Diablo
 dialogs
+diataxis
 Dilithium
 dirents
 distro
@@ -349,6 +351,7 @@ fb
 fbdev
 fd
 fdisk
+FDs
 fguid
 Fibocom
 filemanager
@@ -387,7 +390,9 @@ fwpath
 fwupd
 fwupdmgr
 Galera
+gamepads
 gbp
+Gbps
 gcc
 gcrypt
 gdb
@@ -461,6 +466,7 @@ hostnames
 hotplug
 hotplugging
 hotunplug
+howtos
 hstore
 html
 htpasswd
@@ -559,6 +565,7 @@ Kubuntu
 Kuku
 kvm
 kwin
+Kyber
 Kylin
 lagginess
 laggy
@@ -856,6 +863,7 @@ PNG
 polkit
 Polkit
 pollinate
+pollset
 Popen
 poppler
 Poppler
@@ -915,6 +923,8 @@ ramdisk
 RAs
 raspi
 Ratti
+rclone
+Rclone
 rcu
 rdp
 readonly
@@ -947,6 +957,7 @@ resolvconf
 reStructuredText
 Resync
 retrigger(ing)?
+revalidator
 rfkill
 rhythmbox
 Rightscale
@@ -1090,6 +1101,7 @@ Strongswan
 su
 subarch
 subarchitectures
+subchannels
 subcommands
 subcomponents
 subdirs
@@ -1348,6 +1360,9 @@ Yoshio
 YouTube
 Zak
 Zaqar
+Zbkb
+Zbkc
+Zbkx
 ZBook
 zcrypt
 zdev
@@ -1357,7 +1372,10 @@ Zicbop
 zimg
 zipl
 zkey
+Zknh
+Zkr
 zlib
+Zmmul
 zpool
 zpwr
 Zstack
