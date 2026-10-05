@@ -307,6 +307,8 @@ linkcheck_ignore = [
     r"http://psubuntu\.com/.*",
     # 8.04 release notes: archive.canonical.com times out from CI
     r"https?://archive\.canonical\.com/.*",
+    # 19.04 release notes: Ubuntu Kylin news server returns non-standard 5xx (567)
+    r"http://www\.ubuntukylin\.com/news/shownews\.php.*",
     # 18.04 release notes: bot-challenged (429 / timeout) external links
     r"https://didrocks\.fr/.*",
     r"https://git\.samba\.org/.*",
@@ -349,6 +351,8 @@ linkcheck_anchors_ignore_for_url = [
     r"https://doc\.dovecot\.org/.*",
     # Raspberry Pi docs restructure anchors
     r"https://www\.raspberrypi\.com/.*",
+    # Libvirt docs restructure domain-element anchors
+    r"https://libvirt\.org/formatdomain\.html.*",
     # Fedora wiki anchors drift between revisions
     r"https://fedoraproject\.org/wiki/How_to_debug_Wayland_problems.*",
     # 14.04 release notes: external doc anchors not present on the page
