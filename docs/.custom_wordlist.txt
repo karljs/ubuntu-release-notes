@@ -1,4 +1,3 @@
-
 Abishag
 accountsservice
 Achaicus
@@ -43,6 +42,7 @@ AppArmor
 appIndicator
 apport
 Apport
+appstore
 APQNs
 APs
 apus
@@ -110,14 +110,17 @@ bittorrent
 blackwell
 blkmapd
 blockdev
+blocklisted
 bluetooth
 Bluetooth
 bluez
 Boccassi
 Bolan
 Boldore
+Bonjour
 bool
 boolean
+bootable
 bootloader
 Bootspeed
 borks
@@ -145,6 +148,7 @@ Caimbrie
 Caitir
 Calaminag
 Calanthe
+Calc
 Caley
 Calix
 Callables
@@ -239,6 +243,7 @@ Danya
 Darko
 Darra
 Darsha
+datacenter
 datapath
 Datasafe
 datasource
@@ -251,6 +256,7 @@ DBus
 dbusMenu
 dbusmock
 dconf
+deauthorize
 debcheckout
 debconf
 debhelper
@@ -267,6 +273,7 @@ devicetree
 devscripts
 dhclient
 dhcpcd
+Diablo
 dialogs
 Dilithium
 dirents
@@ -284,6 +291,7 @@ docstrings?
 dotnet
 doveadm
 Dovecot's
+downloader
 dpdk
 dpkg
 dput
@@ -357,6 +365,7 @@ framepointer
 freefont
 freeipmi
 freeradius
+Freescale
 Freshclam
 frr
 FRRouting
@@ -381,6 +390,8 @@ Genio
 genprotimg
 getent
 Ghadi
+Ghostscript
+Ghostscript's
 github
 GitHub
 gjs
@@ -428,6 +439,7 @@ Heimdal
 helo
 Hetzner
 hibagent
+highbank
 Himmelblaud
 hio
 Hiroyuki
@@ -456,6 +468,7 @@ IDEs
 idmapped
 igc
 Ilya
+iMac
 iMacs
 imager
 imap
@@ -469,6 +482,7 @@ initializers
 initramfs
 initrd
 initrdless
+Inkscape
 inlining
 inode
 intel
@@ -505,6 +519,7 @@ Jetson
 jinkangkang
 journalctl
 journald
+Joyent
 js
 json
 jsonb
@@ -532,6 +547,7 @@ kvm
 kwin
 Kylin
 lagginess
+laggy
 landlock
 landscape
 lang
@@ -591,6 +607,7 @@ libxmlb
 libzdnn
 libzpc
 Lichee
+Linaro
 Linoone
 lintian
 llvm
@@ -629,6 +646,8 @@ Macbook
 Macbooks
 machinectl
 MACs
+maguro
+Maguro
 maintainer's
 makedumpfile
 Makefile
@@ -646,6 +665,7 @@ mdmon
 Mediatek
 Mejina
 Mellanox
+Membase
 memfd
 memlock
 memorytexture
@@ -661,6 +681,7 @@ Mii
 mips
 miscompilation
 misconfiguration
+Mitaka
 mitigations
 Miyoko
 mkdir
@@ -685,6 +706,7 @@ MSBuild
 msr
 mtdpstore
 mtr
+multiarch
 Multipass
 multipath
 multipathd
@@ -736,10 +758,12 @@ nouveau
 Nouveau
 nss
 nullboot
+num
 numactl
 Numpy
 Nusakan
 Nutanix
+Nuxeo
 nvdimm
 NVDIMM
 NVDIMMs
@@ -775,6 +799,7 @@ pagnation
 Panko
 paramiko
 params
+partitioner
 passthrough
 patchlevel
 patchset
@@ -797,6 +822,7 @@ PIDs
 Pimoroni
 pipewire
 pipewiresrc
+Pitivi
 pkey
 pkgbinarymangler
 plantuml
@@ -841,6 +867,7 @@ PulseAudio
 pvimg
 PWAs
 pwd
+px
 pxgsettings
 Pygments
 pygobject
@@ -857,10 +884,12 @@ QEMU
 qeth
 qpdf
 qualcomm
+Quantal
 quicksettings
 Quokka
 RA
 rabbitmqctl
+Rackspace
 Radeon
 radeonsi
 Rahme
@@ -903,6 +932,7 @@ Resync
 retrigger(ing)?
 rfkill
 rhythmbox
+Rightscale
 rmadison
 Rockcraft
 Rockhopper
@@ -947,6 +977,9 @@ sclp
 SCons
 scp
 screencasting
+Screenful
+scrollbar
+scrollbars
 scsi
 sdbm
 sdw
@@ -1017,6 +1050,7 @@ Sphinx
 Spiana
 Spread
 spread_test_example
+SRUs
 Ssdbltrp
 sshd
 ssl
@@ -1028,17 +1062,20 @@ statx
 stderr
 stdin
 stdout
+stracciatella
 strace
 Streetman
 Strix
 Strongswan
 su
 subarch
+subarchitectures
 subcommands
 subcomponents
 subdirs
 subiquity
 Subiquity
+submenus
 subproject
 subprojects
 subscripting
@@ -1069,6 +1106,7 @@ Sysprof
 sysstat
 systemctl
 systemd
+systray
 Tamako
 Tanaka
 Tarako
@@ -1093,6 +1131,7 @@ texlive
 thermald
 Thinkpad
 Thinkplus
+throbber
 thumbnailer
 thumbnailers
 thunderbird
@@ -1116,6 +1155,8 @@ touchpads
 tplg
 TPMs
 traceback
+Trackpad
+Trackpads
 Tragis
 transitionals
 Treecko
@@ -1137,6 +1178,7 @@ udata
 udev
 udevadm
 uevent
+uevents
 ufw
 UIDs
 ukify
@@ -1230,9 +1272,11 @@ walinuxagent
 walreceiver
 wayland
 WCAG
+webapps
 webdav
 webextensions
 webkitgtk
+webpages
 webrick
 wellbeing
 whitepaper
@@ -1293,3 +1337,16 @@ zpwr
 Zstack
 zstd
 Zstd
+Galera
+GNOME's
+Homescreen
+JavaScript
+VGA
+flo
+maguro
+nameserver
+sifr
+toolstack
+trendline
+trendlines
+upleveled
