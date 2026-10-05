@@ -290,6 +290,7 @@ dhcpcd
 Diablo
 dialogs
 diataxis
+Didrocks
 Dilithium
 Dimgrey
 dirents
@@ -567,6 +568,7 @@ keymapper
 keytab
 killswitch
 kmod
+Komeda
 kpartx
 kprobes
 Krackan
@@ -1365,6 +1367,7 @@ Wubi
 xen
 Xen
 Xena
+Xeon
 xetex
 Xfce
 xfsprogs

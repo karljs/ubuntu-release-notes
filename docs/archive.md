@@ -13,6 +13,7 @@
 21.04 (Hirsute Hippo) <21.04/index>
 20.10 (Groovy Gorilla) <20.10/index>
 20.04 LTS (Focal Fossa) <20.04/index>
+19.10 (Eoan Ermine) <19.10/index>
 18.10 (Cosmic Cuttlefish) <18.10/index>
 18.04 LTS (Bionic Beaver) <18.04/index>
 17.10 (Artful Aardvark) <17.10/index>

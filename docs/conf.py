@@ -237,6 +237,8 @@ linkcheck_ignore = [
     # systemd wiki page served with 418 (bot challenge)
     r"https?://freedesktop\.org/wiki/Software/systemd.*",
     r"https://linux-nfs\.org/wiki/.*",
+    r"https://didrocks\.fr/.*",
+    r"https://patchwork\.ozlabs\.org/.*",
     # Flaky host (intermittent connection aborts from CI)
     r"https://www\.xfce\.org/.*",
     # Launchpad: bugs/commits may be private or deleted
