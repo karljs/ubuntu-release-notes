@@ -209,13 +209,20 @@ linkcheck_ignore = [
     r"https://wiki\.ubuntu\.com/.*",
     # Same wiki, bare host and plain http (read timeouts from CI)
     r"https?://wiki\.ubuntu\.com(/.*)?$",
+    r"http://wiki\.ubuntu\.com(/.*)?$",
+    # Ubuntu wiki over HTTP (connect timeouts)
+    r"http://wiki\.ubuntu\.com.*",
     # Rate-blocked or bot-challenged (418 / 5xx responses)
+    r"https?://blog\.didrocks\.fr/.*",
     r"https?://ceph\.com.*",
     r"https://dev\.mysql\.com/.*",
     r"https://blogs\.oracle\.com/.*",
     r"https://gitlab\.gnome\.org/.*",
     r"https://discourse\.lubuntu\.me/.*",
+    # Mythbuntu: page is live but blocks bots with 403
+    r"http://www\.mythbuntu\.org/.*",
     r"https://downloads\.apache\.org/.*",
+    r"https?://freedesktop\.org/wiki/Software/systemd/.*",
     r"https://www\.freedesktop\.org/.*",
     r"https://gstreamer\.freedesktop\.org/.*",
     # systemd wiki page served with 418 (bot challenge)
@@ -255,6 +262,8 @@ linkcheck_ignore = [
     r"https://www.monitoring-plugins\.org/news/.*",
     r"https://kernelnewbies\.org/.*",
     r"https://cairographics\.org/news/.*",
+    r"https?://dark-net\.net/.*",
+    # 22.10 release notes: dead (404) and (403) external links
     # 20.04 release notes: bot-challenged links (kept live)
     r"https?://help\.ubuntu\.com/.*",
     r"https://en\.wikipedia\.org/.*",
@@ -269,6 +278,8 @@ linkcheck_ignore = [
     r"https://docs\.kernel\.org/admin-guide/gpio/sysfs\.html",
     r"https://kubuntu\.org/news/.*",
     r"https://ubuntuunity\.org/blog/.*",
+    # 13.10 release notes: bot-challenged (403) external link
+    r"https?://www\.arm\.com/products/tools/models/fast-models/foundation-model\.php",
     # 10.10 release notes: bot-challenged / TLS-broken external links
     r"https?://www\.kdedevelopers\.org/.*",
     r"https?://help\.ubuntu\.com/community/UEC/Images",
@@ -283,6 +294,19 @@ linkcheck_ignore = [
     r"http://psubuntu\.com/.*",
     # 8.04 release notes: archive.canonical.com times out from CI
     r"https?://archive\.canonical\.com/.*",
+    # 14.04 release notes: bot-challenged (403) external link
+    r"https?://askubuntu\.com/questions/ask\?.*",
+    # 13.04 release notes: bot-challenged (403 / timeout) external links
+    r"https://launchpad\.net/~gnome3-team/\+archive/gnome3-staging/.*",
+    r"https://code\.google\.com/p/chromium/issues/detail\?id=226002",
+    # 11.10 release notes: bot-challenged (timeout / 418) external links
+    r"https?://www\.compiz\.org.*",
+    r"http://www\.freedesktop\.org/.*",
+    r"https?://paste\.ubuntu\.com/.*",
+    # Debian wiki serves a bot challenge page without the expected anchors
+    r"https?://wiki\.debian\.org/.*",
+    # KDE Bugzilla rejects CI runners (403 / unreachable); live for humans
+    r"https://bugs\.kde\.org/.*",
 ]
 
 # A regex list of URLs where anchors are ignored by 'make linkcheck'
@@ -302,6 +326,11 @@ linkcheck_anchors_ignore_for_url = [
     r"https://doc\.dovecot\.org/.*",
     # Raspberry Pi docs restructure anchors
     r"https://www\.raspberrypi\.com/.*",
+    # 14.04 release notes: external doc anchors not present on the page
+    r"https?://docs\.puppetlabs\.com/puppet/3/reference/release_notes\.html",
+    r"https?://wiki\.xenproject\.org/wiki/MigrationGuideToXen4\.1.*",
+    # Puppet docs moved to a GitHub archive without the old anchors
+    r"https?://docs\.puppetlabs\.com/.*",
 ]
 
 # How long the link checker will wait for a response for each request
