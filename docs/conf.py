@@ -207,9 +207,13 @@ linkcheck_ignore = [
     r"https://github\.com/.*/blob/.*",
     # Ubuntu wiki (rate-limited)
     r"https://wiki\.ubuntu\.com/.*",
+    # Same wiki, bare host and plain http (read timeouts from CI)
+    r"https?://wiki\.ubuntu\.com(/.*)?$",
+    r"http://wiki\.ubuntu\.com(/.*)?$",
     # Ubuntu wiki over HTTP (connect timeouts)
     r"http://wiki\.ubuntu\.com.*",
     # Rate-blocked or bot-challenged (418 / 5xx responses)
+    r"https?://blog\.didrocks\.fr/.*",
     r"https?://ceph\.com.*",
     r"https://dev\.mysql\.com/.*",
     r"https://blogs\.oracle\.com/.*",
@@ -222,8 +226,11 @@ linkcheck_ignore = [
     # OpenVPN community wiki (Trac): blocks bots with 403
     r"https://community\.openvpn\.net/openvpn/wiki/ChangesInOpenvpn25",
     r"https://downloads\.apache\.org/.*",
+    r"https?://freedesktop\.org/wiki/Software/systemd/.*",
     r"https://www\.freedesktop\.org/.*",
     r"https://gstreamer\.freedesktop\.org/.*",
+    # systemd wiki page served with 418 (bot challenge)
+    r"https?://freedesktop\.org/wiki/Software/systemd.*",
     r"https://linux-nfs\.org/wiki/.*",
     # Flaky host (intermittent connection aborts from CI)
     r"https://www\.xfce\.org/.*",
@@ -275,6 +282,8 @@ linkcheck_ignore = [
     r"https://docs\.kernel\.org/admin-guide/gpio/sysfs\.html",
     r"https://kubuntu\.org/news/.*",
     r"https://ubuntuunity\.org/blog/.*",
+    # 13.10 release notes: bot-challenged (403) external link
+    r"https?://www\.arm\.com/products/tools/models/fast-models/foundation-model\.php",
     # 10.10 release notes: bot-challenged / TLS-broken external links
     r"https?://www\.kdedevelopers\.org/.*",
     r"https?://help\.ubuntu\.com/community/UEC/Images",
@@ -289,6 +298,13 @@ linkcheck_ignore = [
     r"http://psubuntu\.com/.*",
     # 8.04 release notes: archive.canonical.com times out from CI
     r"https?://archive\.canonical\.com/.*",
+    # 17.10 release notes: read timeout from CI (page exists)
+    r"https://www\.icann\.org/resources/pages/ksk-rollover/.*",
+    # 14.04 release notes: bot-challenged (403) external link
+    r"https?://askubuntu\.com/questions/ask\?.*",
+    # 13.04 release notes: bot-challenged (403 / timeout) external links
+    r"https://launchpad\.net/~gnome3-team/\+archive/gnome3-staging/.*",
+    r"https://code\.google\.com/p/chromium/issues/detail\?id=226002",
     # 11.10 release notes: bot-challenged (timeout / 418) external links
     r"https?://www\.compiz\.org.*",
     r"http://www\.freedesktop\.org/.*",
@@ -316,6 +332,13 @@ linkcheck_anchors_ignore_for_url = [
     r"https://doc\.dovecot\.org/.*",
     # Raspberry Pi docs restructure anchors
     r"https://www\.raspberrypi\.com/.*",
+    # Fedora wiki anchors drift between revisions
+    r"https://fedoraproject\.org/wiki/How_to_debug_Wayland_problems.*",
+    # 14.04 release notes: external doc anchors not present on the page
+    r"https?://docs\.puppetlabs\.com/puppet/3/reference/release_notes\.html",
+    r"https?://wiki\.xenproject\.org/wiki/MigrationGuideToXen4\.1.*",
+    # Puppet docs moved to a GitHub archive without the old anchors
+    r"https?://docs\.puppetlabs\.com/.*",
 ]
 
 # How long the link checker will wait for a response for each request
