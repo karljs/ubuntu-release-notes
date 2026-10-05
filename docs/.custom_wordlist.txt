@@ -270,6 +270,7 @@ debconf
 debhelper
 debootstrap
 debsums
+decompressor
 deduplicate
 Deerling
 Delcatty
@@ -285,6 +286,7 @@ Diablo
 dialogs
 diataxis
 Dilithium
+Dimgrey
 dirents
 distro
 distros
@@ -868,6 +870,7 @@ Popen
 poppler
 Poppler
 portblock
+postcopy
 postinst
 postprocessing
 powerpc
@@ -938,6 +941,7 @@ reauth
 redeclare
 reenable
 reexec
+refclock
 regexes
 Reimplement
 reimplementing
@@ -963,6 +967,7 @@ rhythmbox
 Rightscale
 rmadison
 Rockcraft
+Rocketlake
 Rockhopper
 ROCm
 Romi
@@ -1247,6 +1252,7 @@ URIs
 URL
 usbrtl
 userdata
+userfaults
 userland
 userns
 userspace
@@ -1261,6 +1267,7 @@ uucore
 uv
 valgrind
 Valkey
+Vangogh
 vCPUs
 vdec
 vdso
