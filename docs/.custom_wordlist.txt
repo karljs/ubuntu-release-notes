@@ -8,6 +8,7 @@ Adamina
 Addo
 addrconf
 adduser
+Adebaran
 Adelia
 adl
 adm
@@ -16,6 +17,7 @@ Aggron
 Aitland
 Akando
 Alberts
+Alderlake
 Alessandro
 algo
 algs
@@ -213,6 +215,7 @@ Compiz
 Computrace
 conffile
 conffiles
+configurability
 confiles
 consts
 coredumps
@@ -287,6 +290,7 @@ dhcpcd
 Diablo
 dialogs
 diataxis
+Didrocks
 Dilithium
 Dimgrey
 dirents
@@ -466,6 +470,7 @@ highbank
 Himmelblaud
 hio
 Hiroyuki
+hirsute's
 hoc
 Homescreen
 Hoppip
@@ -499,6 +504,7 @@ imager
 imap
 imc
 imjournal
+Impish's
 implicity
 indendent
 Indri
@@ -562,6 +568,7 @@ keymapper
 keytab
 killswitch
 kmod
+Komeda
 kpartx
 kprobes
 Krackan
@@ -856,6 +863,7 @@ pipewiresrc
 Pitivi
 pkey
 pkgbinarymangler
+plaintext
 plantuml
 plocate
 plucky's
@@ -919,6 +927,7 @@ qeth
 qpdf
 qualcomm
 Quantal
+querydata
 quicksettings
 Quokka
 RA
@@ -1090,6 +1099,7 @@ speechsynthesis
 speex
 Sphinx
 Spiana
+Spinlock
 Spread
 spread_test_example
 SRUs
@@ -1249,6 +1259,7 @@ unlockDialog
 unminimize
 unmount
 unshare
+upcalls
 upgrader
 upgraders
 upleveled
@@ -1311,6 +1322,7 @@ VPNs
 vsftpd
 vSwitch
 vsync
+VTs
 Vulkan
 wacom
 Wacom
@@ -1354,6 +1366,8 @@ wtpm
 Wubi
 xen
 Xen
+Xena
+Xeon
 xetex
 Xfce
 xfsprogs
@@ -1369,6 +1383,7 @@ Xtrabackup's
 Xubuntu
 xwayland
 xz
+Yakkety
 yaml
 Yaru
 Yoshio
@@ -1396,3 +1411,9 @@ zpwr
 Zstack
 zstd
 Zstd
+Artful's
+Driverless
+GNOME's
+IBMCloud
+livepatches
+ntpsec

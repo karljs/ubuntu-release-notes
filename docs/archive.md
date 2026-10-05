@@ -9,12 +9,16 @@
 23.10 (Mantic Minotaur) <23.10/index>
 23.04 (Lunar Lobster) <23.04/index>
 22.10 (Kinetic Kudu) <22.10/index>
+21.10 (Impish Indri) <21.10/index>
 21.04 (Hirsute Hippo) <21.04/index>
 20.10 (Groovy Gorilla) <20.10/index>
 20.04 LTS (Focal Fossa) <20.04/index>
+19.10 (Eoan Ermine) <19.10/index>
 19.04 (Disco Dingo) <19.04/index>
 18.10 (Cosmic Cuttlefish) <18.10/index>
+18.04 LTS (Bionic Beaver) <18.04/index>
 17.10 (Artful Aardvark) <17.10/index>
+16.10 (Yakkety Yak) <16.10/index>
 16.04 LTS (Xenial Xerus) <16.04/index>
 15.10 (Wily Werewolf) <15.10/index>
 15.04 (Vivid Vervet) <15.04/index>

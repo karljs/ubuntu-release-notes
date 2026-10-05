@@ -237,6 +237,8 @@ linkcheck_ignore = [
     # systemd wiki page served with 418 (bot challenge)
     r"https?://freedesktop\.org/wiki/Software/systemd.*",
     r"https://linux-nfs\.org/wiki/.*",
+    r"https://didrocks\.fr/.*",
+    r"https://patchwork\.ozlabs\.org/.*",
     # Flaky host (intermittent connection aborts from CI)
     r"https://www\.xfce\.org/.*",
     # Launchpad: bugs/commits may be private or deleted
@@ -307,6 +309,10 @@ linkcheck_ignore = [
     r"https?://archive\.canonical\.com/.*",
     # 19.04 release notes: Ubuntu Kylin news server returns non-standard 5xx (567)
     r"http://www\.ubuntukylin\.com/news/shownews\.php.*",
+    # 18.04 release notes: bot-challenged (429 / timeout) external links
+    r"https://didrocks\.fr/.*",
+    r"https://git\.samba\.org/.*",
+    r"https://bugzilla\.samba\.org/.*",
     # 17.10 release notes: read timeout from CI (page exists)
     r"https://www\.icann\.org/resources/pages/ksk-rollover/.*",
     # 14.04 release notes: bot-challenged (403) external link
@@ -335,6 +341,8 @@ linkcheck_anchors_ignore_for_url = [
     r"https://documentation\.ubuntu\.com/.*",
     # Launchpad bug list anchors use non-standard fragment format
     r"https://launchpad\.net/.*",
+    # Datadog docs restructure anchors between doc versions
+    r"https://docs\.datadoghq\.com/metrics/distributions/.*",
     # QEMU wiki ChangeLog anchors fail to resolve
     r"https://wiki\.qemu\.org/.*",
     # External project changelogs with non-stable anchor IDs
