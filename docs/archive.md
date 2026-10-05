@@ -9,6 +9,7 @@
 22.10 (Kinetic Kudu) <22.10/index>
 20.04 LTS (Focal Fossa) <20.04/index>
 16.04 LTS (Xenial Xerus) <16.04/index>
+13.10 (Saucy Salamander) <13.10/index>
 13.04 (Raring Ringtail) <13.04/index>
 12.10 (Quantal Quetzal) <12.10/index>
 12.04 LTS (Precise Pangolin) <12.04/index>

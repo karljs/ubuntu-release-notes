@@ -1,4 +1,3 @@
-
 Abishag
 accountsservice
 Achaicus
@@ -43,6 +42,7 @@ AppArmor
 appIndicator
 apport
 Apport
+appstore
 APQNs
 APs
 apus
@@ -110,6 +110,7 @@ bittorrent
 blackwell
 blkmapd
 blockdev
+blocklisted
 bluetooth
 Bluetooth
 bluez
@@ -145,6 +146,7 @@ Caimbrie
 Caitir
 Calaminag
 Calanthe
+Calc
 Caley
 Calix
 Callables
@@ -251,6 +253,7 @@ DBus
 dbusMenu
 dbusmock
 dconf
+deauthorize
 debcheckout
 debconf
 debhelper
@@ -356,10 +359,10 @@ forkserver
 fprintd
 framebuffer
 framepointer
-Freescale
 freefont
 freeipmi
 freeradius
+Freescale
 Freshclam
 frr
 FRRouting
@@ -384,6 +387,8 @@ Genio
 genprotimg
 getent
 Ghadi
+Ghostscript
+Ghostscript's
 github
 GitHub
 gjs
@@ -430,6 +435,7 @@ Heimdal
 helo
 Hetzner
 hibagent
+highbank
 Himmelblaud
 hio
 Hiroyuki
@@ -458,6 +464,7 @@ IDEs
 idmapped
 igc
 Ilya
+iMac
 iMacs
 imager
 imap
@@ -471,8 +478,8 @@ initializers
 initramfs
 initrd
 initrdless
-inlining
 Inkscape
+inlining
 inode
 intel
 intelrdt
@@ -536,6 +543,7 @@ kvm
 kwin
 Kylin
 lagginess
+laggy
 landlock
 landscape
 lang
@@ -634,6 +642,8 @@ Macbook
 Macbooks
 machinectl
 MACs
+maguro
+Maguro
 maintainer's
 makedumpfile
 Makefile
@@ -651,6 +661,7 @@ mdmon
 Mediatek
 Mejina
 Mellanox
+Membase
 memfd
 memlock
 memorytexture
@@ -783,6 +794,7 @@ pagnation
 Panko
 paramiko
 params
+partitioner
 passthrough
 patchlevel
 patchset
@@ -915,6 +927,7 @@ Resync
 retrigger(ing)?
 rfkill
 rhythmbox
+Rightscale
 rmadison
 Rockcraft
 Rockhopper
@@ -959,6 +972,9 @@ sclp
 SCons
 scp
 screencasting
+Screenful
+scrollbar
+scrollbars
 scsi
 sdbm
 sdw
@@ -1029,6 +1045,7 @@ Sphinx
 Spiana
 Spread
 spread_test_example
+SRUs
 Ssdbltrp
 sshd
 ssl
@@ -1040,6 +1057,7 @@ statx
 stderr
 stdin
 stdout
+stracciatella
 strace
 Streetman
 Strix
@@ -1083,6 +1101,7 @@ Sysprof
 sysstat
 systemctl
 systemd
+systray
 Tamako
 Tanaka
 Tarako
@@ -1131,6 +1150,8 @@ touchpads
 tplg
 TPMs
 traceback
+Trackpad
+Trackpads
 Tragis
 transitionals
 Treecko
@@ -1152,6 +1173,7 @@ udata
 udev
 udevadm
 uevent
+uevents
 ufw
 UIDs
 ukify
@@ -1244,9 +1266,11 @@ walinuxagent
 walreceiver
 wayland
 WCAG
+webapps
 webdav
 webextensions
 webkitgtk
+webpages
 webrick
 wellbeing
 whitepaper
@@ -1307,21 +1331,3 @@ zpwr
 Zstack
 zstd
 Zstd
-bootable
-blocklisted
-deauthorize
-iMac
-laggy
-Membase
-multiarch
-partitioner
-Rightscale
-scrollbar
-scrollbars
-Screenful
-SRUs
-stracciatella
-systray
-Trackpad
-Trackpads
-Quantal
