@@ -306,6 +306,10 @@ linkcheck_ignore = [
     r"http://psubuntu\.com/.*",
     # 8.04 release notes: archive.canonical.com times out from CI
     r"https?://archive\.canonical\.com/.*",
+    # 18.04 release notes: bot-challenged (429 / timeout) external links
+    r"https://didrocks\.fr/.*",
+    r"https://git\.samba\.org/.*",
+    r"https://bugzilla\.samba\.org/.*",
     # 17.10 release notes: read timeout from CI (page exists)
     r"https://www\.icann\.org/resources/pages/ksk-rollover/.*",
     # 14.04 release notes: bot-challenged (403) external link
@@ -334,6 +338,8 @@ linkcheck_anchors_ignore_for_url = [
     r"https://documentation\.ubuntu\.com/.*",
     # Launchpad bug list anchors use non-standard fragment format
     r"https://launchpad\.net/.*",
+    # Datadog docs restructure anchors between doc versions
+    r"https://docs\.datadoghq\.com/metrics/distributions/.*",
     # QEMU wiki ChangeLog anchors fail to resolve
     r"https://wiki\.qemu\.org/.*",
     # External project changelogs with non-stable anchor IDs
