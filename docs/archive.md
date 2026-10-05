@@ -12,6 +12,7 @@
 21.04 (Hirsute Hippo) <21.04/index>
 20.10 (Groovy Gorilla) <20.10/index>
 20.04 LTS (Focal Fossa) <20.04/index>
+18.10 (Cosmic Cuttlefish) <18.10/index>
 17.10 (Artful Aardvark) <17.10/index>
 16.04 LTS (Xenial Xerus) <16.04/index>
 15.10 (Wily Werewolf) <15.10/index>
