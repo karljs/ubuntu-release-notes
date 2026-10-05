@@ -210,6 +210,7 @@ linkcheck_ignore = [
     # Ubuntu wiki over HTTP (connect timeouts)
     r"http://wiki\.ubuntu\.com.*",
     # Rate-blocked or bot-challenged (418 / 5xx responses)
+    r"https?://blog\.didrocks\.fr/.*",
     r"https?://ceph\.com.*",
     r"https://dev\.mysql\.com/.*",
     r"https://blogs\.oracle\.com/.*",
