@@ -52,6 +52,7 @@ argparse
 artifacting
 Asobo
 asound
+Aspeed
 asure
 asus
 async
@@ -77,6 +78,7 @@ autostart
 autosuspend
 autosync
 autotrim
+aws
 aznfs
 AZs
 backend
@@ -115,6 +117,7 @@ Blueman
 bluetooth
 Bluetooth
 bluez
+BMCs
 Boccassi
 Bolan
 Boldore
@@ -489,6 +492,7 @@ Indri
 Infineon
 initializers
 initramfs
+initramfsless
 initrd
 initrdless
 Inkscape
@@ -632,6 +636,7 @@ logrotate
 logspam
 LOM's
 lookups
+Loongarch
 losetup
 lowlatency
 lp
@@ -678,6 +683,7 @@ Mellanox
 Membase
 memfd
 memlock
+Memop
 memorytexture
 Merrifield
 metacharacters
@@ -1053,6 +1059,7 @@ sos
 sosreport
 Sottile
 soundwire
+southbridge
 spamassassin
 spamd
 sparsifying
