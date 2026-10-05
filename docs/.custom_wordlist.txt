@@ -129,9 +129,9 @@ bpftool
 bpftools
 bpftrace
 brltty
-Broxton
 Broadcom
 Broadwell
+Broxton
 Brus
 btmtk
 btrfs
@@ -301,6 +301,7 @@ dpkg
 dput
 dracut
 Dracut
+driverless
 dropins
 dsp
 du
@@ -359,6 +360,7 @@ fixups
 flashable
 flatpak
 flatpanel's
+flo
 Fluendo
 fonts
 forcemirror
@@ -381,6 +383,7 @@ fw
 fwpath
 fwupd
 fwupdmgr
+Galera
 gbp
 gcc
 gcrypt
@@ -408,6 +411,7 @@ glxgear
 glxgears
 Glycin
 Gmock
+GNOME's
 gnudate
 Gogoat
 Goirand
@@ -448,6 +452,7 @@ Himmelblaud
 hio
 Hiroyuki
 hoc
+Homescreen
 Hoppip
 hostnames
 hotplug
@@ -515,6 +520,7 @@ iwlwifi
 ixgbe
 Jaiko
 jammy's
+JavaScript
 Jellicent
 Jellyfin
 jemalloc
@@ -726,6 +732,7 @@ Mysql
 mysqld
 MyST
 Mythbuntu
+nameserver
 Navi
 nbd
 nbdkit
@@ -1013,6 +1020,7 @@ sha
 Sharmee
 shiftfs
 shotwell
+sifr
 signup
 sigsegv
 simpledrm
@@ -1153,6 +1161,7 @@ toolchain
 Toolchain
 toolchains
 Toolchains
+toolstack
 Torracat
 touchpad
 Touchpad
@@ -1166,6 +1175,8 @@ Tragis
 transactionally
 transitionals
 Treecko
+trendline
+trendlines
 triggerable
 tristate
 Trustcor
@@ -1209,6 +1220,7 @@ unmount
 unshare
 upgrader
 upgraders
+upleveled
 Upstreamed
 upstream's
 uris
@@ -1241,6 +1253,7 @@ Versal
 vfio
 vfs
 VFs
+VGA
 Viktor
 virdevmapper
 virgl
@@ -1343,16 +1356,3 @@ zpwr
 Zstack
 zstd
 Zstd
-Galera
-GNOME's
-Homescreen
-JavaScript
-VGA
-flo
-maguro
-nameserver
-sifr
-toolstack
-trendline
-trendlines
-upleveled

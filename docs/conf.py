@@ -294,6 +294,8 @@ linkcheck_ignore = [
     r"http://psubuntu\.com/.*",
     # 8.04 release notes: archive.canonical.com times out from CI
     r"https?://archive\.canonical\.com/.*",
+    # 17.10 release notes: read timeout from CI (page exists)
+    r"https://www\.icann\.org/resources/pages/ksk-rollover/.*",
     # 14.04 release notes: bot-challenged (403) external link
     r"https?://askubuntu\.com/questions/ask\?.*",
     # 13.04 release notes: bot-challenged (403 / timeout) external links
@@ -326,6 +328,8 @@ linkcheck_anchors_ignore_for_url = [
     r"https://doc\.dovecot\.org/.*",
     # Raspberry Pi docs restructure anchors
     r"https://www\.raspberrypi\.com/.*",
+    # Fedora wiki anchors drift between revisions
+    r"https://fedoraproject\.org/wiki/How_to_debug_Wayland_problems.*",
     # 14.04 release notes: external doc anchors not present on the page
     r"https?://docs\.puppetlabs\.com/puppet/3/reference/release_notes\.html",
     r"https?://wiki\.xenproject\.org/wiki/MigrationGuideToXen4\.1.*",

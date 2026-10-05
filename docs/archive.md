@@ -8,6 +8,7 @@
 24.10 (Oracular Oriole) <24.10/index>
 22.10 (Kinetic Kudu) <22.10/index>
 20.04 LTS (Focal Fossa) <20.04/index>
+17.10 (Artful Aardvark) <17.10/index>
 16.04 LTS (Xenial Xerus) <16.04/index>
 15.10 (Wily Werewolf) <15.10/index>
 15.04 (Vivid Vervet) <15.04/index>
