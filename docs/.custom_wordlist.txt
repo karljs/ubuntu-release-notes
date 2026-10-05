@@ -130,6 +130,7 @@ bootable
 bootloader
 Bootspeed
 borks
+Bouchard
 bpftool
 bpftools
 bpftrace
@@ -161,6 +162,7 @@ Caley
 Calix
 Callables
 camelCase
+Cannonlake
 Canonical('s)?
 cardreader
 CA's
@@ -273,6 +275,7 @@ debconf
 debhelper
 debootstrap
 debsums
+decompressor
 deduplicate
 Deerling
 Delcatty
@@ -288,6 +291,7 @@ Diablo
 dialogs
 diataxis
 Dilithium
+Dimgrey
 dirents
 distro
 distros
@@ -371,6 +375,7 @@ flatpak
 flatpanel's
 flo
 Fluendo
+focal's
 fonts
 forcemirror
 forkserver
@@ -397,6 +402,7 @@ gamepads
 gbp
 Gbps
 gcc
+GCE's
 gcrypt
 gdb
 gdctl
@@ -406,6 +412,7 @@ gedit
 Geneve
 Genio
 genprotimg
+Gerdts
 getent
 Ghadi
 Ghostscript
@@ -874,6 +881,7 @@ Popen
 poppler
 Poppler
 portblock
+postcopy
 postinst
 postprocessing
 powerpc
@@ -890,6 +898,7 @@ preseeds
 printks
 procps
 proto
+proxied
 pstore
 pthread
 Ptyxis
@@ -928,6 +937,7 @@ Rahme
 Ralink
 ramdisk
 RAs
+Raspbian
 raspi
 Ratti
 rclone
@@ -945,6 +955,7 @@ reauth
 redeclare
 reenable
 reexec
+refclock
 regexes
 Reimplement
 reimplementing
@@ -970,6 +981,7 @@ rhythmbox
 Rightscale
 rmadison
 Rockcraft
+Rocketlake
 Rockhopper
 ROCm
 Romi
@@ -1256,6 +1268,7 @@ URIs
 URL
 usbrtl
 userdata
+userfaults
 userland
 userns
 userspace
@@ -1270,6 +1283,7 @@ uucore
 uv
 valgrind
 Valkey
+Vangogh
 vCPUs
 vdec
 vdso
@@ -1344,6 +1358,7 @@ Wooper
 wordlist
 wpa
 wpasupplicant
+wrt
 WSLg
 wtpm
 Wubi
@@ -1365,6 +1380,7 @@ Xtrabackup's
 Xubuntu
 xwayland
 xz
+Yakkety
 yaml
 Yaru
 Yoshio
