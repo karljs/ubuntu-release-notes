@@ -287,6 +287,8 @@ linkcheck_ignore = [
     r"http://psubuntu\.com/.*",
     # 8.04 release notes: archive.canonical.com times out from CI
     r"https?://archive\.canonical\.com/.*",
+    # 14.04 release notes: bot-challenged (403) external link
+    r"https?://askubuntu\.com/questions/ask\?.*",
     # 13.04 release notes: bot-challenged (403 / timeout) external links
     r"https://launchpad\.net/~gnome3-team/\+archive/gnome3-staging/.*",
     r"https://code\.google\.com/p/chromium/issues/detail\?id=226002",
@@ -317,6 +319,9 @@ linkcheck_anchors_ignore_for_url = [
     r"https://doc\.dovecot\.org/.*",
     # Raspberry Pi docs restructure anchors
     r"https://www\.raspberrypi\.com/.*",
+    # 14.04 release notes: external doc anchors not present on the page
+    r"https?://docs\.puppetlabs\.com/puppet/3/reference/release_notes\.html",
+    r"https?://wiki\.xenproject\.org/wiki/MigrationGuideToXen4\.1.*",
     # Puppet docs moved to a GitHub archive without the old anchors
     r"https?://docs\.puppetlabs\.com/.*",
 ]
