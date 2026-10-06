@@ -162,6 +162,31 @@ Documentation on how to install on the SpacemiT K3 boards is available: <https:/
 
 Ubuntu Desktop and Xubuntu Minimal RISC-V desktop images are provided with support for the SpacemiT K3 and QEMU.
 
+#### Improvements in IBM Z and LinuxONE support
+
+Early IBM Z (s390x) core platform operations for `s390-tools` receive critical updates with Secure Execution (SEL) instrumentation. An SEL `initramfs` image can now be customized during early boot ([LP: #2139601](https://launchpad.net/bugs/2139601)), supported by a new tool to build basic SEL-`qcow2` images ([LP: #2139602](https://launchpad.net/bugs/2139602)). Memory operations were also improved with `s390`/`sclp` architectural support for dynamic configuration and deconfiguration of hot-pluggable memory ([LP: #2142862](https://launchpad.net/bugs/2142862)).
+
+Updates have been landed to modernize I/O architectures and hardware monitoring telemetry on the IBM Z platform. This introduces support for new PCI adapter notification actions for Spyre and NVMe storage subsystems ([LP: #2160042](https://launchpad.net/bugs/2160042)). Storage tracking accuracy is reinforced by adding NVMe SMART data health monitoring protocols directly into the background `zpcimon` management service within `s390-tools` ([LP: #2160048](https://launchpad.net/bugs/2160048)).
+
+The IBM Z security architecture has been enhanced with Quantum-Safe cryptography optimizations. Namely, the openCryptoki infrastructure brings robust PKCS #11 V3.2 specification coverage across multiple tokens:
+
+Soft token
+: Introduces full support for ML-DSA and ML-KEM schemes ([LP: #2160146](https://launchpad.net/bugs/2160146))
+
+EP11 token
+: Integrates ML-DSA and ML-KEM algorithms ([LP: #2160204](https://launchpad.net/bugs/2160204))
+
+CCA token
+: Introduces formal cryptographic support for ML-DSA ([LP: #2160205](https://launchpad.net/bugs/2160205))
+
+Underlying low-level cryptographic libraries have been advanced too: `libica4` has migrated to version 4.4.2 ([LP: #2160677](https://launchpad.net/bugs/2160677)). Concurrently, the runtime ecosystem for protected cryptographic keys sees significant structural packaging and utility evolution:
+
+- The new `zpckey` management utility orchestrates Ultravisor (UV) retrievable secrets directly within the local `zpc` provider ([LP: #2160140](https://launchpad.net/bugs/2160140)).
+- `libzpc` (version 1) was updated to the latest branch ([LP: #2160138](https://launchpad.net/bugs/2160138)).
+- At the same time the next generation `libzpc2` library ([LP: #2160132](https://launchpad.net/bugs/2160132)) with provider support was added.
+
+The `virt-stack` gains performance resilience, architecture agility, and hardening protocols. Secure execution benefits from Quantum Safe SE Header modifications and localized tooling integrations across both the `s390-tools` utility space ([LP: #2160225](https://launchpad.net/bugs/2160225)) and the base Linux kernel subsystem ([LP: #2160226](https://launchpad.net/bugs/2160226)). Virtualization performance features also gain the VSIE SIGP Interpretation Facility inside KVM environments ([LP: #2160277](https://launchpad.net/bugs/2160277)), architectural memory mapping extensions allowing KVM to host 4K memslots natively ([LP: #2163132](https://launchpad.net/bugs/2163132)), and core SWIOTLB bounce-buffer optimization enhancements for `virtio-ccw` channel I/O frameworks ([LP: #2163133](https://launchpad.net/bugs/2163133)).
+
 ### System features
 
 #### Linux kernel \<VERSION\>
